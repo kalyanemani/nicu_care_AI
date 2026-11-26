@@ -140,6 +140,15 @@ def process_text_query(req: TextQueryRequest):
             model=req.model
         )
 
+    # Cloud Text-to-Speech (GCP Free Tier: 4M chars/month)
+    audio_b64 = None
+    try:
+        from ..services.cloud_speech_service import cloud_speech_service
+        if cloud_speech_service.is_tts_available and voice_summary:
+            audio_b64 = cloud_speech_service.synthesize_speech(voice_summary, target_lang)
+    except Exception:
+        pass
+
     resp = VoiceQueryResponse(
         text_card=text_card,
         voice_summary=voice_summary,
@@ -148,7 +157,7 @@ def process_text_query(req: TextQueryRequest):
         intent=final_state.get("intent", "CLINICAL_QA"),
         wiki_updated=final_state.get("wiki_updated", False),
         next_reminder_minutes=final_state.get("next_reminder_minutes"),
-        audio_base64=None,
+        audio_base64=audio_b64,
         model_used=final_state.get("selected_model") or req.model or llm_service.get_routed_model("clinical_synthesis"),
     )
 

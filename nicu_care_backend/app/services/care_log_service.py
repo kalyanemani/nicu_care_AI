@@ -30,17 +30,32 @@ class CareLogService:
         return self._baby_log_dir(baby_id) / f"{log_type}.json"
 
     def _load_entries(self, baby_id: str, log_type: str) -> List[dict]:
+        from .firestore_service import firestore_service
+        if firestore_service.is_connected:
+            fs_entries = firestore_service.get_care_logs(baby_id, log_type)
+            if fs_entries is not None and len(fs_entries) > 0:
+                return fs_entries
+
         path = self._file_path(baby_id, log_type)
         if not path.exists():
             return []
         try:
-            return json.loads(path.read_text(encoding="utf-8"))
+            entries = json.loads(path.read_text(encoding="utf-8"))
+            if firestore_service.is_connected and entries:
+                firestore_service.save_care_logs(baby_id, log_type, entries)
+            return entries
         except Exception:
             return []
 
     def _save_entries(self, baby_id: str, log_type: str, entries: List[dict]):
-        path = self._file_path(baby_id, log_type)
-        path.write_text(json.dumps(entries, default=str, indent=2), encoding="utf-8")
+        try:
+            path = self._file_path(baby_id, log_type)
+            path.write_text(json.dumps(entries, default=str, indent=2), encoding="utf-8")
+        except Exception:
+            pass
+        from .firestore_service import firestore_service
+        if firestore_service.is_connected:
+            firestore_service.save_care_logs(baby_id, log_type, entries)
 
     # ── Feedings ────────────────────────────────────────────────────────
     def log_feed(self, entry: FeedingEntry) -> FeedingEntry:

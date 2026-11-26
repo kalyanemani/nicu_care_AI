@@ -26,14 +26,16 @@ app = FastAPI(
 @app.on_event("startup")
 def startup_event():
     """Starts the autonomous background reminder scheduler."""
-    from .services.reminder_scheduler import reminder_scheduler
-    reminder_scheduler.start()
+    if os.getenv("TESTING", "false").lower() != "true":
+        from .services.reminder_scheduler import reminder_scheduler
+        reminder_scheduler.start()
 
 @app.on_event("shutdown")
 def shutdown_event():
     """Stops the autonomous background reminder scheduler."""
-    from .services.reminder_scheduler import reminder_scheduler
-    reminder_scheduler.stop()
+    if os.getenv("TESTING", "false").lower() != "true":
+        from .services.reminder_scheduler import reminder_scheduler
+        reminder_scheduler.stop()
 
 # CORS — configured for local development and production cloud deployment
 allowed_origins_env = os.getenv("ALLOWED_ORIGINS")

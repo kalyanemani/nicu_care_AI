@@ -59,15 +59,30 @@ class AuthService:
             return False
 
     def _load_users(self) -> Dict[str, Dict[str, Any]]:
+        from .firestore_service import firestore_service
+        if firestore_service.is_connected:
+            fs_users = firestore_service.get_all_users()
+            if fs_users:
+                return fs_users
+
         if not self.users_file.exists():
             return {}
         try:
-            return json.loads(self.users_file.read_text(encoding="utf-8"))
+            users = json.loads(self.users_file.read_text(encoding="utf-8"))
+            if firestore_service.is_connected and users:
+                firestore_service.batch_save_users(users)
+            return users
         except Exception:
             return {}
 
     def _save_users(self, users: Dict[str, Dict[str, Any]]) -> None:
-        self.users_file.write_text(json.dumps(users, indent=2), encoding="utf-8")
+        try:
+            self.users_file.write_text(json.dumps(users, indent=2), encoding="utf-8")
+        except Exception:
+            pass
+        from .firestore_service import firestore_service
+        if firestore_service.is_connected:
+            firestore_service.batch_save_users(users)
 
     def _ensure_default_users(self) -> None:
         """Seeds default clinical, parent, and admin accounts if not present."""

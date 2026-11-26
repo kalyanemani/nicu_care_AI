@@ -31,39 +31,37 @@ class WikiService:
         return p
 
     def read_section(self, baby_id: str, section: str) -> Optional[str]:
-        """
-        Reads a wiki section's Markdown content.
-
-        Parameters
-        ----------
-        baby_id : str
-        section : str
-            One of: profile, active_regimen, clinical_alerts, rolling_log_summary
-
-        Returns
-        -------
-        str or None
-            The Markdown content, or None if the file doesn't exist.
-        """
         if section not in VALID_SECTIONS:
             raise ValueError(f"Invalid section '{section}'. Must be one of {VALID_SECTIONS}")
+
+        from .firestore_service import firestore_service
+        if firestore_service.is_connected:
+            content = firestore_service.get_wiki_section(baby_id, section)
+            if content:
+                return content
 
         filepath = self._baby_dir(baby_id) / f"{section}.md"
         if filepath.exists():
-            return filepath.read_text(encoding="utf-8")
+            text = filepath.read_text(encoding="utf-8")
+            if firestore_service.is_connected and text:
+                firestore_service.save_wiki_section(baby_id, section, text)
+            return text
         return None
 
     def write_section(self, baby_id: str, section: str, content: str) -> str:
-        """
-        Writes (overwrites) a wiki section.
-
-        Returns the written content.
-        """
         if section not in VALID_SECTIONS:
             raise ValueError(f"Invalid section '{section}'. Must be one of {VALID_SECTIONS}")
 
-        filepath = self._baby_dir(baby_id) / f"{section}.md"
-        filepath.write_text(content, encoding="utf-8")
+        try:
+            filepath = self._baby_dir(baby_id) / f"{section}.md"
+            filepath.write_text(content, encoding="utf-8")
+        except Exception:
+            pass
+
+        from .firestore_service import firestore_service
+        if firestore_service.is_connected:
+            firestore_service.save_wiki_section(baby_id, section, content)
+
         return content
 
     def patch_section(self, baby_id: str, section: str, patch_text: str) -> str:
@@ -186,14 +184,30 @@ class WikiService:
         return self.write_section(baby.baby_id, "profile", content.strip())
 
     def save_baby_profile_json(self, baby: BabyProfile) -> None:
-        """Persists the BabyProfile as a JSON file alongside the wiki."""
-        filepath = self._baby_dir(baby.baby_id) / "baby_profile.json"
-        filepath.write_text(baby.model_dump_json(indent=2), encoding="utf-8")
+        """Persists the BabyProfile as a JSON file and mirrors to Firestore."""
+        try:
+            filepath = self._baby_dir(baby.baby_id) / "baby_profile.json"
+            filepath.write_text(baby.model_dump_json(indent=2), encoding="utf-8")
+        except Exception:
+            pass
+
+        from .firestore_service import firestore_service
+        if firestore_service.is_connected:
+            firestore_service.save_baby_profile(baby.baby_id, baby.model_dump(mode="json"))
 
     def load_baby_profile_json(self, baby_id: str) -> Optional[BabyProfile]:
-        """Loads a BabyProfile from the JSON file."""
+        """Loads a BabyProfile from Firestore or local JSON file."""
+        from .firestore_service import firestore_service
+        if firestore_service.is_connected:
+            fs_profile = firestore_service.get_baby_profile(baby_id)
+            if fs_profile:
+                return BabyProfile(**fs_profile)
+
         filepath = self._baby_dir(baby_id) / "baby_profile.json"
         if not filepath.exists():
             return None
         data = json.loads(filepath.read_text(encoding="utf-8"))
-        return BabyProfile(**data)
+        profile = BabyProfile(**data)
+        if firestore_service.is_connected:
+            firestore_service.save_baby_profile(baby_id, data)
+        return profile

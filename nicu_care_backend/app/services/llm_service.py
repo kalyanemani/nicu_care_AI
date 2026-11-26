@@ -89,6 +89,50 @@ class LLMService:
             "is_connected": False
         }
 
+    def _call_gemini(self, prompt: str, system_prompt: Optional[str] = None) -> Optional[str]:
+        """
+        Invokes Gemini 1.5 / 2.0 Flash via Google AI Studio / Vertex AI Free Tier.
+        Ultra-low latency (<500ms) with zero local GPU/RAM requirement.
+        """
+        api_key = self.gemini_key or os.getenv("GEMINI_API_KEY")
+        if not api_key:
+            return None
+
+        # Google AI Studio Gemini Flash Endpoint (Free Tier)
+        url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={api_key}"
+        headers = {"Content-Type": "application/json"}
+        
+        payload: Dict[str, Any] = {
+            "contents": [
+                {
+                    "role": "user",
+                    "parts": [{"text": prompt}]
+                }
+            ],
+            "generationConfig": {
+                "temperature": 0.2,
+                "maxOutputTokens": 600,
+            }
+        }
+        if system_prompt:
+            payload["systemInstruction"] = {
+                "parts": [{"text": system_prompt}]
+            }
+
+        try:
+            resp = requests.post(url, headers=headers, json=payload, timeout=8.0)
+            if resp.status_code == 200:
+                data = resp.json()
+                candidates = data.get("candidates", [])
+                if candidates:
+                    parts = candidates[0].get("content", {}).get("parts", [])
+                    if parts:
+                        return parts[0].get("text")
+        except Exception as e:
+            import logging
+            logging.getLogger("llm_service").warning(f"Gemini API invocation error: {e}")
+        return None
+
     def generate_chat_response(
         self,
         prompt: str,
@@ -98,10 +142,14 @@ class LLMService:
         timeout: Optional[float] = None,
     ) -> Optional[str]:
         """
-        Generates grounded text response via local Ollama using model routing.
-        Configured with CPU-conscious token and context limits (num_predict, num_ctx, num_thread)
-        and adaptive safeguard timeouts to eliminate infinite hangs on CPU-only hosts.
+        Generates grounded text response via cloud Gemini Flash (when key provided)
+        or local Ollama using model routing.
         """
+        # 1. Cloud Gemini Flash (Free Tier) Fast-Path
+        gemini_result = self._call_gemini(prompt, system_prompt)
+        if gemini_result:
+            return gemini_result
+
         selected_model = model or (self.get_routed_model(task_type) if task_type else self.default_model)
         # Normalize medgemma shorthand: "medgemma1.5" -> "medgemma1.5:latest"
         if selected_model in ["medgemma1.5", "medgemma"]:
