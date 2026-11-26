@@ -1,0 +1,2992 @@
+[
+  {
+    "timestamp": 1795535880.7017648,
+    "date": "2026-11-24 21:28:00",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's chest is retracting under ribs and lips look dusky blue",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795535880.7501888,
+    "date": "2026-11-24 21:28:00",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Liam has a rectal temperature of 38.3 C and won't wake up to feed",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795535880.8992724,
+    "date": "2026-11-24 21:28:00",
+    "category": "CARE_UPDATE",
+    "title": "LOG_FEED Event",
+    "description": "Liam weighs 2400 grams today, what is his recommended daily volume of breast milk?",
+    "data": {
+      "voice_summary": "50 milliliters logged. Remember to keep baby upright, and next feed is in three hours."
+    }
+  },
+  {
+    "timestamp": 1795535881.056168,
+    "date": "2026-11-24 21:28:01",
+    "category": "CARE_UPDATE",
+    "title": "LOG_FEED Event",
+    "description": "Pediatrician prescribed iron drops 1.0 mL once daily starting tomorrow",
+    "data": {
+      "voice_summary": "1 milliliters logged. Remember to keep baby upright, and next feed is in three hours."
+    }
+  },
+  {
+    "timestamp": 1795535916.3153322,
+    "date": "2026-11-24 21:28:36",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's chest is retracting under ribs and lips look dusky blue",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795535916.357434,
+    "date": "2026-11-24 21:28:36",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Liam has a rectal temperature of 38.3 C and won't wake up to feed",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795535916.5288558,
+    "date": "2026-11-24 21:28:36",
+    "category": "CARE_UPDATE",
+    "title": "LOG_FEED Event",
+    "description": "Liam weighs 2400 grams today, what is his recommended daily volume of breast milk?",
+    "data": {
+      "voice_summary": "50 milliliters logged. Remember to keep baby upright, and next feed is in three hours."
+    }
+  },
+  {
+    "timestamp": 1795535916.7023883,
+    "date": "2026-11-24 21:28:36",
+    "category": "CARE_UPDATE",
+    "title": "LOG_FEED Event",
+    "description": "Pediatrician prescribed iron drops 1.0 mL once daily starting tomorrow",
+    "data": {
+      "voice_summary": "1 milliliters logged. Remember to keep baby upright, and next feed is in three hours."
+    }
+  },
+  {
+    "timestamp": 1795535987.2870057,
+    "date": "2026-11-24 21:29:47",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Liam has a rectal temperature of 38.3 C and won't wake up to feed",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795536063.012715,
+    "date": "2026-11-24 21:31:03",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's chest is retracting under ribs and lips look dusky blue",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795536063.0658646,
+    "date": "2026-11-24 21:31:03",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Liam has a rectal temperature of 38.3 C and won't wake up to feed",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795536063.1138425,
+    "date": "2026-11-24 21:31:03",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby just threw up bright green dark liquid twice",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795536063.2147517,
+    "date": "2026-11-24 21:31:03",
+    "category": "CARE_UPDATE",
+    "title": "LOG_FEED Event",
+    "description": "Liam weighs 2400 grams today, what is his recommended daily volume of breast milk?",
+    "data": {
+      "voice_summary": "50 milliliters logged. Remember to keep baby upright, and next feed is in three hours."
+    }
+  },
+  {
+    "timestamp": 1795536063.3357227,
+    "date": "2026-11-24 21:31:03",
+    "category": "CARE_UPDATE",
+    "title": "LOG_MEDICATION Event",
+    "description": "Pediatrician prescribed iron drops 1.0 mL once daily starting tomorrow",
+    "data": {
+      "voice_summary": "Care entry recorded successfully."
+    }
+  },
+  {
+    "timestamp": 1795536087.1074355,
+    "date": "2026-11-24 21:31:27",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's chest is retracting under ribs and lips look dusky blue",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795536087.1400535,
+    "date": "2026-11-24 21:31:27",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Liam has a rectal temperature of 38.3 C and won't wake up to feed",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795536087.196288,
+    "date": "2026-11-24 21:31:27",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby just threw up bright green dark liquid twice",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795536087.2815363,
+    "date": "2026-11-24 21:31:27",
+    "category": "CARE_UPDATE",
+    "title": "LOG_FEED Event",
+    "description": "Liam weighs 2400 grams today, what is his recommended daily volume of breast milk?",
+    "data": {
+      "voice_summary": "50 milliliters logged. Remember to keep baby upright, and next feed is in three hours."
+    }
+  },
+  {
+    "timestamp": 1795536087.3734703,
+    "date": "2026-11-24 21:31:27",
+    "category": "CARE_UPDATE",
+    "title": "LOG_MEDICATION Event",
+    "description": "Pediatrician prescribed iron drops 1.0 mL once daily starting tomorrow",
+    "data": {
+      "voice_summary": "Care entry recorded successfully."
+    }
+  },
+  {
+    "timestamp": 1795536122.5462677,
+    "date": "2026-11-24 21:32:02",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's chest is retracting under ribs and lips look dusky blue",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795536122.623595,
+    "date": "2026-11-24 21:32:02",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Liam has a rectal temperature of 38.3 C and won't wake up to feed",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795536122.7192564,
+    "date": "2026-11-24 21:32:02",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby just threw up bright green dark liquid twice",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795536122.8590417,
+    "date": "2026-11-24 21:32:02",
+    "category": "CARE_UPDATE",
+    "title": "LOG_FEED Event",
+    "description": "Liam weighs 2400 grams today, what is his recommended daily volume of breast milk?",
+    "data": {
+      "voice_summary": "50 milliliters logged. Remember to keep baby upright, and next feed is in three hours."
+    }
+  },
+  {
+    "timestamp": 1795536122.957134,
+    "date": "2026-11-24 21:32:02",
+    "category": "CARE_UPDATE",
+    "title": "LOG_MEDICATION Event",
+    "description": "Pediatrician prescribed iron drops 1.0 mL once daily starting tomorrow",
+    "data": {
+      "voice_summary": "Care entry recorded successfully."
+    }
+  },
+  {
+    "timestamp": 1795536144.5270054,
+    "date": "2026-11-24 21:32:24",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's lips look blue and chest is retracting under the ribs",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795536146.3637474,
+    "date": "2026-11-24 21:32:26",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's chest is retracting under ribs and lips look dusky blue",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795536146.4410248,
+    "date": "2026-11-24 21:32:26",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Liam has a rectal temperature of 38.3 C and won't wake up to feed",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795536146.502984,
+    "date": "2026-11-24 21:32:26",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby just threw up bright green dark liquid twice",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795536146.6197934,
+    "date": "2026-11-24 21:32:26",
+    "category": "CARE_UPDATE",
+    "title": "LOG_FEED Event",
+    "description": "Liam weighs 2400 grams today, what is his recommended daily volume of breast milk?",
+    "data": {
+      "voice_summary": "50 milliliters logged. Remember to keep baby upright, and next feed is in three hours."
+    }
+  },
+  {
+    "timestamp": 1795536146.751625,
+    "date": "2026-11-24 21:32:26",
+    "category": "CARE_UPDATE",
+    "title": "LOG_MEDICATION Event",
+    "description": "Pediatrician prescribed iron drops 1.0 mL once daily starting tomorrow",
+    "data": {
+      "voice_summary": "Care entry recorded successfully."
+    }
+  },
+  {
+    "timestamp": 1795536166.8468616,
+    "date": "2026-11-24 21:32:46",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's lips look blue and chest is retracting under the ribs",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795539959.9857326,
+    "date": "2026-11-24 22:35:59",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's chest is retracting under ribs and lips look dusky blue",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795540009.2545881,
+    "date": "2026-11-24 22:36:49",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's chest is retracting under ribs and lips look dusky blue",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795540009.3346725,
+    "date": "2026-11-24 22:36:49",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Liam has a rectal temperature of 38.3 C and won't wake up to feed",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795540009.4507177,
+    "date": "2026-11-24 22:36:49",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby just threw up bright green dark liquid twice",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795540009.6666307,
+    "date": "2026-11-24 22:36:49",
+    "category": "CARE_UPDATE",
+    "title": "LOG_FEED Event",
+    "description": "Liam weighs 2400 grams today, what is his recommended daily volume of breast milk?",
+    "data": {
+      "voice_summary": "50 milliliters logged. Remember to keep baby upright, and next feed is in three hours."
+    }
+  },
+  {
+    "timestamp": 1795540009.8558817,
+    "date": "2026-11-24 22:36:49",
+    "category": "CARE_UPDATE",
+    "title": "LOG_MEDICATION Event",
+    "description": "Pediatrician prescribed iron drops 1.0 mL once daily starting tomorrow",
+    "data": {
+      "voice_summary": "Care entry recorded successfully."
+    }
+  },
+  {
+    "timestamp": 1795540482.7794604,
+    "date": "2026-11-24 22:44:42",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's chest is retracting under ribs and lips look dusky blue",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795540482.8553698,
+    "date": "2026-11-24 22:44:42",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Liam has a rectal temperature of 38.3 C and won't wake up to feed",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795540482.9998703,
+    "date": "2026-11-24 22:44:42",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby just threw up bright green dark liquid twice",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795540483.2304337,
+    "date": "2026-11-24 22:44:43",
+    "category": "CARE_UPDATE",
+    "title": "LOG_FEED Event",
+    "description": "Liam weighs 2400 grams today, what is his recommended daily volume of breast milk?",
+    "data": {
+      "voice_summary": "50 milliliters logged. Remember to keep baby upright, and next feed is in three hours."
+    }
+  },
+  {
+    "timestamp": 1795540483.4196293,
+    "date": "2026-11-24 22:44:43",
+    "category": "CARE_UPDATE",
+    "title": "LOG_MEDICATION Event",
+    "description": "Pediatrician prescribed iron drops 1.0 mL once daily starting tomorrow",
+    "data": {
+      "voice_summary": "Care entry recorded successfully."
+    }
+  },
+  {
+    "timestamp": 1795541939.798292,
+    "date": "2026-11-24 23:08:59",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's lips look blue and chest is retracting under the ribs",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795541941.8720295,
+    "date": "2026-11-24 23:09:01",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's chest is retracting under ribs and lips look dusky blue",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795541942.0028803,
+    "date": "2026-11-24 23:09:02",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Liam has a rectal temperature of 38.3 C and won't wake up to feed",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795541942.1497066,
+    "date": "2026-11-24 23:09:02",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby just threw up bright green dark liquid twice",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795541942.3615685,
+    "date": "2026-11-24 23:09:02",
+    "category": "CARE_UPDATE",
+    "title": "LOG_FEED Event",
+    "description": "Liam weighs 2400 grams today, what is his recommended daily volume of breast milk?",
+    "data": {
+      "voice_summary": "50 milliliters logged. Remember to keep baby upright, and next feed is in three hours."
+    }
+  },
+  {
+    "timestamp": 1795541942.540039,
+    "date": "2026-11-24 23:09:02",
+    "category": "CARE_UPDATE",
+    "title": "LOG_MEDICATION Event",
+    "description": "Pediatrician prescribed iron drops 1.0 mL once daily starting tomorrow",
+    "data": {
+      "voice_summary": "Care entry recorded successfully."
+    }
+  },
+  {
+    "timestamp": 1795543796.1227572,
+    "date": "2026-11-24 23:39:56",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "\u0c2c\u0c3e\u0c2c\u0c41\u0c15\u0c3f \u0c06\u0c15\u0c41\u0c2a\u0c1a\u0c4d\u0c1a \u0c35\u0c3e\u0c02\u0c24\u0c41\u0c32\u0c41 \u0c05\u0c35\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c2f\u0c3f",
+    "data": {
+      "voice_summary": "\u0c35\u0c46\u0c02\u0c1f\u0c28\u0c47 \u0c2e\u0c40 \u0c06\u0c38\u0c41\u0c2a\u0c24\u0c4d\u0c30\u0c3f\u0c32\u0c4b\u0c28\u0c3f NICU \u0c0e\u0c2e\u0c30\u0c4d\u0c1c\u0c46\u0c28\u0c4d\u0c38\u0c40 \u0c35\u0c3f\u0c2d\u0c3e\u0c17\u0c3e\u0c28\u0c3f\u0c15\u0c3f \u0c15\u0c3e\u0c32\u0c4d \u0c1a\u0c47\u0c2f\u0c02\u0c21\u0c3f. \u0c08 \u0c32\u0c15\u0c4d\u0c37\u0c23\u0c3e\u0c32\u0c41 \u0c24\u0c15\u0c4d\u0c37\u0c23 \u0c35\u0c48\u0c26\u0c4d\u0c2f \u0c38\u0c39\u0c3e\u0c2f\u0c02 \u0c15\u0c4b\u0c30\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c2f\u0c3f."
+    }
+  },
+  {
+    "timestamp": 1795543883.494137,
+    "date": "2026-11-24 23:41:23",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "\u0c2c\u0c3e\u0c2c\u0c41\u0c15\u0c3f \u0c06\u0c15\u0c41\u0c2a\u0c1a\u0c4d\u0c1a \u0c35\u0c3e\u0c02\u0c24\u0c41\u0c32\u0c41 \u0c05\u0c35\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c2f\u0c3f",
+    "data": {
+      "voice_summary": "\u0c35\u0c46\u0c02\u0c1f\u0c28\u0c47 \u0c2e\u0c40 \u0c06\u0c38\u0c41\u0c2a\u0c24\u0c4d\u0c30\u0c3f\u0c32\u0c4b\u0c28\u0c3f NICU \u0c0e\u0c2e\u0c30\u0c4d\u0c1c\u0c46\u0c28\u0c4d\u0c38\u0c40 \u0c35\u0c3f\u0c2d\u0c3e\u0c17\u0c3e\u0c28\u0c3f\u0c15\u0c3f \u0c15\u0c3e\u0c32\u0c4d \u0c1a\u0c47\u0c2f\u0c02\u0c21\u0c3f. \u0c08 \u0c32\u0c15\u0c4d\u0c37\u0c23\u0c3e\u0c32\u0c41 \u0c24\u0c15\u0c4d\u0c37\u0c23 \u0c35\u0c48\u0c26\u0c4d\u0c2f \u0c38\u0c39\u0c3e\u0c2f\u0c02 \u0c15\u0c4b\u0c30\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c2f\u0c3f."
+    }
+  },
+  {
+    "timestamp": 1795543901.3742213,
+    "date": "2026-11-24 23:41:41",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's lips look blue and chest is retracting under the ribs",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795543903.190271,
+    "date": "2026-11-24 23:41:43",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "\u0c2c\u0c3e\u0c2c\u0c41\u0c15\u0c3f \u0c06\u0c15\u0c41\u0c2a\u0c1a\u0c4d\u0c1a \u0c35\u0c3e\u0c02\u0c24\u0c41\u0c32\u0c41 \u0c05\u0c35\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c2f\u0c3f",
+    "data": {
+      "voice_summary": "\u0c35\u0c46\u0c02\u0c1f\u0c28\u0c47 \u0c2e\u0c40 \u0c06\u0c38\u0c41\u0c2a\u0c24\u0c4d\u0c30\u0c3f\u0c32\u0c4b\u0c28\u0c3f NICU \u0c0e\u0c2e\u0c30\u0c4d\u0c1c\u0c46\u0c28\u0c4d\u0c38\u0c40 \u0c35\u0c3f\u0c2d\u0c3e\u0c17\u0c3e\u0c28\u0c3f\u0c15\u0c3f \u0c15\u0c3e\u0c32\u0c4d \u0c1a\u0c47\u0c2f\u0c02\u0c21\u0c3f. \u0c08 \u0c32\u0c15\u0c4d\u0c37\u0c23\u0c3e\u0c32\u0c41 \u0c24\u0c15\u0c4d\u0c37\u0c23 \u0c35\u0c48\u0c26\u0c4d\u0c2f \u0c38\u0c39\u0c3e\u0c2f\u0c02 \u0c15\u0c4b\u0c30\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c2f\u0c3f."
+    }
+  },
+  {
+    "timestamp": 1795543903.7040613,
+    "date": "2026-11-24 23:41:43",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's chest is retracting under ribs and lips look dusky blue",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795543903.8495433,
+    "date": "2026-11-24 23:41:43",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Liam has a rectal temperature of 38.3 C and won't wake up to feed",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795543903.9855206,
+    "date": "2026-11-24 23:41:43",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby just threw up bright green dark liquid twice",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795543904.1985078,
+    "date": "2026-11-24 23:41:44",
+    "category": "CARE_UPDATE",
+    "title": "LOG_FEED Event",
+    "description": "Liam weighs 2400 grams today, what is his recommended daily volume of breast milk?",
+    "data": {
+      "voice_summary": "50 milliliters logged. Remember to keep baby upright, and next feed is in three hours."
+    }
+  },
+  {
+    "timestamp": 1795543904.383053,
+    "date": "2026-11-24 23:41:44",
+    "category": "CARE_UPDATE",
+    "title": "LOG_MEDICATION Event",
+    "description": "Pediatrician prescribed iron drops 1.0 mL once daily starting tomorrow",
+    "data": {
+      "voice_summary": "Care entry recorded successfully."
+    }
+  },
+  {
+    "timestamp": 1795544621.1549296,
+    "date": "2026-11-24 23:53:41",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's lips look blue and chest is retracting under the ribs",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795544623.2389438,
+    "date": "2026-11-24 23:53:43",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "\u0c2c\u0c3e\u0c2c\u0c41\u0c15\u0c3f \u0c06\u0c15\u0c41\u0c2a\u0c1a\u0c4d\u0c1a \u0c35\u0c3e\u0c02\u0c24\u0c41\u0c32\u0c41 \u0c05\u0c35\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c2f\u0c3f",
+    "data": {
+      "voice_summary": "\u0c35\u0c46\u0c02\u0c1f\u0c28\u0c47 \u0c2e\u0c40 \u0c06\u0c38\u0c41\u0c2a\u0c24\u0c4d\u0c30\u0c3f\u0c32\u0c4b\u0c28\u0c3f NICU \u0c0e\u0c2e\u0c30\u0c4d\u0c1c\u0c46\u0c28\u0c4d\u0c38\u0c40 \u0c35\u0c3f\u0c2d\u0c3e\u0c17\u0c3e\u0c28\u0c3f\u0c15\u0c3f \u0c15\u0c3e\u0c32\u0c4d \u0c1a\u0c47\u0c2f\u0c02\u0c21\u0c3f. \u0c08 \u0c32\u0c15\u0c4d\u0c37\u0c23\u0c3e\u0c32\u0c41 \u0c24\u0c15\u0c4d\u0c37\u0c23 \u0c35\u0c48\u0c26\u0c4d\u0c2f \u0c38\u0c39\u0c3e\u0c2f\u0c02 \u0c15\u0c4b\u0c30\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c2f\u0c3f."
+    }
+  },
+  {
+    "timestamp": 1795544623.8890748,
+    "date": "2026-11-24 23:53:43",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's chest is retracting under ribs and lips look dusky blue",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795544624.054878,
+    "date": "2026-11-24 23:53:44",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Liam has a rectal temperature of 38.3 C and won't wake up to feed",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795544624.2228832,
+    "date": "2026-11-24 23:53:44",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby just threw up bright green dark liquid twice",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795544624.4652665,
+    "date": "2026-11-24 23:53:44",
+    "category": "CARE_UPDATE",
+    "title": "LOG_FEED Event",
+    "description": "Liam weighs 2400 grams today, what is his recommended daily volume of breast milk?",
+    "data": {
+      "voice_summary": "50 milliliters logged. Remember to keep baby upright, and next feed is in three hours."
+    }
+  },
+  {
+    "timestamp": 1795544624.6827466,
+    "date": "2026-11-24 23:53:44",
+    "category": "CARE_UPDATE",
+    "title": "LOG_MEDICATION Event",
+    "description": "Pediatrician prescribed iron drops 1.0 mL once daily starting tomorrow",
+    "data": {
+      "voice_summary": "Care entry recorded successfully."
+    }
+  },
+  {
+    "timestamp": 1795548317.4358237,
+    "date": "2026-11-25 00:55:17",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's lips look blue and chest is retracting under the ribs",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795548319.4845293,
+    "date": "2026-11-25 00:55:19",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "\u0c2c\u0c3e\u0c2c\u0c41\u0c15\u0c3f \u0c06\u0c15\u0c41\u0c2a\u0c1a\u0c4d\u0c1a \u0c35\u0c3e\u0c02\u0c24\u0c41\u0c32\u0c41 \u0c05\u0c35\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c2f\u0c3f",
+    "data": {
+      "voice_summary": "\u0c35\u0c46\u0c02\u0c1f\u0c28\u0c47 \u0c2e\u0c40 \u0c06\u0c38\u0c41\u0c2a\u0c24\u0c4d\u0c30\u0c3f\u0c32\u0c4b\u0c28\u0c3f NICU \u0c0e\u0c2e\u0c30\u0c4d\u0c1c\u0c46\u0c28\u0c4d\u0c38\u0c40 \u0c35\u0c3f\u0c2d\u0c3e\u0c17\u0c3e\u0c28\u0c3f\u0c15\u0c3f \u0c15\u0c3e\u0c32\u0c4d \u0c1a\u0c47\u0c2f\u0c02\u0c21\u0c3f. \u0c08 \u0c32\u0c15\u0c4d\u0c37\u0c23\u0c3e\u0c32\u0c41 \u0c24\u0c15\u0c4d\u0c37\u0c23 \u0c35\u0c48\u0c26\u0c4d\u0c2f \u0c38\u0c39\u0c3e\u0c2f\u0c02 \u0c15\u0c4b\u0c30\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c2f\u0c3f."
+    }
+  },
+  {
+    "timestamp": 1795548320.1122844,
+    "date": "2026-11-25 00:55:20",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's chest is retracting under ribs and lips look dusky blue",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795548320.2813263,
+    "date": "2026-11-25 00:55:20",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Liam has a rectal temperature of 38.3 C and won't wake up to feed",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795548320.4568646,
+    "date": "2026-11-25 00:55:20",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby just threw up bright green dark liquid twice",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795548320.7093933,
+    "date": "2026-11-25 00:55:20",
+    "category": "CARE_UPDATE",
+    "title": "LOG_FEED Event",
+    "description": "Liam weighs 2400 grams today, what is his recommended daily volume of breast milk?",
+    "data": {
+      "voice_summary": "50 milliliters logged. Remember to keep baby upright, and next feed is in three hours."
+    }
+  },
+  {
+    "timestamp": 1795548320.9408145,
+    "date": "2026-11-25 00:55:20",
+    "category": "CARE_UPDATE",
+    "title": "LOG_MEDICATION Event",
+    "description": "Pediatrician prescribed iron drops 1.0 mL once daily starting tomorrow",
+    "data": {
+      "voice_summary": "Care entry recorded successfully."
+    }
+  },
+  {
+    "timestamp": 1795596640.7919462,
+    "date": "2026-11-25 14:20:40",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's lips look blue and chest is retracting under the ribs",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795596642.7860625,
+    "date": "2026-11-25 14:20:42",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "\u0c2c\u0c3e\u0c2c\u0c41\u0c15\u0c3f \u0c06\u0c15\u0c41\u0c2a\u0c1a\u0c4d\u0c1a \u0c35\u0c3e\u0c02\u0c24\u0c41\u0c32\u0c41 \u0c05\u0c35\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c2f\u0c3f",
+    "data": {
+      "voice_summary": "\u0c35\u0c46\u0c02\u0c1f\u0c28\u0c47 \u0c2e\u0c40 \u0c06\u0c38\u0c41\u0c2a\u0c24\u0c4d\u0c30\u0c3f\u0c32\u0c4b\u0c28\u0c3f NICU \u0c0e\u0c2e\u0c30\u0c4d\u0c1c\u0c46\u0c28\u0c4d\u0c38\u0c40 \u0c35\u0c3f\u0c2d\u0c3e\u0c17\u0c3e\u0c28\u0c3f\u0c15\u0c3f \u0c15\u0c3e\u0c32\u0c4d \u0c1a\u0c47\u0c2f\u0c02\u0c21\u0c3f. \u0c08 \u0c32\u0c15\u0c4d\u0c37\u0c23\u0c3e\u0c32\u0c41 \u0c24\u0c15\u0c4d\u0c37\u0c23 \u0c35\u0c48\u0c26\u0c4d\u0c2f \u0c38\u0c39\u0c3e\u0c2f\u0c02 \u0c15\u0c4b\u0c30\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c2f\u0c3f."
+    }
+  },
+  {
+    "timestamp": 1795596643.4344003,
+    "date": "2026-11-25 14:20:43",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's chest is retracting under ribs and lips look dusky blue",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795596643.6067111,
+    "date": "2026-11-25 14:20:43",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Liam has a rectal temperature of 38.3 C and won't wake up to feed",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795596643.7861223,
+    "date": "2026-11-25 14:20:43",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby just threw up bright green dark liquid twice",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795596643.983122,
+    "date": "2026-11-25 14:20:43",
+    "category": "CARE_UPDATE",
+    "title": "LOG_FEED Event",
+    "description": "Liam weighs 2400 grams today, what is his recommended daily volume of breast milk?",
+    "data": {
+      "voice_summary": "50 milliliters logged. Remember to keep baby upright, and next feed is in three hours."
+    }
+  },
+  {
+    "timestamp": 1795596644.2140682,
+    "date": "2026-11-25 14:20:44",
+    "category": "CARE_UPDATE",
+    "title": "LOG_MEDICATION Event",
+    "description": "Pediatrician prescribed iron drops 1.0 mL once daily starting tomorrow",
+    "data": {
+      "voice_summary": "Care entry recorded successfully."
+    }
+  },
+  {
+    "timestamp": 1795596972.7342064,
+    "date": "2026-11-25 14:26:12",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's lips look blue and chest is retracting under the ribs",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795596974.7506528,
+    "date": "2026-11-25 14:26:14",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "\u0c2c\u0c3e\u0c2c\u0c41\u0c15\u0c3f \u0c06\u0c15\u0c41\u0c2a\u0c1a\u0c4d\u0c1a \u0c35\u0c3e\u0c02\u0c24\u0c41\u0c32\u0c41 \u0c05\u0c35\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c2f\u0c3f",
+    "data": {
+      "voice_summary": "\u0c35\u0c46\u0c02\u0c1f\u0c28\u0c47 \u0c2e\u0c40 \u0c06\u0c38\u0c41\u0c2a\u0c24\u0c4d\u0c30\u0c3f\u0c32\u0c4b\u0c28\u0c3f NICU \u0c0e\u0c2e\u0c30\u0c4d\u0c1c\u0c46\u0c28\u0c4d\u0c38\u0c40 \u0c35\u0c3f\u0c2d\u0c3e\u0c17\u0c3e\u0c28\u0c3f\u0c15\u0c3f \u0c15\u0c3e\u0c32\u0c4d \u0c1a\u0c47\u0c2f\u0c02\u0c21\u0c3f. \u0c08 \u0c32\u0c15\u0c4d\u0c37\u0c23\u0c3e\u0c32\u0c41 \u0c24\u0c15\u0c4d\u0c37\u0c23 \u0c35\u0c48\u0c26\u0c4d\u0c2f \u0c38\u0c39\u0c3e\u0c2f\u0c02 \u0c15\u0c4b\u0c30\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c2f\u0c3f."
+    }
+  },
+  {
+    "timestamp": 1795596975.3917377,
+    "date": "2026-11-25 14:26:15",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's chest is retracting under ribs and lips look dusky blue",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795596975.5894167,
+    "date": "2026-11-25 14:26:15",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Liam has a rectal temperature of 38.3 C and won't wake up to feed",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795596975.7511747,
+    "date": "2026-11-25 14:26:15",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby just threw up bright green dark liquid twice",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795596975.9697218,
+    "date": "2026-11-25 14:26:15",
+    "category": "CARE_UPDATE",
+    "title": "LOG_FEED Event",
+    "description": "Liam weighs 2400 grams today, what is his recommended daily volume of breast milk?",
+    "data": {
+      "voice_summary": "50 milliliters logged. Remember to keep baby upright, and next feed is in three hours."
+    }
+  },
+  {
+    "timestamp": 1795596976.2056046,
+    "date": "2026-11-25 14:26:16",
+    "category": "CARE_UPDATE",
+    "title": "LOG_MEDICATION Event",
+    "description": "Pediatrician prescribed iron drops 1.0 mL once daily starting tomorrow",
+    "data": {
+      "voice_summary": "Care entry recorded successfully."
+    }
+  },
+  {
+    "timestamp": 1795598681.1160228,
+    "date": "2026-11-25 14:54:41",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's lips look blue and chest is retracting under the ribs",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795598683.609878,
+    "date": "2026-11-25 14:54:43",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "\u0c2c\u0c3e\u0c2c\u0c41\u0c15\u0c3f \u0c06\u0c15\u0c41\u0c2a\u0c1a\u0c4d\u0c1a \u0c35\u0c3e\u0c02\u0c24\u0c41\u0c32\u0c41 \u0c05\u0c35\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c2f\u0c3f",
+    "data": {
+      "voice_summary": "\u0c35\u0c46\u0c02\u0c1f\u0c28\u0c47 \u0c2e\u0c40 \u0c06\u0c38\u0c41\u0c2a\u0c24\u0c4d\u0c30\u0c3f\u0c32\u0c4b\u0c28\u0c3f NICU \u0c0e\u0c2e\u0c30\u0c4d\u0c1c\u0c46\u0c28\u0c4d\u0c38\u0c40 \u0c35\u0c3f\u0c2d\u0c3e\u0c17\u0c3e\u0c28\u0c3f\u0c15\u0c3f \u0c15\u0c3e\u0c32\u0c4d \u0c1a\u0c47\u0c2f\u0c02\u0c21\u0c3f. \u0c08 \u0c32\u0c15\u0c4d\u0c37\u0c23\u0c3e\u0c32\u0c41 \u0c24\u0c15\u0c4d\u0c37\u0c23 \u0c35\u0c48\u0c26\u0c4d\u0c2f \u0c38\u0c39\u0c3e\u0c2f\u0c02 \u0c15\u0c4b\u0c30\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c2f\u0c3f."
+    }
+  },
+  {
+    "timestamp": 1795598684.4082603,
+    "date": "2026-11-25 14:54:44",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's chest is retracting under ribs and lips look dusky blue",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795598684.632576,
+    "date": "2026-11-25 14:54:44",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Liam has a rectal temperature of 38.3 C and won't wake up to feed",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795598684.8515759,
+    "date": "2026-11-25 14:54:44",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby just threw up bright green dark liquid twice",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795598685.0918028,
+    "date": "2026-11-25 14:54:45",
+    "category": "CARE_UPDATE",
+    "title": "GROWTH_ANALYSIS Event",
+    "description": "Liam weighs 2400 grams today, what is his recommended daily volume of breast milk?",
+    "data": {
+      "voice_summary": "Liam is currently 2400 grams, with healthy catch-up growth of about 26.4 grams per day since discharge. The 3-hour feed goal is 45\u201354 mL every 3 hours."
+    }
+  },
+  {
+    "timestamp": 1795598685.3445325,
+    "date": "2026-11-25 14:54:45",
+    "category": "CARE_UPDATE",
+    "title": "LOG_MEDICATION Event",
+    "description": "Pediatrician prescribed iron drops 1.0 mL once daily starting tomorrow",
+    "data": {
+      "voice_summary": "Care entry recorded successfully."
+    }
+  },
+  {
+    "timestamp": 1795601720.9066613,
+    "date": "2026-11-25 15:45:20",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's lips look blue and chest is retracting under the ribs",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795601724.668774,
+    "date": "2026-11-25 15:45:24",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "\u0c2c\u0c3e\u0c2c\u0c41\u0c15\u0c3f \u0c06\u0c15\u0c41\u0c2a\u0c1a\u0c4d\u0c1a \u0c35\u0c3e\u0c02\u0c24\u0c41\u0c32\u0c41 \u0c05\u0c35\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c2f\u0c3f",
+    "data": {
+      "voice_summary": "\u0c35\u0c46\u0c02\u0c1f\u0c28\u0c47 \u0c2e\u0c40 \u0c06\u0c38\u0c41\u0c2a\u0c24\u0c4d\u0c30\u0c3f\u0c32\u0c4b\u0c28\u0c3f NICU \u0c0e\u0c2e\u0c30\u0c4d\u0c1c\u0c46\u0c28\u0c4d\u0c38\u0c40 \u0c35\u0c3f\u0c2d\u0c3e\u0c17\u0c3e\u0c28\u0c3f\u0c15\u0c3f \u0c15\u0c3e\u0c32\u0c4d \u0c1a\u0c47\u0c2f\u0c02\u0c21\u0c3f. \u0c08 \u0c32\u0c15\u0c4d\u0c37\u0c23\u0c3e\u0c32\u0c41 \u0c24\u0c15\u0c4d\u0c37\u0c23 \u0c35\u0c48\u0c26\u0c4d\u0c2f \u0c38\u0c39\u0c3e\u0c2f\u0c02 \u0c15\u0c4b\u0c30\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c2f\u0c3f."
+    }
+  },
+  {
+    "timestamp": 1795601725.4582837,
+    "date": "2026-11-25 15:45:25",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's chest is retracting under ribs and lips look dusky blue",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795601725.6824656,
+    "date": "2026-11-25 15:45:25",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Liam has a rectal temperature of 38.3 C and won't wake up to feed",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795601725.9092119,
+    "date": "2026-11-25 15:45:25",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby just threw up bright green dark liquid twice",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795601726.147709,
+    "date": "2026-11-25 15:45:26",
+    "category": "CARE_UPDATE",
+    "title": "GROWTH_ANALYSIS Event",
+    "description": "Liam weighs 2400 grams today, what is his recommended daily volume of breast milk?",
+    "data": {
+      "voice_summary": "Liam is currently 2400 grams, with healthy catch-up growth of about 26.4 grams per day since discharge. The 3-hour feed goal is 45\u201354 mL every 3 hours."
+    }
+  },
+  {
+    "timestamp": 1795601726.4009397,
+    "date": "2026-11-25 15:45:26",
+    "category": "CARE_UPDATE",
+    "title": "LOG_MEDICATION Event",
+    "description": "Pediatrician prescribed iron drops 1.0 mL once daily starting tomorrow",
+    "data": {
+      "voice_summary": "Care entry recorded successfully."
+    }
+  },
+  {
+    "timestamp": 1795601895.828497,
+    "date": "2026-11-25 15:48:15",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's lips look blue and chest is retracting under the ribs",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795601898.10471,
+    "date": "2026-11-25 15:48:18",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "\u0c2c\u0c3e\u0c2c\u0c41\u0c15\u0c3f \u0c06\u0c15\u0c41\u0c2a\u0c1a\u0c4d\u0c1a \u0c35\u0c3e\u0c02\u0c24\u0c41\u0c32\u0c41 \u0c05\u0c35\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c2f\u0c3f",
+    "data": {
+      "voice_summary": "\u0c35\u0c46\u0c02\u0c1f\u0c28\u0c47 \u0c2e\u0c40 \u0c06\u0c38\u0c41\u0c2a\u0c24\u0c4d\u0c30\u0c3f\u0c32\u0c4b\u0c28\u0c3f NICU \u0c0e\u0c2e\u0c30\u0c4d\u0c1c\u0c46\u0c28\u0c4d\u0c38\u0c40 \u0c35\u0c3f\u0c2d\u0c3e\u0c17\u0c3e\u0c28\u0c3f\u0c15\u0c3f \u0c15\u0c3e\u0c32\u0c4d \u0c1a\u0c47\u0c2f\u0c02\u0c21\u0c3f. \u0c08 \u0c32\u0c15\u0c4d\u0c37\u0c23\u0c3e\u0c32\u0c41 \u0c24\u0c15\u0c4d\u0c37\u0c23 \u0c35\u0c48\u0c26\u0c4d\u0c2f \u0c38\u0c39\u0c3e\u0c2f\u0c02 \u0c15\u0c4b\u0c30\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c2f\u0c3f."
+    }
+  },
+  {
+    "timestamp": 1795601898.8821166,
+    "date": "2026-11-25 15:48:18",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's chest is retracting under ribs and lips look dusky blue",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795601899.124831,
+    "date": "2026-11-25 15:48:19",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Liam has a rectal temperature of 38.3 C and won't wake up to feed",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795601899.3632658,
+    "date": "2026-11-25 15:48:19",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby just threw up bright green dark liquid twice",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795601899.6081576,
+    "date": "2026-11-25 15:48:19",
+    "category": "CARE_UPDATE",
+    "title": "GROWTH_ANALYSIS Event",
+    "description": "Liam weighs 2400 grams today, what is his recommended daily volume of breast milk?",
+    "data": {
+      "voice_summary": "Liam is currently 2400 grams, with healthy catch-up growth of about 26.4 grams per day since discharge. The 3-hour feed goal is 45\u201354 mL every 3 hours."
+    }
+  },
+  {
+    "timestamp": 1795601899.867073,
+    "date": "2026-11-25 15:48:19",
+    "category": "CARE_UPDATE",
+    "title": "LOG_MEDICATION Event",
+    "description": "Pediatrician prescribed iron drops 1.0 mL once daily starting tomorrow",
+    "data": {
+      "voice_summary": "Care entry recorded successfully."
+    }
+  },
+  {
+    "timestamp": 1795602032.4512212,
+    "date": "2026-11-25 15:50:32",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's lips look blue and chest is retracting under the ribs",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795602034.8806655,
+    "date": "2026-11-25 15:50:34",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "\u0c2c\u0c3e\u0c2c\u0c41\u0c15\u0c3f \u0c06\u0c15\u0c41\u0c2a\u0c1a\u0c4d\u0c1a \u0c35\u0c3e\u0c02\u0c24\u0c41\u0c32\u0c41 \u0c05\u0c35\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c2f\u0c3f",
+    "data": {
+      "voice_summary": "\u0c35\u0c46\u0c02\u0c1f\u0c28\u0c47 \u0c2e\u0c40 \u0c06\u0c38\u0c41\u0c2a\u0c24\u0c4d\u0c30\u0c3f\u0c32\u0c4b\u0c28\u0c3f NICU \u0c0e\u0c2e\u0c30\u0c4d\u0c1c\u0c46\u0c28\u0c4d\u0c38\u0c40 \u0c35\u0c3f\u0c2d\u0c3e\u0c17\u0c3e\u0c28\u0c3f\u0c15\u0c3f \u0c15\u0c3e\u0c32\u0c4d \u0c1a\u0c47\u0c2f\u0c02\u0c21\u0c3f. \u0c08 \u0c32\u0c15\u0c4d\u0c37\u0c23\u0c3e\u0c32\u0c41 \u0c24\u0c15\u0c4d\u0c37\u0c23 \u0c35\u0c48\u0c26\u0c4d\u0c2f \u0c38\u0c39\u0c3e\u0c2f\u0c02 \u0c15\u0c4b\u0c30\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c2f\u0c3f."
+    }
+  },
+  {
+    "timestamp": 1795602037.3680565,
+    "date": "2026-11-25 15:50:37",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's chest is retracting under ribs and lips look dusky blue",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795602037.626913,
+    "date": "2026-11-25 15:50:37",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Liam has a rectal temperature of 38.3 C and won't wake up to feed",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795602037.8711941,
+    "date": "2026-11-25 15:50:37",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby just threw up bright green dark liquid twice",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795602038.1482248,
+    "date": "2026-11-25 15:50:38",
+    "category": "CARE_UPDATE",
+    "title": "GROWTH_ANALYSIS Event",
+    "description": "Liam weighs 2400 grams today, what is his recommended daily volume of breast milk?",
+    "data": {
+      "voice_summary": "Liam is currently 2400 grams, with healthy catch-up growth of about 26.4 grams per day since discharge. The 3-hour feed goal is 45\u201354 mL every 3 hours."
+    }
+  },
+  {
+    "timestamp": 1795602038.4302344,
+    "date": "2026-11-25 15:50:38",
+    "category": "CARE_UPDATE",
+    "title": "LOG_MEDICATION Event",
+    "description": "Pediatrician prescribed iron drops 1.0 mL once daily starting tomorrow",
+    "data": {
+      "voice_summary": "Care entry recorded successfully."
+    }
+  },
+  {
+    "timestamp": 1795602078.4541364,
+    "date": "2026-11-25 15:51:18",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's lips look blue and chest is retracting under the ribs",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795602080.9811425,
+    "date": "2026-11-25 15:51:20",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "\u0c2c\u0c3e\u0c2c\u0c41\u0c15\u0c3f \u0c06\u0c15\u0c41\u0c2a\u0c1a\u0c4d\u0c1a \u0c35\u0c3e\u0c02\u0c24\u0c41\u0c32\u0c41 \u0c05\u0c35\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c2f\u0c3f",
+    "data": {
+      "voice_summary": "\u0c35\u0c46\u0c02\u0c1f\u0c28\u0c47 \u0c2e\u0c40 \u0c06\u0c38\u0c41\u0c2a\u0c24\u0c4d\u0c30\u0c3f\u0c32\u0c4b\u0c28\u0c3f NICU \u0c0e\u0c2e\u0c30\u0c4d\u0c1c\u0c46\u0c28\u0c4d\u0c38\u0c40 \u0c35\u0c3f\u0c2d\u0c3e\u0c17\u0c3e\u0c28\u0c3f\u0c15\u0c3f \u0c15\u0c3e\u0c32\u0c4d \u0c1a\u0c47\u0c2f\u0c02\u0c21\u0c3f. \u0c08 \u0c32\u0c15\u0c4d\u0c37\u0c23\u0c3e\u0c32\u0c41 \u0c24\u0c15\u0c4d\u0c37\u0c23 \u0c35\u0c48\u0c26\u0c4d\u0c2f \u0c38\u0c39\u0c3e\u0c2f\u0c02 \u0c15\u0c4b\u0c30\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c2f\u0c3f."
+    }
+  },
+  {
+    "timestamp": 1795602082.0647347,
+    "date": "2026-11-25 15:51:22",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's chest is retracting under ribs and lips look dusky blue",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795602082.3286738,
+    "date": "2026-11-25 15:51:22",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Liam has a rectal temperature of 38.3 C and won't wake up to feed",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795602082.5887656,
+    "date": "2026-11-25 15:51:22",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby just threw up bright green dark liquid twice",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795602082.8496182,
+    "date": "2026-11-25 15:51:22",
+    "category": "CARE_UPDATE",
+    "title": "GROWTH_ANALYSIS Event",
+    "description": "Liam weighs 2400 grams today, what is his recommended daily volume of breast milk?",
+    "data": {
+      "voice_summary": "Liam is currently 2400 grams, with healthy catch-up growth of about 26.4 grams per day since discharge. The 3-hour feed goal is 45\u201354 mL every 3 hours."
+    }
+  },
+  {
+    "timestamp": 1795602083.1454093,
+    "date": "2026-11-25 15:51:23",
+    "category": "CARE_UPDATE",
+    "title": "LOG_MEDICATION Event",
+    "description": "Pediatrician prescribed iron drops 1.0 mL once daily starting tomorrow",
+    "data": {
+      "voice_summary": "Care entry recorded successfully."
+    }
+  },
+  {
+    "timestamp": 1795602671.3886333,
+    "date": "2026-11-25 16:01:11",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's chest is retracting under ribs and lips look dusky blue",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795602671.5334501,
+    "date": "2026-11-25 16:01:11",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Liam has a rectal temperature of 38.3 C and won't wake up to feed",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795602671.869455,
+    "date": "2026-11-25 16:01:11",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby just threw up bright green dark liquid twice",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795602672.227074,
+    "date": "2026-11-25 16:01:12",
+    "category": "CARE_UPDATE",
+    "title": "GROWTH_ANALYSIS Event",
+    "description": "Liam weighs 2400 grams today, what is his recommended daily volume of breast milk?",
+    "data": {
+      "voice_summary": "Liam is currently 2400 grams, with healthy catch-up growth of about 26.4 grams per day since discharge. The 3-hour feed goal is 45\u201354 mL every 3 hours."
+    }
+  },
+  {
+    "timestamp": 1795602672.6143208,
+    "date": "2026-11-25 16:01:12",
+    "category": "CARE_UPDATE",
+    "title": "LOG_MEDICATION Event",
+    "description": "Pediatrician prescribed iron drops 1.0 mL once daily starting tomorrow",
+    "data": {
+      "voice_summary": "Care entry recorded successfully."
+    }
+  },
+  {
+    "timestamp": 1795606556.3788123,
+    "date": "2026-11-25 17:05:56",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's lips look blue and chest is retracting under the ribs",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795606558.4970453,
+    "date": "2026-11-25 17:05:58",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "\u0c2c\u0c3e\u0c2c\u0c41\u0c15\u0c3f \u0c06\u0c15\u0c41\u0c2a\u0c1a\u0c4d\u0c1a \u0c35\u0c3e\u0c02\u0c24\u0c41\u0c32\u0c41 \u0c05\u0c35\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c2f\u0c3f",
+    "data": {
+      "voice_summary": "\u0c35\u0c46\u0c02\u0c1f\u0c28\u0c47 \u0c2e\u0c40 \u0c06\u0c38\u0c41\u0c2a\u0c24\u0c4d\u0c30\u0c3f\u0c32\u0c4b\u0c28\u0c3f NICU \u0c0e\u0c2e\u0c30\u0c4d\u0c1c\u0c46\u0c28\u0c4d\u0c38\u0c40 \u0c35\u0c3f\u0c2d\u0c3e\u0c17\u0c3e\u0c28\u0c3f\u0c15\u0c3f \u0c15\u0c3e\u0c32\u0c4d \u0c1a\u0c47\u0c2f\u0c02\u0c21\u0c3f. \u0c08 \u0c32\u0c15\u0c4d\u0c37\u0c23\u0c3e\u0c32\u0c41 \u0c24\u0c15\u0c4d\u0c37\u0c23 \u0c35\u0c48\u0c26\u0c4d\u0c2f \u0c38\u0c39\u0c3e\u0c2f\u0c02 \u0c15\u0c4b\u0c30\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c2f\u0c3f."
+    }
+  },
+  {
+    "timestamp": 1795606560.8006103,
+    "date": "2026-11-25 17:06:00",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's chest is retracting under ribs and lips look dusky blue",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795606561.0767412,
+    "date": "2026-11-25 17:06:01",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Liam has a rectal temperature of 38.3 C and won't wake up to feed",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795606561.3607426,
+    "date": "2026-11-25 17:06:01",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby just threw up bright green dark liquid twice",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795606561.582913,
+    "date": "2026-11-25 17:06:01",
+    "category": "CARE_UPDATE",
+    "title": "GROWTH_ANALYSIS Event",
+    "description": "Liam weighs 2400 grams today, what is his recommended daily volume of breast milk?",
+    "data": {
+      "voice_summary": "Liam is currently 2400 grams, with healthy catch-up growth of about 26.4 grams per day since discharge. The 3-hour feed goal is 45\u201354 mL every 3 hours."
+    }
+  },
+  {
+    "timestamp": 1795606561.820294,
+    "date": "2026-11-25 17:06:01",
+    "category": "CARE_UPDATE",
+    "title": "LOG_MEDICATION Event",
+    "description": "Pediatrician prescribed iron drops 1.0 mL once daily starting tomorrow",
+    "data": {
+      "voice_summary": "Care entry recorded successfully."
+    }
+  },
+  {
+    "timestamp": 1795606641.8891654,
+    "date": "2026-11-25 17:07:21",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's lips look blue and chest is retracting under the ribs",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795606644.2721705,
+    "date": "2026-11-25 17:07:24",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "\u0c2c\u0c3e\u0c2c\u0c41\u0c15\u0c3f \u0c06\u0c15\u0c41\u0c2a\u0c1a\u0c4d\u0c1a \u0c35\u0c3e\u0c02\u0c24\u0c41\u0c32\u0c41 \u0c05\u0c35\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c2f\u0c3f",
+    "data": {
+      "voice_summary": "\u0c35\u0c46\u0c02\u0c1f\u0c28\u0c47 \u0c2e\u0c40 \u0c06\u0c38\u0c41\u0c2a\u0c24\u0c4d\u0c30\u0c3f\u0c32\u0c4b\u0c28\u0c3f NICU \u0c0e\u0c2e\u0c30\u0c4d\u0c1c\u0c46\u0c28\u0c4d\u0c38\u0c40 \u0c35\u0c3f\u0c2d\u0c3e\u0c17\u0c3e\u0c28\u0c3f\u0c15\u0c3f \u0c15\u0c3e\u0c32\u0c4d \u0c1a\u0c47\u0c2f\u0c02\u0c21\u0c3f. \u0c08 \u0c32\u0c15\u0c4d\u0c37\u0c23\u0c3e\u0c32\u0c41 \u0c24\u0c15\u0c4d\u0c37\u0c23 \u0c35\u0c48\u0c26\u0c4d\u0c2f \u0c38\u0c39\u0c3e\u0c2f\u0c02 \u0c15\u0c4b\u0c30\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c2f\u0c3f."
+    }
+  },
+  {
+    "timestamp": 1795606645.4757178,
+    "date": "2026-11-25 17:07:25",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's chest is retracting under ribs and lips look dusky blue",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795606645.778816,
+    "date": "2026-11-25 17:07:25",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Liam has a rectal temperature of 38.3 C and won't wake up to feed",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795606646.0574048,
+    "date": "2026-11-25 17:07:26",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby just threw up bright green dark liquid twice",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795606646.390796,
+    "date": "2026-11-25 17:07:26",
+    "category": "CARE_UPDATE",
+    "title": "GROWTH_ANALYSIS Event",
+    "description": "Liam weighs 2400 grams today, what is his recommended daily volume of breast milk?",
+    "data": {
+      "voice_summary": "Liam is currently 2400 grams, with healthy catch-up growth of about 26.4 grams per day since discharge. The 3-hour feed goal is 45\u201354 mL every 3 hours."
+    }
+  },
+  {
+    "timestamp": 1795606646.7255013,
+    "date": "2026-11-25 17:07:26",
+    "category": "CARE_UPDATE",
+    "title": "LOG_MEDICATION Event",
+    "description": "Pediatrician prescribed iron drops 1.0 mL once daily starting tomorrow",
+    "data": {
+      "voice_summary": "Care entry recorded successfully."
+    }
+  },
+  {
+    "timestamp": 1795606874.755538,
+    "date": "2026-11-25 17:11:14",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's chest is retracting under ribs and lips look dusky blue",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795606874.8757243,
+    "date": "2026-11-25 17:11:14",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Liam has a rectal temperature of 38.3 C and won't wake up to feed",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795606875.1897902,
+    "date": "2026-11-25 17:11:15",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby just threw up bright green dark liquid twice",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795606875.5385554,
+    "date": "2026-11-25 17:11:15",
+    "category": "CARE_UPDATE",
+    "title": "GROWTH_ANALYSIS Event",
+    "description": "Liam weighs 2400 grams today, what is his recommended daily volume of breast milk?",
+    "data": {
+      "voice_summary": "Liam is currently 2400 grams, with healthy catch-up growth of about 26.4 grams per day since discharge. The 3-hour feed goal is 45\u201354 mL every 3 hours."
+    }
+  },
+  {
+    "timestamp": 1795606875.8999743,
+    "date": "2026-11-25 17:11:15",
+    "category": "CARE_UPDATE",
+    "title": "LOG_MEDICATION Event",
+    "description": "Pediatrician prescribed iron drops 1.0 mL once daily starting tomorrow",
+    "data": {
+      "voice_summary": "Care entry recorded successfully."
+    }
+  },
+  {
+    "timestamp": 1795608170.382209,
+    "date": "2026-11-25 17:32:50",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's lips look blue and chest is retracting under the ribs",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795608173.1607156,
+    "date": "2026-11-25 17:32:53",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "\u0c2c\u0c3e\u0c2c\u0c41\u0c15\u0c3f \u0c06\u0c15\u0c41\u0c2a\u0c1a\u0c4d\u0c1a \u0c35\u0c3e\u0c02\u0c24\u0c41\u0c32\u0c41 \u0c05\u0c35\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c2f\u0c3f",
+    "data": {
+      "voice_summary": "\u0c35\u0c46\u0c02\u0c1f\u0c28\u0c47 \u0c2e\u0c40 \u0c06\u0c38\u0c41\u0c2a\u0c24\u0c4d\u0c30\u0c3f\u0c32\u0c4b\u0c28\u0c3f NICU \u0c0e\u0c2e\u0c30\u0c4d\u0c1c\u0c46\u0c28\u0c4d\u0c38\u0c40 \u0c35\u0c3f\u0c2d\u0c3e\u0c17\u0c3e\u0c28\u0c3f\u0c15\u0c3f \u0c15\u0c3e\u0c32\u0c4d \u0c1a\u0c47\u0c2f\u0c02\u0c21\u0c3f. \u0c08 \u0c32\u0c15\u0c4d\u0c37\u0c23\u0c3e\u0c32\u0c41 \u0c24\u0c15\u0c4d\u0c37\u0c23 \u0c35\u0c48\u0c26\u0c4d\u0c2f \u0c38\u0c39\u0c3e\u0c2f\u0c02 \u0c15\u0c4b\u0c30\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c2f\u0c3f."
+    }
+  },
+  {
+    "timestamp": 1795608175.5780463,
+    "date": "2026-11-25 17:32:55",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's chest is retracting under ribs and lips look dusky blue",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795608175.8771095,
+    "date": "2026-11-25 17:32:55",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Liam has a rectal temperature of 38.3 C and won't wake up to feed",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795608176.1762397,
+    "date": "2026-11-25 17:32:56",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby just threw up bright green dark liquid twice",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795608176.4927423,
+    "date": "2026-11-25 17:32:56",
+    "category": "CARE_UPDATE",
+    "title": "GROWTH_ANALYSIS Event",
+    "description": "Liam weighs 2400 grams today, what is his recommended daily volume of breast milk?",
+    "data": {
+      "voice_summary": "Liam is currently 2400 grams, with healthy catch-up growth of about 26.4 grams per day since discharge. The 3-hour feed goal is 45\u201354 mL every 3 hours."
+    }
+  },
+  {
+    "timestamp": 1795608176.8366823,
+    "date": "2026-11-25 17:32:56",
+    "category": "CARE_UPDATE",
+    "title": "LOG_MEDICATION Event",
+    "description": "Pediatrician prescribed iron drops 1.0 mL once daily starting tomorrow",
+    "data": {
+      "voice_summary": "Care entry recorded successfully."
+    }
+  },
+  {
+    "timestamp": 1795608218.8736367,
+    "date": "2026-11-25 17:33:38",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's lips look blue and chest is retracting under the ribs",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795608221.7203784,
+    "date": "2026-11-25 17:33:41",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "\u0c2c\u0c3e\u0c2c\u0c41\u0c15\u0c3f \u0c06\u0c15\u0c41\u0c2a\u0c1a\u0c4d\u0c1a \u0c35\u0c3e\u0c02\u0c24\u0c41\u0c32\u0c41 \u0c05\u0c35\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c2f\u0c3f",
+    "data": {
+      "voice_summary": "\u0c35\u0c46\u0c02\u0c1f\u0c28\u0c47 \u0c2e\u0c40 \u0c06\u0c38\u0c41\u0c2a\u0c24\u0c4d\u0c30\u0c3f\u0c32\u0c4b\u0c28\u0c3f NICU \u0c0e\u0c2e\u0c30\u0c4d\u0c1c\u0c46\u0c28\u0c4d\u0c38\u0c40 \u0c35\u0c3f\u0c2d\u0c3e\u0c17\u0c3e\u0c28\u0c3f\u0c15\u0c3f \u0c15\u0c3e\u0c32\u0c4d \u0c1a\u0c47\u0c2f\u0c02\u0c21\u0c3f. \u0c08 \u0c32\u0c15\u0c4d\u0c37\u0c23\u0c3e\u0c32\u0c41 \u0c24\u0c15\u0c4d\u0c37\u0c23 \u0c35\u0c48\u0c26\u0c4d\u0c2f \u0c38\u0c39\u0c3e\u0c2f\u0c02 \u0c15\u0c4b\u0c30\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c2f\u0c3f."
+    }
+  },
+  {
+    "timestamp": 1795608223.0396166,
+    "date": "2026-11-25 17:33:43",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's chest is retracting under ribs and lips look dusky blue",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795608223.3760767,
+    "date": "2026-11-25 17:33:43",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Liam has a rectal temperature of 38.3 C and won't wake up to feed",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795608223.7180393,
+    "date": "2026-11-25 17:33:43",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby just threw up bright green dark liquid twice",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795608224.0634332,
+    "date": "2026-11-25 17:33:44",
+    "category": "CARE_UPDATE",
+    "title": "GROWTH_ANALYSIS Event",
+    "description": "Liam weighs 2400 grams today, what is his recommended daily volume of breast milk?",
+    "data": {
+      "voice_summary": "Liam is currently 2400 grams, with healthy catch-up growth of about 26.4 grams per day since discharge. The 3-hour feed goal is 45\u201354 mL every 3 hours."
+    }
+  },
+  {
+    "timestamp": 1795608224.4436672,
+    "date": "2026-11-25 17:33:44",
+    "category": "CARE_UPDATE",
+    "title": "LOG_MEDICATION Event",
+    "description": "Pediatrician prescribed iron drops 1.0 mL once daily starting tomorrow",
+    "data": {
+      "voice_summary": "Care entry recorded successfully."
+    }
+  },
+  {
+    "timestamp": 1795608372.930518,
+    "date": "2026-11-25 17:36:12",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's chest is retracting under ribs and lips look dusky blue",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795608373.046582,
+    "date": "2026-11-25 17:36:13",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Liam has a rectal temperature of 38.3 C and won't wake up to feed",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795608373.3827198,
+    "date": "2026-11-25 17:36:13",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby just threw up bright green dark liquid twice",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795608373.6933832,
+    "date": "2026-11-25 17:36:13",
+    "category": "CARE_UPDATE",
+    "title": "GROWTH_ANALYSIS Event",
+    "description": "Liam weighs 2400 grams today, what is his recommended daily volume of breast milk?",
+    "data": {
+      "voice_summary": "Liam is currently 2400 grams, with healthy catch-up growth of about 26.4 grams per day since discharge. The 3-hour feed goal is 45\u201354 mL every 3 hours."
+    }
+  },
+  {
+    "timestamp": 1795608374.0570002,
+    "date": "2026-11-25 17:36:14",
+    "category": "CARE_UPDATE",
+    "title": "LOG_MEDICATION Event",
+    "description": "Pediatrician prescribed iron drops 1.0 mL once daily starting tomorrow",
+    "data": {
+      "voice_summary": "Care entry recorded successfully."
+    }
+  },
+  {
+    "timestamp": 1795609394.8017175,
+    "date": "2026-11-25 17:53:14",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's chest is retracting under ribs and lips look dusky blue",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795609394.9463425,
+    "date": "2026-11-25 17:53:14",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Liam has a rectal temperature of 38.3 C and won't wake up to feed",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795609395.334549,
+    "date": "2026-11-25 17:53:15",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby just threw up bright green dark liquid twice",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795609395.7535243,
+    "date": "2026-11-25 17:53:15",
+    "category": "CARE_UPDATE",
+    "title": "GROWTH_ANALYSIS Event",
+    "description": "Liam weighs 2400 grams today, what is his recommended daily volume of breast milk?",
+    "data": {
+      "voice_summary": "Liam is currently 2400 grams, with healthy catch-up growth of about 26.4 grams per day since discharge. The 3-hour feed goal is 45\u201354 mL every 3 hours."
+    }
+  },
+  {
+    "timestamp": 1795609396.173194,
+    "date": "2026-11-25 17:53:16",
+    "category": "CARE_UPDATE",
+    "title": "LOG_MEDICATION Event",
+    "description": "Pediatrician prescribed iron drops 1.0 mL once daily starting tomorrow",
+    "data": {
+      "voice_summary": "Care entry recorded successfully."
+    }
+  },
+  {
+    "timestamp": 1795610346.8135176,
+    "date": "2026-11-25 18:09:06",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's lips look blue and chest is retracting under the ribs",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795610349.789285,
+    "date": "2026-11-25 18:09:09",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "\u0c2c\u0c3e\u0c2c\u0c41\u0c15\u0c3f \u0c06\u0c15\u0c41\u0c2a\u0c1a\u0c4d\u0c1a \u0c35\u0c3e\u0c02\u0c24\u0c41\u0c32\u0c41 \u0c05\u0c35\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c2f\u0c3f",
+    "data": {
+      "voice_summary": "\u0c35\u0c46\u0c02\u0c1f\u0c28\u0c47 \u0c2e\u0c40 \u0c06\u0c38\u0c41\u0c2a\u0c24\u0c4d\u0c30\u0c3f\u0c32\u0c4b\u0c28\u0c3f NICU \u0c0e\u0c2e\u0c30\u0c4d\u0c1c\u0c46\u0c28\u0c4d\u0c38\u0c40 \u0c35\u0c3f\u0c2d\u0c3e\u0c17\u0c3e\u0c28\u0c3f\u0c15\u0c3f \u0c15\u0c3e\u0c32\u0c4d \u0c1a\u0c47\u0c2f\u0c02\u0c21\u0c3f. \u0c08 \u0c32\u0c15\u0c4d\u0c37\u0c23\u0c3e\u0c32\u0c41 \u0c24\u0c15\u0c4d\u0c37\u0c23 \u0c35\u0c48\u0c26\u0c4d\u0c2f \u0c38\u0c39\u0c3e\u0c2f\u0c02 \u0c15\u0c4b\u0c30\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c2f\u0c3f."
+    }
+  },
+  {
+    "timestamp": 1795610351.2091017,
+    "date": "2026-11-25 18:09:11",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's chest is retracting under ribs and lips look dusky blue",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795610351.5659602,
+    "date": "2026-11-25 18:09:11",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Liam has a rectal temperature of 38.3 C and won't wake up to feed",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795610351.9472435,
+    "date": "2026-11-25 18:09:11",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby just threw up bright green dark liquid twice",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795610352.3040779,
+    "date": "2026-11-25 18:09:12",
+    "category": "CARE_UPDATE",
+    "title": "GROWTH_ANALYSIS Event",
+    "description": "Liam weighs 2400 grams today, what is his recommended daily volume of breast milk?",
+    "data": {
+      "voice_summary": "Liam is currently 2400 grams, with healthy catch-up growth of about 26.4 grams per day since discharge. The 3-hour feed goal is 45\u201354 mL every 3 hours."
+    }
+  },
+  {
+    "timestamp": 1795610352.6800942,
+    "date": "2026-11-25 18:09:12",
+    "category": "CARE_UPDATE",
+    "title": "LOG_MEDICATION Event",
+    "description": "Pediatrician prescribed iron drops 1.0 mL once daily starting tomorrow",
+    "data": {
+      "voice_summary": "Care entry recorded successfully."
+    }
+  },
+  {
+    "timestamp": 1795612067.7392354,
+    "date": "2026-11-25 18:37:47",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's lips look blue and chest is retracting under the ribs",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795612070.685875,
+    "date": "2026-11-25 18:37:50",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "\u0c2c\u0c3e\u0c2c\u0c41\u0c15\u0c3f \u0c06\u0c15\u0c41\u0c2a\u0c1a\u0c4d\u0c1a \u0c35\u0c3e\u0c02\u0c24\u0c41\u0c32\u0c41 \u0c05\u0c35\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c2f\u0c3f",
+    "data": {
+      "voice_summary": "\u0c35\u0c46\u0c02\u0c1f\u0c28\u0c47 \u0c2e\u0c40 \u0c06\u0c38\u0c41\u0c2a\u0c24\u0c4d\u0c30\u0c3f\u0c32\u0c4b\u0c28\u0c3f NICU \u0c0e\u0c2e\u0c30\u0c4d\u0c1c\u0c46\u0c28\u0c4d\u0c38\u0c40 \u0c35\u0c3f\u0c2d\u0c3e\u0c17\u0c3e\u0c28\u0c3f\u0c15\u0c3f \u0c15\u0c3e\u0c32\u0c4d \u0c1a\u0c47\u0c2f\u0c02\u0c21\u0c3f. \u0c08 \u0c32\u0c15\u0c4d\u0c37\u0c23\u0c3e\u0c32\u0c41 \u0c24\u0c15\u0c4d\u0c37\u0c23 \u0c35\u0c48\u0c26\u0c4d\u0c2f \u0c38\u0c39\u0c3e\u0c2f\u0c02 \u0c15\u0c4b\u0c30\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c2f\u0c3f."
+    }
+  },
+  {
+    "timestamp": 1795612072.1644204,
+    "date": "2026-11-25 18:37:52",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's chest is retracting under ribs and lips look dusky blue",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795612072.5302198,
+    "date": "2026-11-25 18:37:52",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Liam has a rectal temperature of 38.3 C and won't wake up to feed",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795612072.8802202,
+    "date": "2026-11-25 18:37:52",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby just threw up bright green dark liquid twice",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795612073.228276,
+    "date": "2026-11-25 18:37:53",
+    "category": "CARE_UPDATE",
+    "title": "GROWTH_ANALYSIS Event",
+    "description": "Liam weighs 2400 grams today, what is his recommended daily volume of breast milk?",
+    "data": {
+      "voice_summary": "Liam is currently 2400 grams, with healthy catch-up growth of about 26.4 grams per day since discharge. The 3-hour feed goal is 45\u201354 mL every 3 hours."
+    }
+  },
+  {
+    "timestamp": 1795612073.6033628,
+    "date": "2026-11-25 18:37:53",
+    "category": "CARE_UPDATE",
+    "title": "LOG_MEDICATION Event",
+    "description": "Pediatrician prescribed iron drops 1.0 mL once daily starting tomorrow",
+    "data": {
+      "voice_summary": "Care entry recorded successfully."
+    }
+  },
+  {
+    "timestamp": 1795613784.1923172,
+    "date": "2026-11-25 19:06:24",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's lips look blue and chest is retracting under the ribs",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795613787.142632,
+    "date": "2026-11-25 19:06:27",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "\u0c2c\u0c3e\u0c2c\u0c41\u0c15\u0c3f \u0c06\u0c15\u0c41\u0c2a\u0c1a\u0c4d\u0c1a \u0c35\u0c3e\u0c02\u0c24\u0c41\u0c32\u0c41 \u0c05\u0c35\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c2f\u0c3f",
+    "data": {
+      "voice_summary": "\u0c35\u0c46\u0c02\u0c1f\u0c28\u0c47 \u0c2e\u0c40 \u0c06\u0c38\u0c41\u0c2a\u0c24\u0c4d\u0c30\u0c3f\u0c32\u0c4b\u0c28\u0c3f NICU \u0c0e\u0c2e\u0c30\u0c4d\u0c1c\u0c46\u0c28\u0c4d\u0c38\u0c40 \u0c35\u0c3f\u0c2d\u0c3e\u0c17\u0c3e\u0c28\u0c3f\u0c15\u0c3f \u0c15\u0c3e\u0c32\u0c4d \u0c1a\u0c47\u0c2f\u0c02\u0c21\u0c3f. \u0c08 \u0c32\u0c15\u0c4d\u0c37\u0c23\u0c3e\u0c32\u0c41 \u0c24\u0c15\u0c4d\u0c37\u0c23 \u0c35\u0c48\u0c26\u0c4d\u0c2f \u0c38\u0c39\u0c3e\u0c2f\u0c02 \u0c15\u0c4b\u0c30\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c2f\u0c3f."
+    }
+  },
+  {
+    "timestamp": 1795613788.7437742,
+    "date": "2026-11-25 19:06:28",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's chest is retracting under ribs and lips look dusky blue",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795613789.1382842,
+    "date": "2026-11-25 19:06:29",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Liam has a rectal temperature of 38.3 C and won't wake up to feed",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795613789.5133219,
+    "date": "2026-11-25 19:06:29",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby just threw up bright green dark liquid twice",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795613789.8991811,
+    "date": "2026-11-25 19:06:29",
+    "category": "CARE_UPDATE",
+    "title": "GROWTH_ANALYSIS Event",
+    "description": "Liam weighs 2400 grams today, what is his recommended daily volume of breast milk?",
+    "data": {
+      "voice_summary": "Liam is currently 2400 grams, with healthy catch-up growth of about 26.4 grams per day since discharge. The 3-hour feed goal is 45\u201354 mL every 3 hours."
+    }
+  },
+  {
+    "timestamp": 1795613790.3250873,
+    "date": "2026-11-25 19:06:30",
+    "category": "CARE_UPDATE",
+    "title": "LOG_MEDICATION Event",
+    "description": "Pediatrician prescribed iron drops 1.0 mL once daily starting tomorrow",
+    "data": {
+      "voice_summary": "Care entry recorded successfully."
+    }
+  },
+  {
+    "timestamp": 1795615915.5135744,
+    "date": "2026-11-25 19:41:55",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's lips look blue and chest is retracting under the ribs",
+    "data": {
+      "voice_summary": "For Kangaroo Mother Care, place baby upright chest-to-chest in frog-leg position for at least 60 minutes."
+    }
+  },
+  {
+    "timestamp": 1795615921.4669285,
+    "date": "2026-11-25 19:42:01",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "\u0c2c\u0c3e\u0c2c\u0c41\u0c15\u0c3f \u0c06\u0c15\u0c41\u0c2a\u0c1a\u0c4d\u0c1a \u0c35\u0c3e\u0c02\u0c24\u0c41\u0c32\u0c41 \u0c05\u0c35\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c2f\u0c3f",
+    "data": {
+      "voice_summary": "\u0c35\u0c46\u0c02\u0c1f\u0c28\u0c47 \u0c2e\u0c40 \u0c06\u0c38\u0c41\u0c2a\u0c24\u0c4d\u0c30\u0c3f\u0c32\u0c4b\u0c28\u0c3f NICU \u0c0e\u0c2e\u0c30\u0c4d\u0c1c\u0c46\u0c28\u0c4d\u0c38\u0c40 \u0c35\u0c3f\u0c2d\u0c3e\u0c17\u0c3e\u0c28\u0c3f\u0c15\u0c3f \u0c15\u0c3e\u0c32\u0c4d \u0c1a\u0c47\u0c2f\u0c02\u0c21\u0c3f. \u0c08 \u0c32\u0c15\u0c4d\u0c37\u0c23\u0c3e\u0c32\u0c41 \u0c24\u0c15\u0c4d\u0c37\u0c23 \u0c35\u0c48\u0c26\u0c4d\u0c2f \u0c38\u0c39\u0c3e\u0c2f\u0c02 \u0c15\u0c4b\u0c30\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c2f\u0c3f."
+    }
+  },
+  {
+    "timestamp": 1795615923.3189158,
+    "date": "2026-11-25 19:42:03",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's chest is retracting under ribs and lips look dusky blue",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795615923.7282658,
+    "date": "2026-11-25 19:42:03",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Liam has a rectal temperature of 38.3 C and won't wake up to feed",
+    "data": {
+      "voice_summary": "I cannot provide that specific recommendation as clinical guidelines advise against it."
+    }
+  },
+  {
+    "timestamp": 1795615924.1074665,
+    "date": "2026-11-25 19:42:04",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby just threw up bright green dark liquid twice",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795615924.496629,
+    "date": "2026-11-25 19:42:04",
+    "category": "CARE_UPDATE",
+    "title": "GROWTH_ANALYSIS Event",
+    "description": "Liam weighs 2400 grams today, what is his recommended daily volume of breast milk?",
+    "data": {
+      "voice_summary": "Liam is currently 2400 grams, with healthy catch-up growth of about 26.4 grams per day since discharge. The 3-hour feed goal is 45\u201354 mL every 3 hours."
+    }
+  },
+  {
+    "timestamp": 1795615924.9114618,
+    "date": "2026-11-25 19:42:04",
+    "category": "CARE_UPDATE",
+    "title": "LOG_MEDICATION Event",
+    "description": "Pediatrician prescribed iron drops 1.0 mL once daily starting tomorrow",
+    "data": {
+      "voice_summary": "Care entry recorded successfully."
+    }
+  },
+  {
+    "timestamp": 1795616023.490758,
+    "date": "2026-11-25 19:43:43",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's lips look blue and chest is retracting under the ribs",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795616025.3613942,
+    "date": "2026-11-25 19:43:45",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "\u0c2c\u0c3e\u0c2c\u0c41\u0c15\u0c3f \u0c06\u0c15\u0c41\u0c2a\u0c1a\u0c4d\u0c1a \u0c35\u0c3e\u0c02\u0c24\u0c41\u0c32\u0c41 \u0c05\u0c35\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c2f\u0c3f",
+    "data": {
+      "voice_summary": "\u0c35\u0c46\u0c02\u0c1f\u0c28\u0c47 \u0c2e\u0c40 \u0c06\u0c38\u0c41\u0c2a\u0c24\u0c4d\u0c30\u0c3f\u0c32\u0c4b\u0c28\u0c3f NICU \u0c0e\u0c2e\u0c30\u0c4d\u0c1c\u0c46\u0c28\u0c4d\u0c38\u0c40 \u0c35\u0c3f\u0c2d\u0c3e\u0c17\u0c3e\u0c28\u0c3f\u0c15\u0c3f \u0c15\u0c3e\u0c32\u0c4d \u0c1a\u0c47\u0c2f\u0c02\u0c21\u0c3f. \u0c08 \u0c32\u0c15\u0c4d\u0c37\u0c23\u0c3e\u0c32\u0c41 \u0c24\u0c15\u0c4d\u0c37\u0c23 \u0c35\u0c48\u0c26\u0c4d\u0c2f \u0c38\u0c39\u0c3e\u0c2f\u0c02 \u0c15\u0c4b\u0c30\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c2f\u0c3f."
+    }
+  },
+  {
+    "timestamp": 1795616043.335849,
+    "date": "2026-11-25 19:44:03",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's lips look blue and chest is retracting under the ribs",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795616046.018139,
+    "date": "2026-11-25 19:44:06",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "\u0c2c\u0c3e\u0c2c\u0c41\u0c15\u0c3f \u0c06\u0c15\u0c41\u0c2a\u0c1a\u0c4d\u0c1a \u0c35\u0c3e\u0c02\u0c24\u0c41\u0c32\u0c41 \u0c05\u0c35\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c2f\u0c3f",
+    "data": {
+      "voice_summary": "\u0c35\u0c46\u0c02\u0c1f\u0c28\u0c47 \u0c2e\u0c40 \u0c06\u0c38\u0c41\u0c2a\u0c24\u0c4d\u0c30\u0c3f\u0c32\u0c4b\u0c28\u0c3f NICU \u0c0e\u0c2e\u0c30\u0c4d\u0c1c\u0c46\u0c28\u0c4d\u0c38\u0c40 \u0c35\u0c3f\u0c2d\u0c3e\u0c17\u0c3e\u0c28\u0c3f\u0c15\u0c3f \u0c15\u0c3e\u0c32\u0c4d \u0c1a\u0c47\u0c2f\u0c02\u0c21\u0c3f. \u0c08 \u0c32\u0c15\u0c4d\u0c37\u0c23\u0c3e\u0c32\u0c41 \u0c24\u0c15\u0c4d\u0c37\u0c23 \u0c35\u0c48\u0c26\u0c4d\u0c2f \u0c38\u0c39\u0c3e\u0c2f\u0c02 \u0c15\u0c4b\u0c30\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c2f\u0c3f."
+    }
+  },
+  {
+    "timestamp": 1795616047.6423712,
+    "date": "2026-11-25 19:44:07",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's chest is retracting under ribs and lips look dusky blue",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795616048.0234492,
+    "date": "2026-11-25 19:44:08",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Liam has a rectal temperature of 38.3 C and won't wake up to feed",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795616048.3977163,
+    "date": "2026-11-25 19:44:08",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby just threw up bright green dark liquid twice",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795616048.780939,
+    "date": "2026-11-25 19:44:08",
+    "category": "CARE_UPDATE",
+    "title": "GROWTH_ANALYSIS Event",
+    "description": "Liam weighs 2400 grams today, what is his recommended daily volume of breast milk?",
+    "data": {
+      "voice_summary": "Liam is currently 2400 grams, with healthy catch-up growth of about 26.4 grams per day since discharge. The 3-hour feed goal is 45\u201354 mL every 3 hours."
+    }
+  },
+  {
+    "timestamp": 1795616049.1800878,
+    "date": "2026-11-25 19:44:09",
+    "category": "CARE_UPDATE",
+    "title": "LOG_MEDICATION Event",
+    "description": "Pediatrician prescribed iron drops 1.0 mL once daily starting tomorrow",
+    "data": {
+      "voice_summary": "Care entry recorded successfully."
+    }
+  },
+  {
+    "timestamp": 1795617435.028502,
+    "date": "2026-11-25 20:07:15",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's lips look blue and chest is retracting under the ribs",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795617437.8285835,
+    "date": "2026-11-25 20:07:17",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "\u0c2c\u0c3e\u0c2c\u0c41\u0c15\u0c3f \u0c06\u0c15\u0c41\u0c2a\u0c1a\u0c4d\u0c1a \u0c35\u0c3e\u0c02\u0c24\u0c41\u0c32\u0c41 \u0c05\u0c35\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c2f\u0c3f",
+    "data": {
+      "voice_summary": "\u0c35\u0c46\u0c02\u0c1f\u0c28\u0c47 \u0c2e\u0c40 \u0c06\u0c38\u0c41\u0c2a\u0c24\u0c4d\u0c30\u0c3f\u0c32\u0c4b\u0c28\u0c3f NICU \u0c0e\u0c2e\u0c30\u0c4d\u0c1c\u0c46\u0c28\u0c4d\u0c38\u0c40 \u0c35\u0c3f\u0c2d\u0c3e\u0c17\u0c3e\u0c28\u0c3f\u0c15\u0c3f \u0c15\u0c3e\u0c32\u0c4d \u0c1a\u0c47\u0c2f\u0c02\u0c21\u0c3f. \u0c08 \u0c32\u0c15\u0c4d\u0c37\u0c23\u0c3e\u0c32\u0c41 \u0c24\u0c15\u0c4d\u0c37\u0c23 \u0c35\u0c48\u0c26\u0c4d\u0c2f \u0c38\u0c39\u0c3e\u0c2f\u0c02 \u0c15\u0c4b\u0c30\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c2f\u0c3f."
+    }
+  },
+  {
+    "timestamp": 1795617439.5739121,
+    "date": "2026-11-25 20:07:19",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's chest is retracting under ribs and lips look dusky blue",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795617440.0002997,
+    "date": "2026-11-25 20:07:20",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Liam has a rectal temperature of 38.3 C and won't wake up to feed",
+    "data": {
+      "voice_summary": "I cannot provide that specific recommendation as clinical guidelines advise against it."
+    }
+  },
+  {
+    "timestamp": 1795617440.371698,
+    "date": "2026-11-25 20:07:20",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby just threw up bright green dark liquid twice",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795617440.7822897,
+    "date": "2026-11-25 20:07:20",
+    "category": "CARE_UPDATE",
+    "title": "GROWTH_ANALYSIS Event",
+    "description": "Liam weighs 2400 grams today, what is his recommended daily volume of breast milk?",
+    "data": {
+      "voice_summary": "Liam is currently 2400 grams, with healthy catch-up growth of about 26.4 grams per day since discharge. The 3-hour feed goal is 45\u201354 mL every 3 hours."
+    }
+  },
+  {
+    "timestamp": 1795617441.2133696,
+    "date": "2026-11-25 20:07:21",
+    "category": "CARE_UPDATE",
+    "title": "LOG_MEDICATION Event",
+    "description": "Pediatrician prescribed iron drops 1.0 mL once daily starting tomorrow",
+    "data": {
+      "voice_summary": "Care entry recorded successfully."
+    }
+  },
+  {
+    "timestamp": 1795617892.9063182,
+    "date": "2026-11-25 20:14:52",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's chest is retracting under ribs and lips look dusky blue",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795617902.9705963,
+    "date": "2026-11-25 20:15:02",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Liam has a rectal temperature of 38.3 C and won't wake up to feed",
+    "data": {
+      "voice_summary": "I cannot provide that specific recommendation as clinical guidelines advise against it."
+    }
+  },
+  {
+    "timestamp": 1795617903.1003153,
+    "date": "2026-11-25 20:15:03",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby just threw up bright green dark liquid twice",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795617903.5010676,
+    "date": "2026-11-25 20:15:03",
+    "category": "CARE_UPDATE",
+    "title": "GROWTH_ANALYSIS Event",
+    "description": "Liam weighs 2400 grams today, what is his recommended daily volume of breast milk?",
+    "data": {
+      "voice_summary": "Liam is currently 2400 grams, with healthy catch-up growth of about 26.4 grams per day since discharge. The 3-hour feed goal is 45\u201354 mL every 3 hours."
+    }
+  },
+  {
+    "timestamp": 1795617903.9025784,
+    "date": "2026-11-25 20:15:03",
+    "category": "CARE_UPDATE",
+    "title": "LOG_MEDICATION Event",
+    "description": "Pediatrician prescribed iron drops 1.0 mL once daily starting tomorrow",
+    "data": {
+      "voice_summary": "Care entry recorded successfully."
+    }
+  },
+  {
+    "timestamp": 1795619868.2190428,
+    "date": "2026-11-25 20:47:48",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's lips look blue and chest is retracting under the ribs",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795619871.5927784,
+    "date": "2026-11-25 20:47:51",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "\u0c2c\u0c3e\u0c2c\u0c41\u0c15\u0c3f \u0c06\u0c15\u0c41\u0c2a\u0c1a\u0c4d\u0c1a \u0c35\u0c3e\u0c02\u0c24\u0c41\u0c32\u0c41 \u0c05\u0c35\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c2f\u0c3f",
+    "data": {
+      "voice_summary": "\u0c35\u0c46\u0c02\u0c1f\u0c28\u0c47 \u0c2e\u0c40 \u0c06\u0c38\u0c41\u0c2a\u0c24\u0c4d\u0c30\u0c3f\u0c32\u0c4b\u0c28\u0c3f NICU \u0c0e\u0c2e\u0c30\u0c4d\u0c1c\u0c46\u0c28\u0c4d\u0c38\u0c40 \u0c35\u0c3f\u0c2d\u0c3e\u0c17\u0c3e\u0c28\u0c3f\u0c15\u0c3f \u0c15\u0c3e\u0c32\u0c4d \u0c1a\u0c47\u0c2f\u0c02\u0c21\u0c3f. \u0c08 \u0c32\u0c15\u0c4d\u0c37\u0c23\u0c3e\u0c32\u0c41 \u0c24\u0c15\u0c4d\u0c37\u0c23 \u0c35\u0c48\u0c26\u0c4d\u0c2f \u0c38\u0c39\u0c3e\u0c2f\u0c02 \u0c15\u0c4b\u0c30\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c2f\u0c3f."
+    }
+  },
+  {
+    "timestamp": 1795619873.750522,
+    "date": "2026-11-25 20:47:53",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's chest is retracting under ribs and lips look dusky blue",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795619874.0285711,
+    "date": "2026-11-25 20:47:54",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Liam has a rectal temperature of 38.3 C and won't wake up to feed",
+    "data": {
+      "voice_summary": "I cannot provide that specific recommendation as clinical guidelines advise against it."
+    }
+  },
+  {
+    "timestamp": 1795619874.3645265,
+    "date": "2026-11-25 20:47:54",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby just threw up bright green dark liquid twice",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795619874.7920988,
+    "date": "2026-11-25 20:47:54",
+    "category": "CARE_UPDATE",
+    "title": "FEEDING_INTELLIGENCE Event",
+    "description": "Liam weighs 2400 grams today, what is his recommended daily volume of breast milk?",
+    "data": {
+      "voice_summary": "For a 2.4 kg infant, the recommended feeding volume is 45 to 54 mL every three hours."
+    }
+  },
+  {
+    "timestamp": 1795624725.2208958,
+    "date": "2026-11-25 22:08:45",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Liam has a mild fever of 37.7 C and feels warm",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795625661.9127796,
+    "date": "2026-11-25 22:24:21",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's lips look blue and chest is retracting under the ribs",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795625665.2829506,
+    "date": "2026-11-25 22:24:25",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "\u0c2c\u0c3e\u0c2c\u0c41\u0c15\u0c3f \u0c06\u0c15\u0c41\u0c2a\u0c1a\u0c4d\u0c1a \u0c35\u0c3e\u0c02\u0c24\u0c41\u0c32\u0c41 \u0c05\u0c35\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c2f\u0c3f",
+    "data": {
+      "voice_summary": "\u0c35\u0c46\u0c02\u0c1f\u0c28\u0c47 \u0c2e\u0c40 \u0c06\u0c38\u0c41\u0c2a\u0c24\u0c4d\u0c30\u0c3f\u0c32\u0c4b\u0c28\u0c3f NICU \u0c0e\u0c2e\u0c30\u0c4d\u0c1c\u0c46\u0c28\u0c4d\u0c38\u0c40 \u0c35\u0c3f\u0c2d\u0c3e\u0c17\u0c3e\u0c28\u0c3f\u0c15\u0c3f \u0c15\u0c3e\u0c32\u0c4d \u0c1a\u0c47\u0c2f\u0c02\u0c21\u0c3f. \u0c08 \u0c32\u0c15\u0c4d\u0c37\u0c23\u0c3e\u0c32\u0c41 \u0c24\u0c15\u0c4d\u0c37\u0c23 \u0c35\u0c48\u0c26\u0c4d\u0c2f \u0c38\u0c39\u0c3e\u0c2f\u0c02 \u0c15\u0c4b\u0c30\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c2f\u0c3f."
+    }
+  },
+  {
+    "timestamp": 1795625667.645762,
+    "date": "2026-11-25 22:24:27",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's chest is retracting under ribs and lips look dusky blue",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795625668.1323757,
+    "date": "2026-11-25 22:24:28",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Liam has a rectal temperature of 38.3 C and won't wake up to feed",
+    "data": {
+      "voice_summary": "I cannot provide that specific recommendation as clinical guidelines advise against it."
+    }
+  },
+  {
+    "timestamp": 1795625668.5905817,
+    "date": "2026-11-25 22:24:28",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby just threw up bright green dark liquid twice",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795625669.0607054,
+    "date": "2026-11-25 22:24:29",
+    "category": "CARE_UPDATE",
+    "title": "FEEDING_INTELLIGENCE Event",
+    "description": "Liam weighs 2400 grams today, what is his recommended daily volume of breast milk?",
+    "data": {
+      "voice_summary": "For a 2.4 kg infant, the recommended feeding volume is 45 to 54 mL every three hours."
+    }
+  },
+  {
+    "timestamp": 1795628337.8238356,
+    "date": "2026-11-25 23:08:57",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's lips look blue and chest is retracting under the ribs",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795628341.3466268,
+    "date": "2026-11-25 23:09:01",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "\u0c2c\u0c3e\u0c2c\u0c41\u0c15\u0c3f \u0c06\u0c15\u0c41\u0c2a\u0c1a\u0c4d\u0c1a \u0c35\u0c3e\u0c02\u0c24\u0c41\u0c32\u0c41 \u0c05\u0c35\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c2f\u0c3f",
+    "data": {
+      "voice_summary": "\u0c35\u0c46\u0c02\u0c1f\u0c28\u0c47 \u0c2e\u0c40 \u0c06\u0c38\u0c41\u0c2a\u0c24\u0c4d\u0c30\u0c3f\u0c32\u0c4b\u0c28\u0c3f NICU \u0c0e\u0c2e\u0c30\u0c4d\u0c1c\u0c46\u0c28\u0c4d\u0c38\u0c40 \u0c35\u0c3f\u0c2d\u0c3e\u0c17\u0c3e\u0c28\u0c3f\u0c15\u0c3f \u0c15\u0c3e\u0c32\u0c4d \u0c1a\u0c47\u0c2f\u0c02\u0c21\u0c3f. \u0c08 \u0c32\u0c15\u0c4d\u0c37\u0c23\u0c3e\u0c32\u0c41 \u0c24\u0c15\u0c4d\u0c37\u0c23 \u0c35\u0c48\u0c26\u0c4d\u0c2f \u0c38\u0c39\u0c3e\u0c2f\u0c02 \u0c15\u0c4b\u0c30\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c2f\u0c3f."
+    }
+  },
+  {
+    "timestamp": 1795628343.6778498,
+    "date": "2026-11-25 23:09:03",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's chest is retracting under ribs and lips look dusky blue",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795628344.1191754,
+    "date": "2026-11-25 23:09:04",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Liam has a rectal temperature of 38.3 C and won't wake up to feed",
+    "data": {
+      "voice_summary": "I cannot provide that specific recommendation as clinical guidelines advise against it."
+    }
+  },
+  {
+    "timestamp": 1795628344.5889947,
+    "date": "2026-11-25 23:09:04",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby just threw up bright green dark liquid twice",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795628345.0703244,
+    "date": "2026-11-25 23:09:05",
+    "category": "CARE_UPDATE",
+    "title": "FEEDING_INTELLIGENCE Event",
+    "description": "Liam weighs 2400 grams today, what is his recommended daily volume of breast milk?",
+    "data": {
+      "voice_summary": "For a 2.4 kg infant, the recommended feeding volume is 45 to 54 mL every three hours."
+    }
+  },
+  {
+    "timestamp": 1795628345.555233,
+    "date": "2026-11-25 23:09:05",
+    "category": "CARE_UPDATE",
+    "title": "CLINICAL_QA Event",
+    "description": "Pediatrician prescribed iron drops 1.0 mL once daily starting tomorrow",
+    "data": {
+      "voice_summary": "Clinical guidance recommends: Preterm Infant Feeding Guidelines (Post-Discharge): Vitamin and Iron Supplementation."
+    }
+  },
+  {
+    "timestamp": 1795628494.5978067,
+    "date": "2026-11-25 23:11:34",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's lips look blue and chest is retracting under the ribs",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795628498.922954,
+    "date": "2026-11-25 23:11:38",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "\u0c2c\u0c3e\u0c2c\u0c41\u0c15\u0c3f \u0c06\u0c15\u0c41\u0c2a\u0c1a\u0c4d\u0c1a \u0c35\u0c3e\u0c02\u0c24\u0c41\u0c32\u0c41 \u0c05\u0c35\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c2f\u0c3f",
+    "data": {
+      "voice_summary": "\u0c35\u0c46\u0c02\u0c1f\u0c28\u0c47 \u0c2e\u0c40 \u0c06\u0c38\u0c41\u0c2a\u0c24\u0c4d\u0c30\u0c3f\u0c32\u0c4b\u0c28\u0c3f NICU \u0c0e\u0c2e\u0c30\u0c4d\u0c1c\u0c46\u0c28\u0c4d\u0c38\u0c40 \u0c35\u0c3f\u0c2d\u0c3e\u0c17\u0c3e\u0c28\u0c3f\u0c15\u0c3f \u0c15\u0c3e\u0c32\u0c4d \u0c1a\u0c47\u0c2f\u0c02\u0c21\u0c3f. \u0c08 \u0c32\u0c15\u0c4d\u0c37\u0c23\u0c3e\u0c32\u0c41 \u0c24\u0c15\u0c4d\u0c37\u0c23 \u0c35\u0c48\u0c26\u0c4d\u0c2f \u0c38\u0c39\u0c3e\u0c2f\u0c02 \u0c15\u0c4b\u0c30\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c2f\u0c3f."
+    }
+  },
+  {
+    "timestamp": 1795628501.0708559,
+    "date": "2026-11-25 23:11:41",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's chest is retracting under ribs and lips look dusky blue",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795628501.6092112,
+    "date": "2026-11-25 23:11:41",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Liam has a rectal temperature of 38.3 C and won't wake up to feed",
+    "data": {
+      "voice_summary": "I cannot provide that specific recommendation as clinical guidelines advise against it."
+    }
+  },
+  {
+    "timestamp": 1795628502.1078231,
+    "date": "2026-11-25 23:11:42",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby just threw up bright green dark liquid twice",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795628502.6220202,
+    "date": "2026-11-25 23:11:42",
+    "category": "CARE_UPDATE",
+    "title": "FEEDING_INTELLIGENCE Event",
+    "description": "Liam weighs 2400 grams today, what is his recommended daily volume of breast milk?",
+    "data": {
+      "voice_summary": "For a 2.4 kg infant, the recommended feeding volume is 45 to 54 mL every three hours."
+    }
+  },
+  {
+    "timestamp": 1795628503.1577826,
+    "date": "2026-11-25 23:11:43",
+    "category": "CARE_UPDATE",
+    "title": "CLINICAL_QA Event",
+    "description": "Pediatrician prescribed iron drops 1.0 mL once daily starting tomorrow",
+    "data": {
+      "voice_summary": "Clinical guidance recommends: Preterm Infant Feeding Guidelines (Post-Discharge): Vitamin and Iron Supplementation."
+    }
+  },
+  {
+    "timestamp": 1795631010.104836,
+    "date": "2026-11-25 23:53:30",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's lips look blue and chest is retracting under the ribs",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795631014.65596,
+    "date": "2026-11-25 23:53:34",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "\u0c2c\u0c3e\u0c2c\u0c41\u0c15\u0c3f \u0c06\u0c15\u0c41\u0c2a\u0c1a\u0c4d\u0c1a \u0c35\u0c3e\u0c02\u0c24\u0c41\u0c32\u0c41 \u0c05\u0c35\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c2f\u0c3f",
+    "data": {
+      "voice_summary": "\u0c35\u0c46\u0c02\u0c1f\u0c28\u0c47 \u0c2e\u0c40 \u0c06\u0c38\u0c41\u0c2a\u0c24\u0c4d\u0c30\u0c3f\u0c32\u0c4b\u0c28\u0c3f NICU \u0c0e\u0c2e\u0c30\u0c4d\u0c1c\u0c46\u0c28\u0c4d\u0c38\u0c40 \u0c35\u0c3f\u0c2d\u0c3e\u0c17\u0c3e\u0c28\u0c3f\u0c15\u0c3f \u0c15\u0c3e\u0c32\u0c4d \u0c1a\u0c47\u0c2f\u0c02\u0c21\u0c3f. \u0c08 \u0c32\u0c15\u0c4d\u0c37\u0c23\u0c3e\u0c32\u0c41 \u0c24\u0c15\u0c4d\u0c37\u0c23 \u0c35\u0c48\u0c26\u0c4d\u0c2f \u0c38\u0c39\u0c3e\u0c2f\u0c02 \u0c15\u0c4b\u0c30\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c2f\u0c3f."
+    }
+  },
+  {
+    "timestamp": 1795631019.2620397,
+    "date": "2026-11-25 23:53:39",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's chest is retracting under ribs and lips look dusky blue",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795631019.9015553,
+    "date": "2026-11-25 23:53:39",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Liam has a rectal temperature of 38.3 C and won't wake up to feed",
+    "data": {
+      "voice_summary": "I cannot provide that specific recommendation as clinical guidelines advise against it."
+    }
+  },
+  {
+    "timestamp": 1795631020.5478241,
+    "date": "2026-11-25 23:53:40",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby just threw up bright green dark liquid twice",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795631021.0585265,
+    "date": "2026-11-25 23:53:41",
+    "category": "CARE_UPDATE",
+    "title": "FEEDING_INTELLIGENCE Event",
+    "description": "Liam weighs 2400 grams today, what is his recommended daily volume of breast milk?",
+    "data": {
+      "voice_summary": "For a 2.4 kg infant, the recommended feeding volume is 45 to 54 mL every three hours."
+    }
+  },
+  {
+    "timestamp": 1795631021.6347132,
+    "date": "2026-11-25 23:53:41",
+    "category": "CARE_UPDATE",
+    "title": "CLINICAL_QA Event",
+    "description": "Pediatrician prescribed iron drops 1.0 mL once daily starting tomorrow",
+    "data": {
+      "voice_summary": "Clinical guidance recommends: Preterm Infant Feeding Guidelines (Post-Discharge): Vitamin and Iron Supplementation."
+    }
+  },
+  {
+    "timestamp": 1795632502.4234736,
+    "date": "2026-11-26 00:18:22",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's lips look blue and chest is retracting under the ribs",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795632507.2893887,
+    "date": "2026-11-26 00:18:27",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "\u0c2c\u0c3e\u0c2c\u0c41\u0c15\u0c3f \u0c06\u0c15\u0c41\u0c2a\u0c1a\u0c4d\u0c1a \u0c35\u0c3e\u0c02\u0c24\u0c41\u0c32\u0c41 \u0c05\u0c35\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c2f\u0c3f",
+    "data": {
+      "voice_summary": "\u0c35\u0c46\u0c02\u0c1f\u0c28\u0c47 \u0c2e\u0c40 \u0c06\u0c38\u0c41\u0c2a\u0c24\u0c4d\u0c30\u0c3f\u0c32\u0c4b\u0c28\u0c3f NICU \u0c0e\u0c2e\u0c30\u0c4d\u0c1c\u0c46\u0c28\u0c4d\u0c38\u0c40 \u0c35\u0c3f\u0c2d\u0c3e\u0c17\u0c3e\u0c28\u0c3f\u0c15\u0c3f \u0c15\u0c3e\u0c32\u0c4d \u0c1a\u0c47\u0c2f\u0c02\u0c21\u0c3f. \u0c08 \u0c32\u0c15\u0c4d\u0c37\u0c23\u0c3e\u0c32\u0c41 \u0c24\u0c15\u0c4d\u0c37\u0c23 \u0c35\u0c48\u0c26\u0c4d\u0c2f \u0c38\u0c39\u0c3e\u0c2f\u0c02 \u0c15\u0c4b\u0c30\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c2f\u0c3f."
+    }
+  },
+  {
+    "timestamp": 1795632512.2795284,
+    "date": "2026-11-26 00:18:32",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's chest is retracting under ribs and lips look dusky blue",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795632512.8528478,
+    "date": "2026-11-26 00:18:32",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Liam has a rectal temperature of 38.3 C and won't wake up to feed",
+    "data": {
+      "voice_summary": "I cannot provide that specific recommendation as clinical guidelines advise against it."
+    }
+  },
+  {
+    "timestamp": 1795632513.4466286,
+    "date": "2026-11-26 00:18:33",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby just threw up bright green dark liquid twice",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795632514.0195117,
+    "date": "2026-11-26 00:18:34",
+    "category": "CARE_UPDATE",
+    "title": "FEEDING_INTELLIGENCE Event",
+    "description": "Liam weighs 2400 grams today, what is his recommended daily volume of breast milk?",
+    "data": {
+      "voice_summary": "For a 2.4 kg infant, the recommended feeding volume is 45 to 54 mL every three hours."
+    }
+  },
+  {
+    "timestamp": 1795632514.634198,
+    "date": "2026-11-26 00:18:34",
+    "category": "CARE_UPDATE",
+    "title": "CLINICAL_QA Event",
+    "description": "Pediatrician prescribed iron drops 1.0 mL once daily starting tomorrow",
+    "data": {
+      "voice_summary": "Clinical guidance recommends: Preterm Infant Feeding Guidelines (Post-Discharge): Vitamin and Iron Supplementation."
+    }
+  },
+  {
+    "timestamp": 1795633956.6446807,
+    "date": "2026-11-26 00:42:36",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's lips look blue and chest is retracting under the ribs",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795633961.9673798,
+    "date": "2026-11-26 00:42:41",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "\u0c2c\u0c3e\u0c2c\u0c41\u0c15\u0c3f \u0c06\u0c15\u0c41\u0c2a\u0c1a\u0c4d\u0c1a \u0c35\u0c3e\u0c02\u0c24\u0c41\u0c32\u0c41 \u0c05\u0c35\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c2f\u0c3f",
+    "data": {
+      "voice_summary": "\u0c35\u0c46\u0c02\u0c1f\u0c28\u0c47 \u0c2e\u0c40 \u0c06\u0c38\u0c41\u0c2a\u0c24\u0c4d\u0c30\u0c3f\u0c32\u0c4b\u0c28\u0c3f NICU \u0c0e\u0c2e\u0c30\u0c4d\u0c1c\u0c46\u0c28\u0c4d\u0c38\u0c40 \u0c35\u0c3f\u0c2d\u0c3e\u0c17\u0c3e\u0c28\u0c3f\u0c15\u0c3f \u0c15\u0c3e\u0c32\u0c4d \u0c1a\u0c47\u0c2f\u0c02\u0c21\u0c3f. \u0c08 \u0c32\u0c15\u0c4d\u0c37\u0c23\u0c3e\u0c32\u0c41 \u0c24\u0c15\u0c4d\u0c37\u0c23 \u0c35\u0c48\u0c26\u0c4d\u0c2f \u0c38\u0c39\u0c3e\u0c2f\u0c02 \u0c15\u0c4b\u0c30\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c2f\u0c3f."
+    }
+  },
+  {
+    "timestamp": 1795633968.525912,
+    "date": "2026-11-26 00:42:48",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's chest is retracting under ribs and lips look dusky blue",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795633969.1980662,
+    "date": "2026-11-26 00:42:49",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Liam has a rectal temperature of 38.3 C and won't wake up to feed",
+    "data": {
+      "voice_summary": "I cannot provide that specific recommendation as clinical guidelines advise against it."
+    }
+  },
+  {
+    "timestamp": 1795633969.788673,
+    "date": "2026-11-26 00:42:49",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby just threw up bright green dark liquid twice",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795633970.380796,
+    "date": "2026-11-26 00:42:50",
+    "category": "CARE_UPDATE",
+    "title": "FEEDING_INTELLIGENCE Event",
+    "description": "Liam weighs 2400 grams today, what is his recommended daily volume of breast milk?",
+    "data": {
+      "voice_summary": "For a 2.4 kg infant, the recommended feeding volume is 45 to 54 mL every three hours."
+    }
+  },
+  {
+    "timestamp": 1795633971.0594146,
+    "date": "2026-11-26 00:42:51",
+    "category": "CARE_UPDATE",
+    "title": "CLINICAL_QA Event",
+    "description": "Pediatrician prescribed iron drops 1.0 mL once daily starting tomorrow",
+    "data": {
+      "voice_summary": "Clinical guidance recommends: Preterm Infant Feeding Guidelines (Post-Discharge): Vitamin and Iron Supplementation."
+    }
+  },
+  {
+    "timestamp": 1795666920.8437202,
+    "date": "2026-11-26 09:52:00",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's lips look blue and chest is retracting under the ribs",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795666965.4655118,
+    "date": "2026-11-26 09:52:45",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "\u0c2c\u0c3e\u0c2c\u0c41\u0c15\u0c3f \u0c06\u0c15\u0c41\u0c2a\u0c1a\u0c4d\u0c1a \u0c35\u0c3e\u0c02\u0c24\u0c41\u0c32\u0c41 \u0c05\u0c35\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c2f\u0c3f",
+    "data": {
+      "voice_summary": "\u0c35\u0c46\u0c02\u0c1f\u0c28\u0c47 \u0c2e\u0c40 \u0c06\u0c38\u0c41\u0c2a\u0c24\u0c4d\u0c30\u0c3f\u0c32\u0c4b\u0c28\u0c3f NICU \u0c0e\u0c2e\u0c30\u0c4d\u0c1c\u0c46\u0c28\u0c4d\u0c38\u0c40 \u0c35\u0c3f\u0c2d\u0c3e\u0c17\u0c3e\u0c28\u0c3f\u0c15\u0c3f \u0c15\u0c3e\u0c32\u0c4d \u0c1a\u0c47\u0c2f\u0c02\u0c21\u0c3f. \u0c08 \u0c32\u0c15\u0c4d\u0c37\u0c23\u0c3e\u0c32\u0c41 \u0c24\u0c15\u0c4d\u0c37\u0c23 \u0c35\u0c48\u0c26\u0c4d\u0c2f \u0c38\u0c39\u0c3e\u0c2f\u0c02 \u0c15\u0c4b\u0c30\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c2f\u0c3f."
+    }
+  },
+  {
+    "timestamp": 1795667085.414409,
+    "date": "2026-11-26 09:54:45",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's chest is retracting under ribs and lips look dusky blue",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795667085.8846135,
+    "date": "2026-11-26 09:54:45",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Liam has a rectal temperature of 38.3 C and won't wake up to feed",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795667086.3677952,
+    "date": "2026-11-26 09:54:46",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby just threw up bright green dark liquid twice",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795667086.862462,
+    "date": "2026-11-26 09:54:46",
+    "category": "CARE_UPDATE",
+    "title": "FEEDING_INTELLIGENCE Event",
+    "description": "Liam weighs 2400 grams today, what is his recommended daily volume of breast milk?",
+    "data": {
+      "voice_summary": "Liam is currently 2400 grams, with healthy catch-up growth of about 25.2 grams per day since discharge. The 3-hour feed goal is 45\u201354 mL every 3 hours."
+    }
+  },
+  {
+    "timestamp": 1795667096.5627074,
+    "date": "2026-11-26 09:54:56",
+    "category": "CARE_UPDATE",
+    "title": "LOG_MEDICATION Event",
+    "description": "Pediatrician prescribed iron drops 1.0 mL once daily starting tomorrow",
+    "data": {
+      "voice_summary": "Care entry recorded successfully."
+    }
+  },
+  {
+    "timestamp": 1795678578.7528217,
+    "date": "2026-11-26 13:06:18",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's lips look blue and chest is retracting under the ribs",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795678626.1570308,
+    "date": "2026-11-26 13:07:06",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "\u0c2c\u0c3e\u0c2c\u0c41\u0c15\u0c3f \u0c06\u0c15\u0c41\u0c2a\u0c1a\u0c4d\u0c1a \u0c35\u0c3e\u0c02\u0c24\u0c41\u0c32\u0c41 \u0c05\u0c35\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c2f\u0c3f",
+    "data": {
+      "voice_summary": "\u0c35\u0c46\u0c02\u0c1f\u0c28\u0c47 \u0c2e\u0c40 \u0c06\u0c38\u0c41\u0c2a\u0c24\u0c4d\u0c30\u0c3f\u0c32\u0c4b\u0c28\u0c3f NICU \u0c0e\u0c2e\u0c30\u0c4d\u0c1c\u0c46\u0c28\u0c4d\u0c38\u0c40 \u0c35\u0c3f\u0c2d\u0c3e\u0c17\u0c3e\u0c28\u0c3f\u0c15\u0c3f \u0c15\u0c3e\u0c32\u0c4d \u0c1a\u0c47\u0c2f\u0c02\u0c21\u0c3f. \u0c08 \u0c32\u0c15\u0c4d\u0c37\u0c23\u0c3e\u0c32\u0c41 \u0c24\u0c15\u0c4d\u0c37\u0c23 \u0c35\u0c48\u0c26\u0c4d\u0c2f \u0c38\u0c39\u0c3e\u0c2f\u0c02 \u0c15\u0c4b\u0c30\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c2f\u0c3f."
+    }
+  },
+  {
+    "timestamp": 1795678746.8217723,
+    "date": "2026-11-26 13:09:06",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's chest is retracting under ribs and lips look dusky blue",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795678747.2962484,
+    "date": "2026-11-26 13:09:07",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Liam has a rectal temperature of 38.3 C and won't wake up to feed",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795678747.765415,
+    "date": "2026-11-26 13:09:07",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby just threw up bright green dark liquid twice",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795678748.2579792,
+    "date": "2026-11-26 13:09:08",
+    "category": "CARE_UPDATE",
+    "title": "FEEDING_INTELLIGENCE Event",
+    "description": "Liam weighs 2400 grams today, what is his recommended daily volume of breast milk?",
+    "data": {
+      "voice_summary": "Liam is currently 2400 grams, with healthy catch-up growth of about 25.2 grams per day since discharge. The 3-hour feed goal is 45\u201354 mL every 3 hours."
+    }
+  },
+  {
+    "timestamp": 1795678769.26426,
+    "date": "2026-11-26 13:09:29",
+    "category": "CARE_UPDATE",
+    "title": "CLINICAL_QA Event",
+    "description": "Pediatrician prescribed iron drops 1.0 mL once daily starting tomorrow",
+    "data": {
+      "voice_summary": "Clinical guidance recommends: Preterm Infant Feeding Guidelines (Post-Discharge): Vitamin and Iron Supplementation."
+    }
+  },
+  {
+    "timestamp": 1795681732.9780743,
+    "date": "2026-11-26 13:58:52",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's lips look blue and chest is retracting under the ribs",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795681781.0181472,
+    "date": "2026-11-26 13:59:41",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "\u0c2c\u0c3e\u0c2c\u0c41\u0c15\u0c3f \u0c06\u0c15\u0c41\u0c2a\u0c1a\u0c4d\u0c1a \u0c35\u0c3e\u0c02\u0c24\u0c41\u0c32\u0c41 \u0c05\u0c35\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c2f\u0c3f",
+    "data": {
+      "voice_summary": "\u0c35\u0c46\u0c02\u0c1f\u0c28\u0c47 \u0c2e\u0c40 \u0c06\u0c38\u0c41\u0c2a\u0c24\u0c4d\u0c30\u0c3f\u0c32\u0c4b\u0c28\u0c3f NICU \u0c0e\u0c2e\u0c30\u0c4d\u0c1c\u0c46\u0c28\u0c4d\u0c38\u0c40 \u0c35\u0c3f\u0c2d\u0c3e\u0c17\u0c3e\u0c28\u0c3f\u0c15\u0c3f \u0c15\u0c3e\u0c32\u0c4d \u0c1a\u0c47\u0c2f\u0c02\u0c21\u0c3f. \u0c08 \u0c32\u0c15\u0c4d\u0c37\u0c23\u0c3e\u0c32\u0c41 \u0c24\u0c15\u0c4d\u0c37\u0c23 \u0c35\u0c48\u0c26\u0c4d\u0c2f \u0c38\u0c39\u0c3e\u0c2f\u0c02 \u0c15\u0c4b\u0c30\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c2f\u0c3f."
+    }
+  },
+  {
+    "timestamp": 1795681905.881693,
+    "date": "2026-11-26 14:01:45",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's chest is retracting under ribs and lips look dusky blue",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795681906.413585,
+    "date": "2026-11-26 14:01:46",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Liam has a rectal temperature of 38.3 C and won't wake up to feed",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795681906.9361486,
+    "date": "2026-11-26 14:01:46",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby just threw up bright green dark liquid twice",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795681907.4715667,
+    "date": "2026-11-26 14:01:47",
+    "category": "CARE_UPDATE",
+    "title": "FEEDING_INTELLIGENCE Event",
+    "description": "Liam weighs 2400 grams today, what is his recommended daily volume of breast milk?",
+    "data": {
+      "voice_summary": "Liam is currently 2400 grams, with healthy catch-up growth of about 25.2 grams per day since discharge. The 3-hour feed goal is 45\u201354 mL every 3 hours."
+    }
+  },
+  {
+    "timestamp": 1795681928.5765393,
+    "date": "2026-11-26 14:02:08",
+    "category": "CARE_UPDATE",
+    "title": "CLINICAL_QA Event",
+    "description": "Pediatrician prescribed iron drops 1.0 mL once daily starting tomorrow",
+    "data": {
+      "voice_summary": "Clinical guidance recommends: Preterm Infant Feeding Guidelines (Post-Discharge): Vitamin and Iron Supplementation."
+    }
+  },
+  {
+    "timestamp": 1795682114.4805381,
+    "date": "2026-11-26 14:05:14",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Liam threw up dark greenish liquid and his chest is pulling in under ribs",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795687197.888644,
+    "date": "2026-11-26 15:29:57",
+    "category": "CARE_UPDATE",
+    "title": "LOG_MEDICATION Event",
+    "description": "log vitamin D3",
+    "data": {
+      "voice_summary": "Care entry recorded successfully."
+    }
+  },
+  {
+    "timestamp": 1795695600.8224373,
+    "date": "2026-11-26 17:50:00",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's lips look blue and chest is retracting under the ribs",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795695731.0393806,
+    "date": "2026-11-26 17:52:11",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "\u0c2c\u0c3e\u0c2c\u0c41\u0c15\u0c3f \u0c06\u0c15\u0c41\u0c2a\u0c1a\u0c4d\u0c1a \u0c35\u0c3e\u0c02\u0c24\u0c41\u0c32\u0c41 \u0c05\u0c35\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c2f\u0c3f",
+    "data": {
+      "voice_summary": "\u0c35\u0c46\u0c02\u0c1f\u0c28\u0c47 \u0c2e\u0c40 \u0c06\u0c38\u0c41\u0c2a\u0c24\u0c4d\u0c30\u0c3f\u0c32\u0c4b\u0c28\u0c3f NICU \u0c0e\u0c2e\u0c30\u0c4d\u0c1c\u0c46\u0c28\u0c4d\u0c38\u0c40 \u0c35\u0c3f\u0c2d\u0c3e\u0c17\u0c3e\u0c28\u0c3f\u0c15\u0c3f \u0c15\u0c3e\u0c32\u0c4d \u0c1a\u0c47\u0c2f\u0c02\u0c21\u0c3f. \u0c08 \u0c32\u0c15\u0c4d\u0c37\u0c23\u0c3e\u0c32\u0c41 \u0c24\u0c15\u0c4d\u0c37\u0c23 \u0c35\u0c48\u0c26\u0c4d\u0c2f \u0c38\u0c39\u0c3e\u0c2f\u0c02 \u0c15\u0c4b\u0c30\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28\u0c3e\u0c2f\u0c3f."
+    }
+  },
+  {
+    "timestamp": 1795695985.6948798,
+    "date": "2026-11-26 17:56:25",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's chest is retracting under ribs and lips look dusky blue",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795695986.3560612,
+    "date": "2026-11-26 17:56:26",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Liam has a rectal temperature of 38.3 C and won't wake up to feed",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795695987.054894,
+    "date": "2026-11-26 17:56:27",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby just threw up bright green dark liquid twice",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795695987.7251205,
+    "date": "2026-11-26 17:56:27",
+    "category": "CARE_UPDATE",
+    "title": "FEEDING_INTELLIGENCE Event",
+    "description": "Liam weighs 2400 grams today, what is his recommended daily volume of breast milk?",
+    "data": {
+      "voice_summary": "Liam is currently 2400 grams, with healthy catch-up growth of about 25.2 grams per day since discharge. The 3-hour feed goal is 45\u201354 mL every 3 hours."
+    }
+  },
+  {
+    "timestamp": 1795695988.4121323,
+    "date": "2026-11-26 17:56:28",
+    "category": "CARE_UPDATE",
+    "title": "PATIENT_RECORD_INQUIRY Event",
+    "description": "Pediatrician prescribed iron drops 1.0 mL once daily starting tomorrow",
+    "data": {
+      "voice_summary": "Liam's active medications are Vitamin D3 400 IU daily, elemental iron drops 1 mL daily, and milk fortifier added to expressed milk."
+    }
+  },
+  {
+    "timestamp": 1795701571.338137,
+    "date": "2026-11-26 19:29:31",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby's lips look blue and chest is retracting under the ribs",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795713288.88048,
+    "date": "2026-11-26 22:44:48",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby just vomited bright green bilious liquid and stomach looks swollen",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  },
+  {
+    "timestamp": 1795713315.216183,
+    "date": "2026-11-26 22:45:15",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby feels cold to touch and thermometer shows 35.2 C",
+    "data": {
+      "voice_summary": "The recommended room temperature for a preterm baby is 20 to 22 degrees Celsius, or 68 to 72 degrees Fahrenheit."
+    }
+  },
+  {
+    "timestamp": 1795713351.1636622,
+    "date": "2026-11-26 22:45:51",
+    "category": "EMERGENCY_ALERT",
+    "title": "EMERGENCY Event",
+    "description": "Baby has a high fever of 38.6 C and is limp and unresponsive",
+    "data": {
+      "voice_summary": "Please call your hospital's NICU emergency line immediately. These symptoms require prompt medical evaluation."
+    }
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "baby_id": "baby_liam_01",
+  "name": "Liam",
+  "date_of_birth": "2026-09-29",
+  "gestational_age_weeks": 29,
+  "gestational_age_days": 2,
+  "sex": "male",
+  "birth_weight_grams": 1180,
+  "discharge_weight_grams": 1820,
+  "discharge_date": "2026-11-03",
+  "discharge_hospital": "BirthRight Rainbow Vijayawada",
+  "pediatrician_name": null,
+  "mother_preferred_language": "en-US",
+  "blood_type": null,
+  "created_at": null
+}

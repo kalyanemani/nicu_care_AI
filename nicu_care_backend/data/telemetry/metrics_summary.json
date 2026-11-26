@@ -1,0 +1,41 @@
+{
+  "total_requests": 200,
+  "updated_at": 1795718615.562098,
+  "latency": {
+    "avg_ms": 17407.95,
+    "p50_ms": 84.71,
+    "p95_ms": 30692.64,
+    "p99_ms": 183778.13,
+    "node_breakdown_avg_ms": {
+      "request": 17320.89,
+      "memory.short_term_cache_lookup": 0.04,
+      "memory.long_term_wiki_compilation": 6.11,
+      "agent.langgraph_execution": 17838.32,
+      "agent.langgraph.triage": 515.23,
+      "agent.langgraph.mcp_gateway": 470.74,
+      "agent.langgraph.clinical_guide": 22145.2,
+      "agent.langgraph.safety_critic": 2.56,
+      "telemetry.ragas_evaluation": 0.32,
+      "agent.test_node": 16.57
+    }
+  },
+  "token_optimization": {
+    "total_prompt_tokens": 50835,
+    "total_completion_tokens": 29675,
+    "total_tokens_saved": 192420,
+    "avg_token_reduction_pct": 79.868
+  },
+  "ragas_metrics": {
+    "retrieval": {
+      "avg_context_relevance": 0.593,
+      "avg_context_recall": 0.432,
+      "avg_ga_compliance_rate": 1.0
+    },
+    "generation": {
+      "avg_faithfulness": 0.734,
+      "avg_answer_relevance": 0.643,
+      "avg_harm_prevention_score": 1.0
+    },
+    "composite_quality_score": 0.767
+  }
+}

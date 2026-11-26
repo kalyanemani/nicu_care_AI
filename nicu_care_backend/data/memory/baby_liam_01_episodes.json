@@ -1,0 +1,185 @@
+[
+  {
+    "episode_id": "ep_discharge_001",
+    "baby_id": "baby_liam_01",
+    "timestamp": 1793862287.123761,
+    "date": "2026-11-05 12:34:47",
+    "episode_type": "CLINICAL_CHECKUP",
+    "title": "Hospital Discharge from Rainbow Vijayawada NICU",
+    "description": "Graduated NICU at 1820g on full oral feeding (fortified mother's milk, 22 kcal/oz). Physiological stability demonstrated in room air.",
+    "severity": "INFO",
+    "clinical_data": {
+      "discharge_weight_grams": 1820,
+      "gestational_age_at_birth": "29w+2d",
+      "discharge_hospital": "BirthRight by Rainbow Children's Hospital, Vijayawada",
+      "neonatologist": "Dr. K. Rao"
+    },
+    "resolved": true,
+    "resolution_notes": "All discharge criteria met; outpatient follow-up scheduled.",
+    "tags": [
+      "discharge",
+      "nicu_graduate",
+      "milestone"
+    ]
+  },
+  {
+    "episode_id": "ep_kmc_002",
+    "baby_id": "baby_liam_01",
+    "timestamp": 1794467087.123761,
+    "date": "2026-11-12 12:34:47",
+    "episode_type": "KMC_SESSION",
+    "title": "Extended 3-Hour Continuous Kangaroo Care Milestone",
+    "description": "Mother completed continuous 3h skin-to-skin session. Infant demonstrated deep restorative sleep with stable axillary temperature (36.8\u00b0C).",
+    "severity": "INFO",
+    "clinical_data": {
+      "duration_minutes": 180,
+      "temperature_celsius": 36.8,
+      "tolerated": true
+    },
+    "resolved": true,
+    "resolution_notes": "Excellent thermal stability maintained without sweating or cold extremities.",
+    "tags": [
+      "kmc",
+      "skin_to_skin",
+      "thermoregulation",
+      "milestone"
+    ]
+  },
+  {
+    "episode_id": "ep_weight_003",
+    "baby_id": "baby_liam_01",
+    "timestamp": 1795071887.123761,
+    "date": "2026-11-19 12:34:47",
+    "episode_type": "MILESTONE",
+    "title": "Weight Milestone: Crossed 2,000 Grams Threshold",
+    "description": "Weekly weigh-in confirmed weight of 2,120g (+300g since discharge, ~25g/day average velocity, within WHO optimal target 20-30g/day).",
+    "severity": "INFO",
+    "clinical_data": {
+      "weight_grams": 2120,
+      "growth_velocity_g_day": 25.0,
+      "who_percentile_trajectory": "normal_catchup"
+    },
+    "resolved": true,
+    "resolution_notes": "Growth trajectory on track for corrected gestational age.",
+    "tags": [
+      "weight_gain",
+      "growth",
+      "milestone"
+    ]
+  },
+  {
+    "episode_id": "ep_7eb0792e",
+    "baby_id": "baby_liam_01",
+    "timestamp": 1795678559.8132956,
+    "date": "2026-11-26 13:05:59",
+    "episode_type": "ACUTE_EVENT",
+    "title": "Mild Regurgitation Post-Feeding",
+    "description": "Infant had 5 mL non-bilious regurgitation 20 minutes after 45 mL fortified feed. Vital signs normal, abdomen soft.",
+    "severity": "MILD",
+    "clinical_data": {
+      "regurgitated_volume_ml": 5,
+      "feed_volume_ml": 45,
+      "bilious": false,
+      "respiratory_rate": 44
+    },
+    "resolved": true,
+    "resolution_notes": "Burped upright in KMC position for 25 minutes; no further episodes.",
+    "tags": [
+      "reflux",
+      "feeding_tolerance",
+      "kmc"
+    ]
+  },
+  {
+    "episode_id": "ep_7fc288b0",
+    "baby_id": "baby_liam_01",
+    "timestamp": 1795678613.1419315,
+    "date": "2026-11-26 13:06:53",
+    "episode_type": "ACUTE_EVENT",
+    "title": "Mild Regurgitation Post-Feeding",
+    "description": "Infant had 5 mL non-bilious regurgitation 20 minutes after 45 mL fortified feed. Vital signs normal, abdomen soft.",
+    "severity": "MILD",
+    "clinical_data": {
+      "regurgitated_volume_ml": 5,
+      "feed_volume_ml": 45,
+      "bilious": false,
+      "respiratory_rate": 44
+    },
+    "resolved": true,
+    "resolution_notes": "Burped upright in KMC position for 25 minutes; no further episodes.",
+    "tags": [
+      "reflux",
+      "feeding_tolerance",
+      "kmc"
+    ]
+  },
+  {
+    "episode_id": "ep_0a334a83",
+    "baby_id": "baby_liam_01",
+    "timestamp": 1795681766.950283,
+    "date": "2026-11-26 13:59:26",
+    "episode_type": "ACUTE_EVENT",
+    "title": "Mild Regurgitation Post-Feeding",
+    "description": "Infant had 5 mL non-bilious regurgitation 20 minutes after 45 mL fortified feed. Vital signs normal, abdomen soft.",
+    "severity": "MILD",
+    "clinical_data": {
+      "regurgitated_volume_ml": 5,
+      "feed_volume_ml": 45,
+      "bilious": false,
+      "respiratory_rate": 44
+    },
+    "resolved": true,
+    "resolution_notes": "Burped upright in KMC position for 25 minutes; no further episodes.",
+    "tags": [
+      "reflux",
+      "feeding_tolerance",
+      "kmc"
+    ]
+  },
+  {
+    "episode_id": "ep_46270498",
+    "baby_id": "baby_liam_01",
+    "timestamp": 1795695703.2020018,
+    "date": "2026-11-26 17:51:43",
+    "episode_type": "ACUTE_EVENT",
+    "title": "Mild Regurgitation Post-Feeding",
+    "description": "Infant had 5 mL non-bilious regurgitation 20 minutes after 45 mL fortified feed. Vital signs normal, abdomen soft.",
+    "severity": "MILD",
+    "clinical_data": {
+      "regurgitated_volume_ml": 5,
+      "feed_volume_ml": 45,
+      "bilious": false,
+      "respiratory_rate": 44
+    },
+    "resolved": true,
+    "resolution_notes": "Burped upright in KMC position for 25 minutes; no further episodes.",
+    "tags": [
+      "reflux",
+      "feeding_tolerance",
+      "kmc"
+    ]
+  },
+  {
+    "episode_id": "ep_9aa9eea9",
+    "baby_id": "baby_liam_01",
+    "timestamp": 1795727809.0385718,
+    "date": "2026-11-27 02:46:49",
+    "episode_type": "ACUTE_EVENT",
+    "title": "Mild Regurgitation Post-Feeding",
+    "description": "Infant had 5 mL non-bilious regurgitation 20 minutes after 45 mL fortified feed. Vital signs normal, abdomen soft.",
+    "severity": "MILD",
+    "clinical_data": {
+      "regurgitated_volume_ml": 5,
+      "feed_volume_ml": 45,
+      "bilious": false,
+      "respiratory_rate": 44
+    },
+    "resolved": true,
+    "resolution_notes": "Burped upright in KMC position for 25 minutes; no further episodes.",
+    "tags": [
+      "reflux",
+      "feeding_tolerance",
+      "kmc"
+    ]
+  }
+]

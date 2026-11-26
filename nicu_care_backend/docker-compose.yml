@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  nicu-backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: nicu-care-backend:latest
+    container_name: nicu_care_backend
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - PORT=8000
+      - ENVIRONMENT=production
+      - ALLOWED_ORIGINS=http://localhost:3000,http://127.0.0.1:3000
+    volumes:
+      # Persist infant profiles, care logs, and living wikis outside the container
+      - ./data:/app/data
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s

@@ -1,0 +1,80 @@
+{
+  "mother_liam@example.com": {
+    "id": "usr_mother_01",
+    "email": "mother_liam@example.com",
+    "password_hash": "547b78614b36408b$ecc51afe1f13696d4d180c6b9d94448d4b9a87c3ca356906c5aa714b1bfb57c3",
+    "full_name": "Ananya Sharma (Liam's Mother)",
+    "role": "parent",
+    "assigned_baby_ids": [
+      "baby_liam_01"
+    ],
+    "created_at": "2026-11-26 12:31:26",
+    "last_login": "2026-11-27 02:46:48"
+  },
+  "dr_sharma@rainbow.com": {
+    "id": "usr_dr_sharma_01",
+    "email": "dr_sharma@rainbow.com",
+    "password_hash": "8b7147360785457e$765e5cf957d40b89e5b520e10bf3df58a83e80c5f7c011320dcffa5d31d26ea9",
+    "full_name": "Dr. K. Rao (Consultant Neonatologist)",
+    "role": "clinician",
+    "assigned_baby_ids": [
+      "baby_liam_01",
+      "vochetu1"
+    ],
+    "created_at": "2026-11-26 12:31:26",
+    "last_login": "2026-11-27 02:46:48"
+  },
+  "admin@nicucare.org": {
+    "id": "usr_admin_01",
+    "email": "admin@nicucare.org",
+    "password_hash": "fc46e383026648ff$e262a7090d2c9675f701e60487250c8efa5775bb588832aa91e89d9b75d2fe98",
+    "full_name": "NICU Care System Administrator",
+    "role": "admin",
+    "assigned_baby_ids": [
+      "baby_liam_01",
+      "vochetu1"
+    ],
+    "created_at": "2026-11-26 12:31:26",
+    "last_login": null
+  },
+  "nagaharipriya04@gmail.com": {
+    "id": "usr_d060d012",
+    "email": "nagaharipriya04@gmail.com",
+    "password_hash": "2fb5adbbf6964a1a$ddb1e637d17a68d0786c3bcbbd841a96a093d9579e7679b78fde6a353aef34b7",
+    "full_name": "haripriya",
+    "role": "parent",
+    "assigned_baby_ids": [
+      "baby_liam_01"
+    ],
+    "created_at": "2026-11-27 00:50:27",
+    "last_login": "2026-11-27 01:52:58"
+  },
+  "parent_1795725803@example.com": {
+    "id": "usr_5f3739c5",
+    "email": "parent_1795725803@example.com",
+    "password_hash": "a57e45e0e6724048$b3dc5df0a98ed8d51797c5d9a07f5e1e2c8d6fd6d5fdb359192d8266f3c2e98d",
+    "full_name": "Meera Patel",
+    "phone_number": "+919876543210",
+    "role": "parent",
+    "baby_name": "Aarav",
+    "assigned_baby_ids": [
+      "baby_aarav_ef42"
+    ],
+    "created_at": "2026-11-27 02:13:23",
+    "last_login": null
+  },
+  "parent_1795725814@example.com": {
+    "id": "usr_24487593",
+    "email": "parent_1795725814@example.com",
+    "password_hash": "5d4d97dd854c4bc7$07c8ab8a93c63f92c42d162dada7bca540eda6256879eca1d114867dfb98f497",
+    "full_name": "Meera Patel",
+    "phone_number": "+919876543210",
+    "role": "parent",
+    "baby_name": "Aarav",
+    "assigned_baby_ids": [
+      "baby_aarav_e3c4"
+    ],
+    "created_at": "2026-11-27 02:13:34",
+    "last_login": "2026-11-27 02:13:34"
+  }
+}

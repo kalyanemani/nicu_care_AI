@@ -1,0 +1,14 @@
+[
+  {
+    "record_id": "growth_89712dc8",
+    "baby_id": "baby_liam_01",
+    "date_recorded": "2026-11-03",
+    "weight_grams": 1820,
+    "length_cm": null,
+    "head_circumference_cm": null,
+    "corrected_age_weeks": 0,
+    "daily_gain_g_per_day": null,
+    "velocity_status": null,
+    "notes": "Discharge weight from NICU"
+  }
+]
