@@ -4,7 +4,9 @@
  */
 
 const API_HOST = typeof window !== "undefined" && window.location.hostname ? window.location.hostname : "127.0.0.1";
-const API_BASE = `http://${API_HOST}:8000/api/v1`;
+const API_BASE = (typeof import.meta !== "undefined" && import.meta.env && import.meta.env.VITE_API_BASE)
+  ? import.meta.env.VITE_API_BASE
+  : `http://${API_HOST}:8000/api/v1`;
 
 function getLocalTimestamp(custom) {
   if (custom) return String(custom).replace(/Z$/, "");
