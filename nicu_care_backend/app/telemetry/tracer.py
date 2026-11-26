@@ -150,6 +150,8 @@ class LangfuseExporter:
         if not self.enabled or not self.client:
             return
         try:
+            from datetime import datetime
+            st = trace_dict.get("start_time")
             trace = self.client.trace(
                 id=trace_dict.get("trace_id"),
                 name=f"nicu_agent_{trace_dict.get('user_query', '')[:30]}",
@@ -157,17 +159,23 @@ class LangfuseExporter:
                 input={"query": trace_dict.get("user_query")},
                 output={"status": trace_dict.get("status")},
                 metadata=trace_dict.get("metrics", {}),
+                timestamp=datetime.fromtimestamp(st) if isinstance(st, (int, float)) else None,
             )
             for s in trace_dict.get("spans", []):
+                span_st = s.get("start_time")
+                span_et = s.get("end_time")
                 trace.span(
                     id=s.get("span_id"),
                     name=s.get("name"),
-                    start_time=s.get("start_time"),
-                    end_time=s.get("end_time"),
+                    start_time=datetime.fromtimestamp(span_st) if isinstance(span_st, (int, float)) else None,
+                    end_time=datetime.fromtimestamp(span_et) if isinstance(span_et, (int, float)) else None,
                     metadata=s.get("attributes", {}),
                 )
-        except Exception:
-            pass
+            if hasattr(self.client, "flush"):
+                self.client.flush()
+        except Exception as e:
+            import logging
+            logging.getLogger("tracer").warning(f"Langfuse export_trace error: {e}")
 
     def export_ragas_scores(self, trace_id: str, ragas_scores: Dict[str, Any]):
         if not self.enabled or not self.client:
@@ -184,8 +192,11 @@ class LangfuseExporter:
             ]:
                 if val is not None:
                     self.client.score(trace_id=trace_id, name=name, value=float(val))
-        except Exception:
-            pass
+            if hasattr(self.client, "flush"):
+                self.client.flush()
+        except Exception as e:
+            import logging
+            logging.getLogger("tracer").warning(f"Langfuse export_ragas_scores error: {e}")
 
 
 class AgentTracer:
@@ -259,6 +270,9 @@ class AgentTracer:
         # Export to Langfuse if enabled
         if self.langfuse.enabled:
             self.langfuse.export_trace(trace_dict)
+            ragas_scores = trace_dict.get("metrics", {}).get("ragas_scores")
+            if ragas_scores:
+                self.langfuse.export_ragas_scores(trace_dict["trace_id"], ragas_scores)
 
     def log_ragas_to_langfuse(self, trace_id: str, ragas_scores: Dict[str, Any]):
         """Scores the trace in Langfuse with quantitative RAGAS metrics."""
