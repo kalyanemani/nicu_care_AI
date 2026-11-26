@@ -130,70 +130,122 @@ class TraceContext:
 
 
 class LangfuseExporter:
-    """Exports trace contexts, spans, and RAGAS evaluation scores to Langfuse."""
+    """Exports trace contexts, spans, and RAGAS evaluation scores to Langfuse via modern OpenTelemetry."""
 
     def __init__(self):
         self.enabled = False
-        self.client = None
-        pk = os.getenv("LANGFUSE_PUBLIC_KEY")
-        sk = os.getenv("LANGFUSE_SECRET_KEY")
-        host = os.getenv("LANGFUSE_HOST", "https://cloud.langfuse.com")
-        if pk and sk:
+        self.provider = None
+        self.tracer = None
+        self.pk = os.getenv("LANGFUSE_PUBLIC_KEY")
+        self.sk = os.getenv("LANGFUSE_SECRET_KEY")
+        self.host = (os.getenv("LANGFUSE_HOST") or os.getenv("LANGFUSE_BASE_URL") or "https://cloud.langfuse.com").rstrip("/")
+        if self.pk and self.sk:
+            self.enabled = True
             try:
-                from langfuse import Langfuse
-                self.client = Langfuse(public_key=pk, secret_key=sk, host=host)
-                self.enabled = True
-            except Exception:
-                self.enabled = False
+                import base64
+                from opentelemetry import trace
+                from opentelemetry.sdk.resources import Resource
+                from opentelemetry.sdk.trace import TracerProvider
+                from opentelemetry.sdk.trace.export import SimpleSpanProcessor
+                from opentelemetry.exporter.otlp.proto.http.trace_exporter import OTLPSpanExporter
+
+                encoded_auth = base64.b64encode(f"{self.pk}:{self.sk}".encode("utf-8")).decode("utf-8")
+                self.provider = TracerProvider(resource=Resource.create({"service.name": "nicu-care-backend"}))
+                otlp_exporter = OTLPSpanExporter(
+                    endpoint=f"{self.host}/api/public/otel/v1/traces",
+                    headers={
+                        "Authorization": f"Basic {encoded_auth}",
+                        "x-langfuse-ingestion-version": "4",
+                    },
+                )
+                self.provider.add_span_processor(SimpleSpanProcessor(otlp_exporter))
+                self.tracer = self.provider.get_tracer("nicu-agent-tracer")
+            except Exception as e:
+                import logging
+                logging.getLogger("tracer").warning(f"Could not initialize OpenTelemetry exporter: {e}")
 
     def export_trace(self, trace_dict: Dict[str, Any]):
-        if not self.enabled or not self.client:
+        if not self.enabled or not self.tracer:
             return
         try:
-            from datetime import datetime
-            st = trace_dict.get("start_time")
-            trace = self.client.trace(
-                id=trace_dict.get("trace_id"),
-                name=f"nicu_agent_{trace_dict.get('user_query', '')[:30]}",
-                user_id=trace_dict.get("baby_id"),
-                input={"query": trace_dict.get("user_query")},
-                output={"status": trace_dict.get("status")},
-                metadata=trace_dict.get("metrics", {}),
-                timestamp=datetime.fromtimestamp(st) if isinstance(st, (int, float)) else None,
+            import uuid
+            from opentelemetry import trace
+            from opentelemetry.trace import SpanContext, TraceFlags, NonRecordingSpan
+
+            trace_id_hex = trace_dict.get("trace_id") or uuid.uuid4().hex
+            # Ensure valid 32-hex format
+            if len(trace_id_hex) < 32:
+                trace_id_hex = trace_id_hex.zfill(32)
+            elif len(trace_id_hex) > 32:
+                trace_id_hex = trace_id_hex[:32]
+
+            span_id_hex = uuid.uuid4().hex[:16]
+            remote_ctx = SpanContext(
+                trace_id=int(trace_id_hex, 16),
+                span_id=int(span_id_hex, 16),
+                is_remote=True,
+                trace_flags=TraceFlags(0x01),
             )
-            for s in trace_dict.get("spans", []):
-                span_st = s.get("start_time")
-                span_et = s.get("end_time")
-                trace.span(
-                    id=s.get("span_id"),
-                    name=s.get("name"),
-                    start_time=datetime.fromtimestamp(span_st) if isinstance(span_st, (int, float)) else None,
-                    end_time=datetime.fromtimestamp(span_et) if isinstance(span_et, (int, float)) else None,
-                    metadata=s.get("attributes", {}),
-                )
-            if hasattr(self.client, "flush"):
-                self.client.flush()
+            parent_ctx = trace.set_span_in_context(NonRecordingSpan(remote_ctx))
+
+            query = trace_dict.get("user_query", "")
+            baby_id = trace_dict.get("baby_id", "baby_unknown")
+            trace_name = f"nicu_agent_{query[:30]}" if query else "nicu_agent_query"
+
+            with self.tracer.start_as_current_span(trace_name, context=parent_ctx) as root:
+                root.set_attribute("user.id", baby_id)
+                root.set_attribute("baby_id", baby_id)
+                root.set_attribute("user_query", query)
+                root.set_attribute("status", trace_dict.get("status", "OK"))
+
+                for s in trace_dict.get("spans", []):
+                    span_name = s.get("name", "span")
+                    if span_name == "request":
+                        continue
+                    with self.tracer.start_as_current_span(span_name) as child:
+                        for k, v in s.get("attributes", {}).items():
+                            if isinstance(v, (str, bool, int, float)):
+                                child.set_attribute(str(k), v)
+                        child.set_attribute("span_status", s.get("status", "OK"))
+
+            if self.provider:
+                self.provider.force_flush()
         except Exception as e:
             import logging
             logging.getLogger("tracer").warning(f"Langfuse export_trace error: {e}")
 
     def export_ragas_scores(self, trace_id: str, ragas_scores: Dict[str, Any]):
-        if not self.enabled or not self.client:
+        if not self.enabled or not self.pk or not self.sk:
             return
         try:
+            import base64
+            import urllib.request
+            auth = base64.b64encode(f"{self.pk}:{self.sk}".encode()).decode()
             gen = ragas_scores.get("generation", {})
             ret = ragas_scores.get("retrieval", {})
-            for name, val in [
+            scores_to_send = [
                 ("ragas.faithfulness", gen.get("faithfulness")),
                 ("ragas.harm_prevention", gen.get("harm_prevention_score")),
                 ("ragas.answer_relevance", gen.get("answer_relevance")),
                 ("ragas.context_relevance", ret.get("context_relevance")),
                 ("ragas.composite", ragas_scores.get("overall_ragas_score")),
-            ]:
+            ]
+            for name, val in scores_to_send:
                 if val is not None:
-                    self.client.score(trace_id=trace_id, name=name, value=float(val))
-            if hasattr(self.client, "flush"):
-                self.client.flush()
+                    payload = {
+                        "traceId": trace_id,
+                        "name": name,
+                        "value": float(val),
+                        "dataType": "NUMERIC",
+                        "comment": "Evaluated by NICU Care RAGAS engine",
+                    }
+                    req = urllib.request.Request(
+                        f"{self.host}/api/public/scores",
+                        data=json.dumps(payload).encode("utf-8"),
+                        headers={"Authorization": f"Basic {auth}", "Content-Type": "application/json"},
+                    )
+                    with urllib.request.urlopen(req, timeout=5) as resp:
+                        pass
         except Exception as e:
             import logging
             logging.getLogger("tracer").warning(f"Langfuse export_ragas_scores error: {e}")
