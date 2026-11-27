@@ -407,26 +407,29 @@ class NotificationService:
         if channel in [NotificationChannel.SMS, NotificationChannel.BOTH] and prefs.sms_enabled:
             twilio_sid = os.getenv("TWILIO_ACCOUNT_SID")
             fast2sms_key = os.getenv("FAST2SMS_API_KEY")
-            if twilio_sid:
+            raw_phone = str(phone or "").strip()
+
+            if twilio_sid and raw_phone:
                 try:
-                    # If Twilio credentials provided in env
                     import requests
                     auth_token = os.getenv("TWILIO_AUTH_TOKEN")
                     from_num = os.getenv("TWILIO_PHONE_NUMBER")
+                    # Ensure E.164 international format
+                    target_phone = raw_phone if raw_phone.startswith("+") else f"+{raw_phone}"
                     url = f"https://api.twilio.com/2010-04-01/Accounts/{twilio_sid}/Messages.json"
                     r = requests.post(
                         url,
-                        data={"From": from_num, "To": phone, "Body": templates["sms"]},
+                        data={"From": from_num, "To": target_phone, "Body": templates["sms"]},
                         auth=(twilio_sid, auth_token),
                         timeout=5
                     )
-                    sms_status = "SENT" if r.status_code in [200, 201] else f"FAILED: {r.status_code}"
+                    sms_status = "SENT" if r.status_code in [200, 201] else f"FAILED: {r.status_code} ({r.text[:60]})"
                 except Exception as e:
                     sms_status = f"FAILED: {str(e)[:60]}"
-            elif fast2sms_key:
+            elif fast2sms_key and raw_phone:
                 try:
                     import requests
-                    clean_phone = re.sub(r'[^0-9]', '', phone)
+                    clean_phone = re.sub(r'[^0-9]', '', raw_phone)
                     if clean_phone.startswith("91") and len(clean_phone) > 10:
                         clean_phone = clean_phone[2:]
                     url = "https://www.fast2sms.com/dev/bulkV2"
@@ -442,7 +445,7 @@ class NotificationService:
                         "Content-Type": "application/x-www-form-urlencoded"
                     }
                     r = requests.post(url, data=payload, headers=headers, timeout=5)
-                    sms_status = "SENT" if r.status_code == 200 and r.json().get("return") is True else f"FAILED: {r.text[:50]}"
+                    sms_status = "SENT" if (r.status_code == 200 and r.json().get("return") is True) else f"FAILED: {r.text[:50]}"
                 except Exception as e:
                     sms_status = f"FAILED: {str(e)[:60]}"
             else:

@@ -67,10 +67,25 @@ class ReminderScheduler:
         self.check_count += 1
         dispatched_events = []
 
-        baby_ids = [force_baby_id] if force_baby_id else ["baby_liam_01"]
+        # Dynamically discover all active babies and parents from registered users
+        from .auth_service import auth_service
+        all_users = auth_service.get_all_users()
+        active_targets = []
+        if force_baby_id:
+            active_targets.append({"baby_id": force_baby_id, "user_id": "usr_mother_01"})
+        else:
+            for u in all_users.values():
+                b_ids = u.get("assigned_baby_ids") or []
+                for bid in b_ids:
+                    active_targets.append({"baby_id": bid, "user_id": u.get("id", "usr_mother_01")})
 
-        for baby_id in baby_ids:
-            prefs = notification_service.get_preferences(user_id="usr_mother_01")
+        if not active_targets:
+            active_targets = [{"baby_id": "baby_liam_01", "user_id": "usr_mother_01"}]
+
+        for target in active_targets:
+            baby_id = target["baby_id"]
+            user_id = target["user_id"]
+            prefs = notification_service.get_preferences(user_id=user_id)
             if not (prefs.email_enabled or prefs.sms_enabled):
                 continue
 

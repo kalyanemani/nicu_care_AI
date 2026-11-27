@@ -75,6 +75,10 @@ class AuthService:
         except Exception:
             return {}
 
+    def get_all_users(self) -> Dict[str, Dict[str, Any]]:
+        """Returns all registered users."""
+        return self._load_users()
+
     def _save_users(self, users: Dict[str, Dict[str, Any]]) -> None:
         try:
             self.users_file.write_text(json.dumps(users, indent=2), encoding="utf-8")
