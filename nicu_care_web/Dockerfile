@@ -2,8 +2,6 @@
 FROM node:20-alpine AS builder
 WORKDIR /app
 
-ENV VITE_API_BASE=https://nicu-care-backend-612313214599.us-central1.run.app/api/v1
-
 COPY package*.json ./
 RUN npm install
 
