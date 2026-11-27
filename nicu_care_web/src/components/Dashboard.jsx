@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { Clock, CheckCircle2, AlertCircle, Droplet, Heart, Scale, ShieldAlert, Plus, RefreshCw, Zap, Edit2, Check, X } from "lucide-react";
+import { Clock, CheckCircle2, AlertCircle, Droplet, Heart, Scale, ShieldAlert, Plus, RefreshCw, Zap, Edit2, Check, X, Settings, Calendar, Building2, Stethoscope } from "lucide-react";
 import { babyApi, careLogApi, authApi } from "../api";
+import BabyProfileModal from "./BabyProfileModal";
 
 export default function Dashboard({ user, baby, onUpdateBaby, onOpenReminders }) {
   const babyName = baby?.name || user?.baby_name || "Baby";
@@ -15,6 +16,7 @@ export default function Dashboard({ user, baby, onUpdateBaby, onOpenReminders })
   const [isEditingBaby, setIsEditingBaby] = useState(false);
   const [newBabyName, setNewBabyName] = useState("");
   const [savingBabyName, setSavingBabyName] = useState(false);
+  const [showProfileModal, setShowProfileModal] = useState(false);
 
   async function handleSaveBabyName() {
     if (!newBabyName.trim()) return;
@@ -207,7 +209,7 @@ export default function Dashboard({ user, baby, onUpdateBaby, onOpenReminders })
                 </button>
               </div>
             ) : (
-              <p style={{ fontSize: "14px", color: "#64748b", margin: 0, display: "flex", alignItems: "center", gap: "8px" }}>
+              <p style={{ fontSize: "14px", color: "#64748b", margin: 0, display: "flex", alignItems: "center", gap: "8px", flexWrap: "wrap" }}>
                 Here is Baby <strong style={{ color: "#0f766e", fontWeight: "700" }}>{babyName}</strong>'s routine and clinical targets for today.
                 <button
                   onClick={() => { setNewBabyName(babyName === "Baby" ? "" : babyName); setIsEditingBaby(true); }}
@@ -226,6 +228,25 @@ export default function Dashboard({ user, baby, onUpdateBaby, onOpenReminders })
                   title="Update Baby's Name"
                 >
                   <Edit2 size={11} /> Edit Name
+                </button>
+                <button
+                  onClick={() => setShowProfileModal(true)}
+                  style={{
+                    background: "#f0fdfa",
+                    border: "1px solid #0f766e",
+                    borderRadius: "6px",
+                    padding: "2px 8px",
+                    color: "#0f766e",
+                    cursor: "pointer",
+                    fontSize: "11px",
+                    fontWeight: "700",
+                    display: "inline-flex",
+                    alignItems: "center",
+                    gap: "4px"
+                  }}
+                  title="View and update complete baby clinical profile"
+                >
+                  <Settings size={11} /> Baby Profile
                 </button>
               </p>
             )}
@@ -307,6 +328,83 @@ export default function Dashboard({ user, baby, onUpdateBaby, onOpenReminders })
           {logSuccess}
         </div>
       )}
+
+      {/* 0. PRETERM INFANT CLINICAL PROFILE CARD */}
+      <div style={{
+        background: "white",
+        border: "1px solid #e2e8f0",
+        borderRadius: "14px",
+        padding: "16px 20px",
+        marginBottom: "20px",
+        boxShadow: "0 1px 3px rgba(0,0,0,0.03)",
+        display: "flex",
+        justifyContent: "space-between",
+        alignItems: "center",
+        flexWrap: "wrap",
+        gap: "14px"
+      }}>
+        <div style={{ display: "flex", alignItems: "center", gap: "14px", flexWrap: "wrap" }}>
+          <div style={{
+            width: "44px",
+            height: "44px",
+            borderRadius: "10px",
+            background: "#f0fdfa",
+            border: "1px solid #ccfbf1",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            color: "#0f766e"
+          }}>
+            <Heart size={22} fill="#0f766e" />
+          </div>
+          <div>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "wrap" }}>
+              <span style={{ fontSize: "16px", fontWeight: "800", color: "#0f172a" }}>
+                Baby {babyName}
+              </span>
+              <span style={{ background: "#e0f2fe", color: "#0369a1", fontSize: "11px", fontWeight: "700", padding: "2px 8px", borderRadius: "10px" }}>
+                {baby?.gestational_age_weeks || 29}w {baby?.gestational_age_days || 0}d GA at Birth
+              </span>
+              <span style={{ background: "#ecfdf5", color: "#065f46", fontSize: "11px", fontWeight: "700", padding: "2px 8px", borderRadius: "10px" }}>
+                {baby?.sex ? (baby.sex === "male" ? "Boy" : "Girl") : "Preterm Infant"}
+              </span>
+              {baby?.blood_type && (
+                <span style={{ background: "#fef2f2", color: "#b91c1c", fontSize: "11px", fontWeight: "700", padding: "2px 8px", borderRadius: "10px" }}>
+                  🩸 {baby.blood_type}
+                </span>
+              )}
+            </div>
+            <div style={{ fontSize: "12px", color: "#64748b", marginTop: "4px", display: "flex", gap: "14px", flexWrap: "wrap" }}>
+              <span>📅 DOB: <b>{baby?.date_of_birth || "Recorded"}</b></span>
+              <span>⚖️ Birth: <b>{baby?.birth_weight_grams ? `${baby.birth_weight_grams}g` : "1800g"}</b></span>
+              <span>🏥 Discharge: <b>{baby?.discharge_weight_grams ? `${baby.discharge_weight_grams}g` : "2400g"}</b></span>
+              <span>🩺 Hospital: <b>{baby?.discharge_hospital || "Rainbow Hospital"}</b></span>
+              <span>👨‍⚕️ Doctor: <b>{baby?.pediatrician_name || "Specialist"}</b></span>
+            </div>
+          </div>
+        </div>
+
+        <button
+          onClick={() => setShowProfileModal(true)}
+          style={{
+            background: "#0f766e",
+            color: "white",
+            border: "none",
+            padding: "8px 16px",
+            borderRadius: "8px",
+            fontSize: "12px",
+            fontWeight: "700",
+            cursor: "pointer",
+            display: "flex",
+            alignItems: "center",
+            gap: "6px",
+            boxShadow: "0 2px 4px rgba(15,118,110,0.15)"
+          }}
+        >
+          <Edit2 size={13} />
+          Edit Full Profile
+        </button>
+      </div>
 
       {/* 1. HERO CARD: DYNAMIC "WHAT SHOULD I DO NEXT?" CALCULATED FROM ENTERED TIMES */}
       <div style={{
@@ -917,6 +1015,15 @@ export default function Dashboard({ user, baby, onUpdateBaby, onOpenReminders })
           </div>
         </div>
       )}
+      {/* Baby Profile Full Clinical Details Modal */}
+      <BabyProfileModal
+        isOpen={showProfileModal}
+        onClose={() => setShowProfileModal(false)}
+        baby={baby}
+        onProfileUpdated={(updatedBaby) => {
+          if (onUpdateBaby) onUpdateBaby(updatedBaby);
+        }}
+      />
     </div>
   );
 }

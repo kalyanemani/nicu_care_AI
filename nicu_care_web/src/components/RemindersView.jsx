@@ -119,6 +119,7 @@ export default function RemindersView({ user, baby }) {
     try {
       const payload = {
         baby_id: babyId,
+        baby_name: baby?.name || user?.baby_name || "Baby",
         user_id: user?.id || "usr_mother_01",
         category: testCategory,
         channel: testChannel,
@@ -496,13 +497,34 @@ export default function RemindersView({ user, baby }) {
           {testResult ? (
             <div style={{ marginTop: "14px" }}>
               <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: "8px" }}>
-                <span style={{ fontSize: "12px", fontWeight: "700", color: "#059669" }}>
-                  ✓ Delivery Confirmed ({testResult.notification_id})
-                </span>
+                {testResult.sms_status === "SENT" ? (
+                  <span style={{ fontSize: "12px", fontWeight: "700", color: "#059669" }}>
+                    ✓ Live SMS Delivered ({testResult.notification_id})
+                  </span>
+                ) : (
+                  <span style={{ fontSize: "12px", fontWeight: "700", color: "#d97706", background: "#fef3c7", padding: "2px 8px", borderRadius: "6px" }}>
+                    🧪 Sandbox Simulation Logged ({testResult.notification_id})
+                  </span>
+                )}
                 <span style={{ fontSize: "11px", color: "#64748b" }}>
                   {testResult.timestamp}
                 </span>
               </div>
+
+              {testResult.sms_status === "SIMULATED" && (
+                <div style={{
+                  background: "#fffbeb",
+                  border: "1px solid #fef3c7",
+                  padding: "8px 12px",
+                  borderRadius: "8px",
+                  fontSize: "11px",
+                  color: "#92400e",
+                  lineHeight: 1.4,
+                  marginBottom: "10px"
+                }}>
+                  ℹ️ <b>Sandbox Simulation Mode:</b> Live cellular carrier SMS was not dispatched because Twilio or SMS Gateway credentials are not set in the backend environment. The reminder payload was audited and logged to your history.
+                </div>
+              )}
 
               {/* Mobile SMS Preview */}
               <div style={{
@@ -513,10 +535,10 @@ export default function RemindersView({ user, baby }) {
                 fontSize: "12px",
                 lineHeight: 1.4,
                 marginBottom: "10px",
-                borderLeft: "4px solid #10b981"
+                borderLeft: testResult.sms_status === "SENT" ? "4px solid #10b981" : "4px solid #f59e0b"
               }}>
                 <div style={{ fontSize: "10px", color: "#94a3b8", marginBottom: "4px" }}>
-                  📱 SMS Delivered to {testResult.recipient_phone}:
+                  {testResult.sms_status === "SENT" ? "📱 Carrier SMS Delivered to" : "📱 Simulated SMS Preview for"} {testResult.recipient_phone}:
                 </div>
                 {testResult.preview_sms}
               </div>
@@ -524,7 +546,7 @@ export default function RemindersView({ user, baby }) {
               {/* HTML Email Snippet */}
               <div style={{ background: "#f8fafc", padding: "10px", borderRadius: "8px", border: "1px solid #e2e8f0", fontSize: "12px" }}>
                 <div style={{ fontSize: "11px", fontWeight: "600", color: "#475569", marginBottom: "4px" }}>
-                  📧 HTML Care Card to {testResult.recipient_email}
+                  📧 {testResult.email_status === "SENT" ? "Carrier Email Dispatched to" : "HTML Care Card Preview for"} {testResult.recipient_email}
                 </div>
                 <div style={{ fontSize: "11px", color: "#64748b" }}>
                   Target Volume: <b>{prefs.feeding_volume_range || manualVolumeInput + ' mL'}</b> | Frequency: <b>{isHourly ? "Hourly" : `${prefs.feeding_interval_hours}h`}</b>

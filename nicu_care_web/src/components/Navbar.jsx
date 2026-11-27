@@ -1,7 +1,9 @@
-import React from "react";
-import { Phone, Heart, User, LogOut, Bell, Calendar, Home, CheckCircle } from "lucide-react";
+import React, { useState } from "react";
+import { Phone, Heart, User, LogOut, Bell, Calendar, Home, CheckCircle, Settings } from "lucide-react";
+import BabyProfileModal from "./BabyProfileModal";
 
-export default function Navbar({ user, baby, onOpenAuth, onLogout, activeTab, setActiveTab }) {
+export default function Navbar({ user, baby, onUpdateBaby, onOpenAuth, onLogout, activeTab, setActiveTab }) {
+  const [showProfileModal, setShowProfileModal] = useState(false);
   return (
     <header style={{
       background: "#ffffff",
@@ -133,8 +135,26 @@ export default function Navbar({ user, baby, onOpenAuth, onLogout, activeTab, se
                   return typeof name === "string" ? name.split(" ")[0] : "Parent";
                 })()}
               </div>
-              <div style={{ fontSize: "11px", color: "#64748b" }}>
-                Baby {baby?.name || user?.baby_name || "Baby"}
+              <div style={{ marginTop: "2px" }}>
+                <button
+                  onClick={() => setShowProfileModal(true)}
+                  style={{
+                    background: "#f0fdfa",
+                    border: "1px solid #ccfbf1",
+                    borderRadius: "12px",
+                    padding: "2px 8px",
+                    fontSize: "11px",
+                    fontWeight: "700",
+                    color: "#0f766e",
+                    cursor: "pointer",
+                    display: "inline-flex",
+                    alignItems: "center",
+                    gap: "4px"
+                  }}
+                  title="Click to view & edit baby profile"
+                >
+                  👶 Baby {baby?.name || user?.baby_name || "Baby"} ⚙️
+                </button>
               </div>
             </div>
             <button
@@ -174,6 +194,16 @@ export default function Navbar({ user, baby, onOpenAuth, onLogout, activeTab, se
           </button>
         )}
       </div>
+
+      {/* Baby Profile Modal */}
+      <BabyProfileModal
+        isOpen={showProfileModal}
+        onClose={() => setShowProfileModal(false)}
+        baby={baby}
+        onProfileUpdated={(updatedBaby, updatedUser) => {
+          if (onUpdateBaby) onUpdateBaby(updatedBaby);
+        }}
+      />
     </header>
   );
 }

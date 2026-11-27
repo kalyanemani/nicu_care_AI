@@ -66,15 +66,25 @@ export const authApi = {
       method: "PUT",
       body: JSON.stringify({ baby_name: babyName }),
     }),
+  updateBabyProfile: (profileData) =>
+    request("/auth/baby-profile", {
+      method: "PUT",
+      body: JSON.stringify(profileData),
+    }),
 };
 
 // ── Baby & Timeline Services ─────────────────────────────────────────
 export const babyApi = {
-  getProfile: (babyId = "baby_liam_01") => request(`/baby/${babyId}/profile`),
-  getFeedingTargets: (babyId = "baby_liam_01") => request(`/baby/${babyId}/feeding-targets`),
-  getTimeline: (babyId = "baby_liam_01") => request(`/timeline/${babyId}`),
-  getKmcSummary: (babyId = "baby_liam_01") => request(`/timeline/kmc/summary/${babyId}`),
-  getNextSchedule: (babyId = "baby_liam_01") => request(`/timeline/${babyId}/next-schedule`),
+  getProfile: (babyId) => request(`/baby/${babyId || "baby_default"}/profile`),
+  updateProfile: (babyId, profileData) =>
+    request(`/baby/${babyId || "baby_default"}/profile`, {
+      method: "PUT",
+      body: JSON.stringify(profileData),
+    }),
+  getFeedingTargets: (babyId) => request(`/baby/${babyId || "baby_default"}/feeding-targets`),
+  getTimeline: (babyId) => request(`/timeline/${babyId || "baby_default"}`),
+  getKmcSummary: (babyId) => request(`/timeline/kmc/summary/${babyId || "baby_default"}`),
+  getNextSchedule: (babyId) => request(`/timeline/${babyId || "baby_default"}/next-schedule`),
 };
 
 // ── Care Logging Services ────────────────────────────────────────────

@@ -40,7 +40,7 @@ export default function ChatbotSlider({ baby }) {
   const [inputValue, setInputValue] = useState("");
   const [isListening, setIsListening] = useState(false);
   const [loading, setLoading] = useState(false);
-  const [selectedModel, setSelectedModel] = useState("qwen2.5:3b");
+  const [selectedModel, setSelectedModel] = useState("gemini-1.5-flash");
   const messagesEndRef = useRef(null);
 
   // Speech Recognition Setup
@@ -338,16 +338,21 @@ export default function ChatbotSlider({ baby }) {
                 value={selectedModel}
                 onChange={(e) => setSelectedModel(e.target.value)}
                 style={{
-                  padding: "3px 6px",
+                  padding: "3px 8px",
                   borderRadius: "6px",
-                  border: "1px solid #cbd5e1",
+                  border: "1px solid #0f766e",
                   fontSize: "11px",
-                  background: "white",
-                  outline: "none"
+                  fontWeight: "600",
+                  color: "#0f766e",
+                  background: "#f0fdfa",
+                  outline: "none",
+                  cursor: "pointer"
                 }}
               >
-                <option value="qwen2.5:3b">⚡ Qwen 2.5</option>
-                <option value="medgemma1.5:latest">🩺 MedGemma 1.5</option>
+                <option value="gemini-1.5-flash">✨ Gemini 1.5 Flash (GCP Cloud)</option>
+                <option value="gemini-2.0-flash">🚀 Gemini 2.0 Flash (GCP Cloud)</option>
+                <option value="medgemma1.5:latest">🩺 MedGemma 1.5 (Pediatric Clinical)</option>
+                <option value="qwen2.5:3b">⚡ Qwen 2.5 (Fast Local)</option>
               </select>
             </div>
 
@@ -461,7 +466,17 @@ export default function ChatbotSlider({ baby }) {
                         fontSize: "11px",
                         color: "#64748b"
                       }}>
-                        <span>{m.modelUsed ? `Model: ${m.modelUsed.split(":")[0]}` : "AAP / WHO Verified"}</span>
+                        <span>
+                          {(() => {
+                            const raw = m.modelUsed || "";
+                            if (raw.toLowerCase().includes("gemini-2")) return "🚀 Gemini 2.0 Flash (GCP)";
+                            if (raw.toLowerCase().includes("gemini")) return "✨ Gemini 1.5 Flash (GCP)";
+                            if (raw.toLowerCase().includes("medgemma")) return "🩺 MedGemma 1.5";
+                            if (raw.toLowerCase().includes("qwen")) return "⚡ Qwen 2.5";
+                            if (raw.toLowerCase().includes("protocol") || raw.toLowerCase().includes("mcp")) return "📋 AAP / WHO Clinical Protocol";
+                            return raw ? `Model: ${raw.split(":")[0]}` : "AAP / WHO Verified";
+                          })()}
+                        </span>
                         {/* Optional Manual Read-Aloud Button */}
                         <button
                           onClick={() => speakText(m.voice || m.text, m.language || selectedLanguage)}

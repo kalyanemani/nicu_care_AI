@@ -125,19 +125,28 @@ class NotificationService:
     def generate_templates(
         self,
         category: ReminderCategory,
-        baby_name: str = "Liam",
+        baby_name: str = "Your Baby",
         details: Optional[Dict[str, Any]] = None
     ) -> Dict[str, str]:
         """Generates clinically grounded Subject, SMS text, and HTML email body."""
-        bname = baby_name.capitalize()
+        raw_name = (baby_name or "Your Baby").strip()
+        # Prevent awkward "Baby Baby X" or "Baby Your baby's"
+        if raw_name.lower().startswith("baby "):
+            display_name = raw_name
+        elif raw_name.lower() in ["your baby", "the baby", "infant"]:
+            display_name = "Your Baby"
+        else:
+            display_name = f"Baby {raw_name.capitalize()}"
+
+        short_name = raw_name.replace("Baby ", "").replace("baby ", "").capitalize()
         details = details or {}
         time_now = datetime.now().strftime("%I:%M %p")
 
         if category == ReminderCategory.FEEDING:
             vol_range = details.get("feeding_volume_range") or (f"{details.get('target_volume_ml', 50):.0f} mL" if isinstance(details.get("target_volume_ml"), (int, float)) else str(details.get("target_volume_ml", "45–54 mL")))
-            subject = f"🍼 [NICU Care Alert] Time for Baby {bname}'s Scheduled Feed ({vol_range})"
+            subject = f"🍼 [NICU Care Alert] Time for {display_name}'s Scheduled Feed ({vol_range})"
             sms = (
-                f"[NICU Alert] Time for Baby {bname}'s {time_now} Feed! "
+                f"[NICU Alert] Time for {display_name}'s {time_now} Feed! "
                 f"Target: {vol_range} fortified breast milk. Paced upright feed, burp frequently. "
                 f"24/7 NICU Helpline: 040-49694969"
             )
@@ -170,7 +179,7 @@ class NotificationService:
   </div>
   <div class="content">
     <div class="alert-pill">⏰ Interval Target ({time_now})</div>
-    <p>Hello <strong>Ananya</strong>, it is time for <strong>Baby {bname}'s</strong> scheduled feeding.</p>
+    <p>Hello, it is time for <strong>{display_name}'s</strong> scheduled feeding.</p>
     
     <div class="box">
       <strong>Recommended Feed Volume Target:</strong> <span style="font-size: 18px; color: #0284c7; font-weight: bold;">{vol_range}</span> fortified breast milk (24 kcal/oz).
@@ -189,16 +198,16 @@ class NotificationService:
     </div>
   </div>
   <div class="footer">
-    Sent automatically by NICU HomeCare AI • Dedicated to Baby {bname}'s Growth & Thermal Stability
+    Sent automatically by NICU HomeCare AI • Dedicated to {display_name}'s Growth & Thermal Stability
   </div>
 </div>
 </body>
 </html>"""
 
         elif category == ReminderCategory.KMC:
-            subject = f"🦘 [NICU Care Alert] Kangaroo Mother Care (Skin-to-Skin) Session for {bname}"
+            subject = f"🦘 [NICU Care Alert] Kangaroo Mother Care (Skin-to-Skin) Session for {display_name}"
             sms = (
-                f"[NICU Alert] Time for Baby {bname}'s Skin-to-Skin KMC Session! "
+                f"[NICU Alert] Time for {display_name}'s Skin-to-Skin KMC Session! "
                 f"WHO recommends min 60 continuous minutes upright on bare chest. "
                 f"Keep room at 22-24°C. Helpline: 040-49694969"
             )
@@ -222,7 +231,7 @@ class NotificationService:
     <p>RAINBOW CHILDREN'S HOSPITAL • THERMAL CARE</p>
   </div>
   <div class="content">
-    <p>Dear <strong>Ananya</strong>, it is time for <strong>Baby {bname}'s</strong> daily Kangaroo Mother Care session.</p>
+    <p>Hello, it is time for <strong>{display_name}'s</strong> daily Kangaroo Mother Care session.</p>
     <div class="box">
       <strong>Target Duration:</strong> Minimum 60 continuous minutes (WHO Clinical Standard).
     </div>
@@ -242,9 +251,9 @@ class NotificationService:
         elif category == ReminderCategory.MEDICATION:
             med_name = details.get("med_name", "Vitamin D3 Drops (400 IU)")
             dose = details.get("dose", "1.0 mL oral syringe")
-            subject = f"💊 [NICU Care Alert] Prescribed Medication Reminder: {med_name}"
+            subject = f"💊 [NICU Care Alert] Prescribed Medication Reminder: {med_name} for {display_name}"
             sms = (
-                f"[NICU Alert] Medication Due for Baby {bname}: {med_name} ({dose}). "
+                f"[NICU Alert] Medication Due for {display_name}: {med_name} ({dose}). "
                 f"Administer with measured oral syringe. Do not mix into hot milk. "
                 f"Questions? Call NICU: 040-49694969"
             )
@@ -267,6 +276,7 @@ class NotificationService:
   </div>
   <div class="content">
     <div class="box">
+      <strong>Patient:</strong> {display_name}<br>
       <strong>Medication:</strong> {med_name}<br>
       <strong>Prescribed Dose:</strong> {dose}
     </div>
@@ -277,9 +287,9 @@ class NotificationService:
 </html>"""
 
         else:  # SYSTEM_TEST or GENERAL
-            subject = f"🔔 [NICU Companion] Test Reminder Notification for Baby {bname}"
+            subject = f"🔔 [NICU Companion] Test Reminder Notification for {display_name}"
             sms = (
-                f"[NICU Alert] Test Notification for Baby {bname}! "
+                f"[NICU Alert] Test Notification for {display_name}! "
                 f"Your registered email & mobile are connected and receiving interval care alerts. "
                 f"Rainbow NICU Helpline: 040-49694969"
             )
@@ -297,8 +307,8 @@ class NotificationService:
   <div class="header">
     <h2>🔔 NICU HomeCare Notification Test Successful</h2>
   </div>
-  <p>Hello <strong>Ananya</strong>,</p>
-  <p>This is a confirmed test of the NICU Care Companion interval reminder system for <strong>Baby {bname}</strong>.</p>
+  <p>Hello,</p>
+  <p>This is a confirmed test of the NICU Care Companion interval reminder system for <strong>{display_name}</strong>.</p>
   <p>You will receive automated reminders at regular intervals for:</p>
   <ul>
     <li>Scheduled feeds (every 2.5–3 hours)</li>
@@ -320,24 +330,48 @@ class NotificationService:
     def send_notification(
         self,
         category: ReminderCategory,
-        baby_id: str = "baby_liam_01",
+        baby_id: str = "baby_default",
         user_id: str = "usr_mother_01",
         channel: NotificationChannel = NotificationChannel.BOTH,
         recipient_email: Optional[str] = None,
         recipient_phone: Optional[str] = None,
-        details: Optional[Dict[str, Any]] = None
+        details: Optional[Dict[str, Any]] = None,
+        baby_name: Optional[str] = None,
     ) -> NotificationRecord:
         """
         Dispatches notification via Email and/or SMS.
-        Uses real SMTP / SMS gateway if credentials exist; otherwise executes
+        Uses real SMTP / Twilio / Fast2SMS gateway if credentials exist; otherwise executes
         high-fidelity offline sandbox simulation with full delivery audit trail.
         """
         prefs = self.get_preferences(user_id)
         email = recipient_email or prefs.email
         phone = recipient_phone or prefs.phone_number
 
-        baby_name = "Liam" if "liam" in baby_id.lower() else "your baby"
-        templates = self.generate_templates(category, baby_name=baby_name, details=details)
+        # Dynamically resolve real baby name
+        resolved_name = (baby_name or "").strip()
+        if not resolved_name or resolved_name.lower() in ["your baby", "baby", "liam"]:
+            try:
+                from .wiki_service import WikiService
+                wiki = WikiService()
+                prof = wiki.load_baby_profile_json(baby_id)
+                if prof and prof.name:
+                    resolved_name = prof.name
+            except Exception:
+                pass
+
+        if not resolved_name or resolved_name.lower() in ["your baby", "baby", "liam"]:
+            try:
+                from .auth_service import auth_service
+                u = auth_service.get_user_by_id(user_id)
+                if u and u.baby_name:
+                    resolved_name = u.baby_name
+            except Exception:
+                pass
+
+        if not resolved_name:
+            resolved_name = "Your Baby"
+
+        templates = self.generate_templates(category, baby_name=resolved_name, details=details)
 
         email_status = "SKIPPED"
         sms_status = "SKIPPED"
@@ -372,6 +406,7 @@ class NotificationService:
         # B. SMS Dispatch
         if channel in [NotificationChannel.SMS, NotificationChannel.BOTH] and prefs.sms_enabled:
             twilio_sid = os.getenv("TWILIO_ACCOUNT_SID")
+            fast2sms_key = os.getenv("FAST2SMS_API_KEY")
             if twilio_sid:
                 try:
                     # If Twilio credentials provided in env
@@ -386,6 +421,28 @@ class NotificationService:
                         timeout=5
                     )
                     sms_status = "SENT" if r.status_code in [200, 201] else f"FAILED: {r.status_code}"
+                except Exception as e:
+                    sms_status = f"FAILED: {str(e)[:60]}"
+            elif fast2sms_key:
+                try:
+                    import requests
+                    clean_phone = re.sub(r'[^0-9]', '', phone)
+                    if clean_phone.startswith("91") and len(clean_phone) > 10:
+                        clean_phone = clean_phone[2:]
+                    url = "https://www.fast2sms.com/dev/bulkV2"
+                    payload = {
+                        "route": "q",
+                        "message": templates["sms"],
+                        "language": "english",
+                        "flash": 0,
+                        "numbers": clean_phone,
+                    }
+                    headers = {
+                        "authorization": fast2sms_key,
+                        "Content-Type": "application/x-www-form-urlencoded"
+                    }
+                    r = requests.post(url, data=payload, headers=headers, timeout=5)
+                    sms_status = "SENT" if r.status_code == 200 and r.json().get("return") is True else f"FAILED: {r.text[:50]}"
                 except Exception as e:
                     sms_status = f"FAILED: {str(e)[:60]}"
             else:

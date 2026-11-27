@@ -26,8 +26,17 @@ def clinical_guide_node(state: NICUAgentState) -> Dict[str, Any]:
         guide_span = tracer.start_span("agent.langgraph.clinical_guide", trace_id=trace_id, parent_span_id=parent_span_id)
 
     query = state.get("raw_query", "")
-    baby_id = state.get("baby_id", "baby_liam_01")
-    bname = "Liam" if "liam" in baby_id.lower() else "your baby"
+    baby_id = state.get("baby_id", "")
+    bname = "Your Baby"
+    if baby_id:
+        try:
+            from ...services.wiki_service import WikiService
+            wiki = WikiService()
+            p = wiki.load_baby_profile_json(baby_id)
+            if p and p.name:
+                bname = p.name
+        except Exception:
+            pass
     intent = state.get("intent", "CLINICAL_QA")
     tool_outputs = state.get("tool_outputs") or {}
     critique_notes = state.get("critique_notes")
@@ -178,17 +187,17 @@ def clinical_guide_node(state: NICUAgentState) -> Dict[str, Any]:
                     f"💡 **Guidance:**\n{action}\n\n"
                     f"📌 *Clinical Tip: Place baby upright on your bare chest in the frog position, head turned to one side with airway clear. Covering with a warm blanket supports temperature regulation.*"
                 )
-                voice = f"Liam's next kangaroo care session is scheduled at {time_str}."
+                voice = f"{bname}'s next kangaroo care session is scheduled at {time_str}."
             elif category == "FEEDING" or is_feed_query:
                 text = (
-                    f"🍼 **Next Scheduled Feed for {bname.capitalize()}:**\n\n"
+                    f"🍼 **Next Scheduled Feed for {bname}:**\n\n"
                     f"- **Scheduled Time:** **`{time_str}`** ({status})\n"
                     f"- **Feeding Plan:** {task_title}\n"
                     f"- **Target Volume:** 45–54 mL fortified breast milk (every 2.5–3 hours)\n\n"
                     f"💡 **Guidance:**\n{action}\n\n"
                     f"📌 *Clinical Tip: Feed upright with paced bottle feeding and frequent pauses for burping. Look for early feeding cues like rooting or lip smacking before crying begins.*"
                 )
-                voice = f"Liam's next feed is scheduled at {time_str}. The volume target is 45 to 54 mL."
+                voice = f"{bname}'s next feed is scheduled at {time_str}. The volume target is 45 to 54 mL."
             else:
                 text = (
                     f"🕒 **{headline}**\n\n"
@@ -202,6 +211,7 @@ def clinical_guide_node(state: NICUAgentState) -> Dict[str, Any]:
             return _return_with_span({
                 "draft_response": text,
                 "voice_summary": voice,
+                "selected_model": "AAP / WHO Clinical Protocol",
                 "retrieved_chunks": []
             })
 
@@ -225,6 +235,7 @@ def clinical_guide_node(state: NICUAgentState) -> Dict[str, Any]:
         return _return_with_span({
             "draft_response": text,
             "voice_summary": voice,
+            "selected_model": "AAP / WHO Clinical Protocol",
             "retrieved_chunks": []
         })
 
@@ -305,7 +316,7 @@ def clinical_guide_node(state: NICUAgentState) -> Dict[str, Any]:
         user_prompt = (
             f"Mother's Question: \"{query}\"\n\n"
             f"Authoritative Clinical Evidence ({source_name}):\n{evidence_snippet}\n\n"
-            f"Baby Liam's Clinical Context:\n{baby_ctx[:250] if baby_ctx else 'Preterm infant, 2400g, 36 weeks CGA'}\n\n"
+            f"Baby {bname}'s Clinical Context:\n{baby_ctx[:250] if baby_ctx else 'Preterm infant, 2400g, 36 weeks CGA'}\n\n"
             "Please provide a warm, direct, empathetic clinical response for the mother:"
         )
 
@@ -375,6 +386,7 @@ def clinical_guide_node(state: NICUAgentState) -> Dict[str, Any]:
         return _return_with_span({
             "draft_response": text,
             "voice_summary": voice,
+            "selected_model": "AAP / WHO Clinical Protocol",
             "retrieved_chunks": chunks
         })
 
@@ -388,5 +400,6 @@ def clinical_guide_node(state: NICUAgentState) -> Dict[str, Any]:
     return _return_with_span({
         "draft_response": default_text,
         "voice_summary": "Preterm infants thrive on consistent feeding intervals and skin-to-skin care.",
+        "selected_model": "AAP / WHO Clinical Protocol",
         "retrieved_chunks": []
     })

@@ -47,6 +47,7 @@ def send_test_reminder(req: SendTestReminderRequest):
         channel=req.channel,
         recipient_email=req.recipient_email,
         recipient_phone=req.recipient_phone,
+        baby_name=req.baby_name,
         details={
             "custom_note": req.custom_note,
             "target_volume_ml": req.target_volume_ml or 50.0,

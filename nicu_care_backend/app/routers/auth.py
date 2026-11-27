@@ -110,6 +110,54 @@ def update_baby(payload: Dict[str, str], current_user: UserResponse = Depends(ge
         raise HTTPException(status_code=400, detail=str(e))
 
 
+@router.put("/baby-profile")
+def update_user_baby_profile(
+    profile_data: Dict[str, Any],
+    current_user: UserResponse = Depends(get_current_user)
+):
+    """Updates the complete clinical profile for the authenticated user's registered baby."""
+    primary_baby = current_user.assigned_baby_ids[0] if current_user.assigned_baby_ids else None
+    if not primary_baby:
+        primary_baby = f"baby_{current_user.id.replace('usr_', '')}"
+        current_user.assigned_baby_ids = [primary_baby]
+
+    from ..services.wiki_service import WikiService
+    from ..models.baby import BabyProfile
+    wiki = WikiService()
+
+    existing = wiki.load_baby_profile_json(primary_baby)
+
+    merged = {
+        "baby_id": primary_baby,
+        "name": profile_data.get("name") or (existing.name if existing else current_user.baby_name or "Baby"),
+        "date_of_birth": profile_data.get("date_of_birth") or (str(existing.date_of_birth) if existing else str(datetime.now().date())),
+        "gestational_age_weeks": int(profile_data.get("gestational_age_weeks") or (existing.gestational_age_weeks if existing else 30)),
+        "gestational_age_days": int(profile_data.get("gestational_age_days") or (existing.gestational_age_days if existing else 0)),
+        "sex": profile_data.get("sex") or (existing.sex if existing else "male"),
+        "birth_weight_grams": int(profile_data.get("birth_weight_grams") or (existing.birth_weight_grams if existing else 1800)),
+        "discharge_weight_grams": int(profile_data.get("discharge_weight_grams") or (existing.discharge_weight_grams if existing else 2400)),
+        "discharge_date": profile_data.get("discharge_date") or (str(existing.discharge_date) if existing else str(datetime.now().date())),
+        "discharge_hospital": profile_data.get("discharge_hospital") or (existing.discharge_hospital if existing else "BirthRight Rainbow Vijayawada"),
+        "pediatrician_name": profile_data.get("pediatrician_name") or (existing.pediatrician_name if existing else "Dr. Preterm Specialist"),
+        "mother_preferred_language": profile_data.get("mother_preferred_language") or (existing.mother_preferred_language if existing else current_user.preferred_language or "en-US"),
+        "blood_type": profile_data.get("blood_type") or (existing.blood_type if existing else "O+")
+    }
+
+    baby_profile = BabyProfile(**merged)
+    wiki.save_baby_profile_json(baby_profile)
+    wiki.create_profile_from_baby(baby_profile)
+
+    auth_service.update_user_baby_name(current_user.id, baby_profile.name)
+    updated_user = auth_service.get_user_by_id(current_user.id)
+
+    return {
+        "user": updated_user,
+        "baby": baby_profile.model_dump(mode="json"),
+        "status": "success",
+        "message": f"Clinical profile for Baby {baby_profile.name} successfully updated."
+    }
+
+
 @router.get("/storage-and-memory-status")
 def get_architecture_status(baby_id: str = "baby_liam_01"):
     """

@@ -63,6 +63,33 @@ def get_baby_profile(baby_id: str):
     return baby
 
 
+@router.put("/{baby_id}/profile", response_model=BabyProfile)
+def update_baby_profile(baby_id: str, updated_profile: BabyProfile):
+    """
+    Updates the clinical profile for a registered baby.
+    Updates JSON profile, re-generates Baby Health Wiki (profile.md),
+    and synchronizes to Cloud Firestore.
+    """
+    if updated_profile.baby_id != baby_id:
+        updated_profile.baby_id = baby_id
+
+    wiki_service.save_baby_profile_json(updated_profile)
+    wiki_service.create_profile_from_baby(updated_profile)
+
+    # Sync with auth_service if any user is associated with this baby
+    try:
+        from ..services.auth_service import auth_service
+        users = auth_service._load_users()
+        for u in users.values():
+            if baby_id in u.get("assigned_baby_ids", []):
+                u["baby_name"] = updated_profile.name
+        auth_service._save_users(users)
+    except Exception:
+        pass
+
+    return updated_profile
+
+
 @router.get("/{baby_id}/corrected-age", response_model=CorrectedAge)
 def get_corrected_age(baby_id: str, as_of: Optional[date] = None):
     """

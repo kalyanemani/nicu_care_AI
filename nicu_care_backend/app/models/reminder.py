@@ -17,6 +17,7 @@ class NotificationChannel(str, Enum):
 class ReminderCategory(str, Enum):
     FEEDING = "FEEDING"
     KMC = "KMC_SESSION"
+    KMC_SESSION = "KMC_SESSION"
     MEDICATION = "MEDICATION"
     HYGIENE = "HYGIENE"
     MILESTONE = "MILESTONE"
@@ -67,7 +68,8 @@ class NotificationRecord(BaseModel):
 
 class SendTestReminderRequest(BaseModel):
     user_id: str = "usr_mother_01"
-    baby_id: str = "baby_liam_01"
+    baby_id: str = "baby_default"
+    baby_name: Optional[str] = None
     category: ReminderCategory = ReminderCategory.FEEDING
     recipient_email: Optional[str] = None
     recipient_phone: Optional[str] = None
