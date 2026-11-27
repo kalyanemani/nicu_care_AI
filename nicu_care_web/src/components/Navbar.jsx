@@ -129,12 +129,12 @@ export default function Navbar({ user, baby, onOpenAuth, onLogout, activeTab, se
             <div style={{ textAlign: "right" }}>
               <div style={{ fontSize: "13px", fontWeight: "600", color: "#0f172a" }}>
                 {(() => {
-                  const name = user?.full_name || user?.user?.full_name || user?.name || user?.email || "Ananya";
-                  return typeof name === "string" ? name.split(" ")[0] : "Ananya";
+                  const name = user?.full_name || user?.user?.full_name || user?.name || user?.email || "Parent";
+                  return typeof name === "string" ? name.split(" ")[0] : "Parent";
                 })()}
               </div>
               <div style={{ fontSize: "11px", color: "#64748b" }}>
-                Baby {baby?.name || user?.baby_name || "Liam"} (36w CGA)
+                Baby {baby?.name || user?.baby_name || "Baby"}
               </div>
             </div>
             <button

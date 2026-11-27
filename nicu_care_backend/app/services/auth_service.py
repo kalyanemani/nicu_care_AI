@@ -85,15 +85,16 @@ class AuthService:
             firestore_service.batch_save_users(users)
 
     def _ensure_default_users(self) -> None:
-        """Seeds default clinical, parent, and admin accounts if not present."""
+        """Seeds default demo clinician, parent, and admin accounts if not present."""
         users = self._load_users()
         defaults = [
             {
                 "id": "usr_mother_01",
                 "email": "mother_liam@example.com",
                 "password": "password123",
-                "full_name": "Ananya Sharma (Liam's Mother)",
+                "full_name": "Demo Mother",
                 "role": UserRole.PARENT.value,
+                "baby_name": "Liam",
                 "assigned_baby_ids": ["baby_liam_01"],
             },
             {
@@ -102,7 +103,8 @@ class AuthService:
                 "password": "doctor123",
                 "full_name": "Dr. K. Rao (Consultant Neonatologist)",
                 "role": UserRole.CLINICIAN.value,
-                "assigned_baby_ids": ["baby_liam_01", "vochetu1"],
+                "baby_name": "",
+                "assigned_baby_ids": ["baby_liam_01"],
             },
             {
                 "id": "usr_admin_01",
@@ -110,7 +112,8 @@ class AuthService:
                 "password": "admin123",
                 "full_name": "NICU Care System Administrator",
                 "role": UserRole.ADMIN.value,
-                "assigned_baby_ids": ["baby_liam_01", "vochetu1"],
+                "baby_name": "",
+                "assigned_baby_ids": ["baby_liam_01"],
             },
         ]
 
@@ -145,7 +148,7 @@ class AuthService:
         now_str = time.strftime("%Y-%m-%d %H:%M:%S")
 
         phone = reg.phone_number or "+919876543210"
-        registered_baby_name = (reg.baby_name or "Liam").strip()
+        registered_baby_name = (reg.baby_name or "Baby").strip()
         clean_slug = "".join(c for c in registered_baby_name.lower() if c.isalnum() or c == "_") or "baby"
         baby_id = f"baby_{clean_slug}_{uuid.uuid4().hex[:4]}"
 
@@ -268,17 +271,17 @@ class AuthService:
             full_name=user_record["full_name"],
             phone_number=user_record.get("phone_number", "+919876543210"),
             role=UserRole(user_record["role"]),
-            baby_name=user_record.get("baby_name") or "Liam",
-            assigned_baby_ids=user_record.get("assigned_baby_ids", ["baby_liam_01"]),
+            baby_name=user_record.get("baby_name") or "Baby",
+            assigned_baby_ids=user_record.get("assigned_baby_ids", []),
             created_at=user_record.get("created_at", now_str),
             last_login=now_str,
         )
 
-        primary_baby = user_resp.assigned_baby_ids[0] if user_resp.assigned_baby_ids else "baby_liam_01"
+        primary_baby = user_resp.assigned_baby_ids[0] if user_resp.assigned_baby_ids else ""
 
         # Capture storage and agentic memory architecture
-        storage_arch = db_architecture_service.get_storage_architecture(primary_baby)
-        memory_arch = db_architecture_service.get_agentic_memory_summary(primary_baby)
+        storage_arch = db_architecture_service.get_storage_architecture(primary_baby or "baby_default")
+        memory_arch = db_architecture_service.get_agentic_memory_summary(primary_baby or "baby_default")
 
         return AuthSessionResponse(
             access_token=token,
@@ -287,6 +290,60 @@ class AuthService:
             storage_architecture=storage_arch,
             agentic_memory_architecture=memory_arch,
         )
+
+    def update_user_baby_name(self, user_id: str, new_baby_name: str) -> UserResponse:
+        """Updates or sets the baby name for the authenticated user and creates/updates their baby profile."""
+        users = self._load_users()
+        target_email = None
+        user_record = None
+        for email, u in users.items():
+            if u.get("id") == user_id:
+                target_email = email
+                user_record = u
+                break
+        if not user_record:
+            raise ValueError("User not found.")
+
+        clean_name = new_baby_name.strip() or "Baby"
+        user_record["baby_name"] = clean_name
+
+        existing_baby_id = user_record.get("assigned_baby_ids", [])[0] if user_record.get("assigned_baby_ids") else None
+        if not existing_baby_id or existing_baby_id == "baby_liam_01":
+            clean_slug = "".join(c for c in clean_name.lower() if c.isalnum() or c == "_") or "baby"
+            existing_baby_id = f"baby_{clean_slug}_{uuid.uuid4().hex[:4]}"
+            user_record["assigned_baby_ids"] = [existing_baby_id]
+
+        try:
+            from .wiki_service import WikiService
+            from ..models.baby import BabyProfile
+            import datetime
+            wiki = WikiService()
+            b_profile = wiki.load_baby_profile_json(existing_baby_id)
+            if b_profile:
+                b_profile.name = clean_name
+            else:
+                b_profile = BabyProfile(
+                    baby_id=existing_baby_id,
+                    name=clean_name,
+                    date_of_birth=datetime.date.today() - datetime.timedelta(days=35),
+                    gestational_age_weeks=32,
+                    gestational_age_days=0,
+                    sex="male",
+                    birth_weight_grams=1800,
+                    discharge_weight_grams=2400,
+                    discharge_date=datetime.date.today() - datetime.timedelta(days=3),
+                    discharge_hospital="Post-NICU Pediatric Care Center",
+                    pediatrician_name="Dr. V. Sharma, Neonatologist",
+                    mother_preferred_language="en-US"
+                )
+            wiki.save_baby_profile_json(b_profile)
+            wiki.create_profile_from_baby(b_profile)
+        except Exception:
+            pass
+
+        users[target_email] = user_record
+        self._save_users(users)
+        return self.get_user_by_id(user_id)
 
     def get_user_by_id(self, user_id: str) -> Optional[UserResponse]:
         """Finds user by ID."""
@@ -299,11 +356,29 @@ class AuthService:
                     full_name=u["full_name"],
                     phone_number=u.get("phone_number", "+919876543210"),
                     role=UserRole(u["role"]),
-                    baby_name=u.get("baby_name") or "Liam",
+                    baby_name=u.get("baby_name") or "Baby",
                     assigned_baby_ids=u.get("assigned_baby_ids", []),
                     created_at=u.get("created_at", ""),
                     last_login=u.get("last_login"),
                 )
+        return None
+
+    def get_user_by_email(self, email: str) -> Optional[UserResponse]:
+        """Finds user by email."""
+        users = self._load_users()
+        u = users.get(email.lower())
+        if u:
+            return UserResponse(
+                id=u["id"],
+                email=u["email"],
+                full_name=u["full_name"],
+                phone_number=u.get("phone_number", "+919876543210"),
+                role=UserRole(u["role"]),
+                baby_name=u.get("baby_name") or "Baby",
+                assigned_baby_ids=u.get("assigned_baby_ids", []),
+                created_at=u.get("created_at", ""),
+                last_login=u.get("last_login"),
+            )
         return None
 
 

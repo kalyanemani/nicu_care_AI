@@ -75,7 +75,7 @@ class ErrorBoundary extends Component {
 
 export default function App() {
   const [user, setUser] = useState(null);
-  const [baby, setBaby] = useState({ name: "Liam", baby_id: "baby_liam_01" });
+  const [baby, setBaby] = useState(null);
   const [activeTab, setActiveTab] = useState("dashboard");
   const [checkingAuth, setCheckingAuth] = useState(true);
 
@@ -87,13 +87,16 @@ export default function App() {
         .then((profile) => {
           const userData = profile?.user || profile;
           setUser(userData);
-          if (profile?.baby) {
+          if (profile?.baby && profile.baby.name) {
             setBaby(profile.baby);
           } else if (userData?.baby_name) {
             setBaby({
               name: userData.baby_name,
-              baby_id: userData?.assigned_baby_ids?.[0] || "baby_liam_01"
+              baby_id: userData?.assigned_baby_ids?.[0] || ""
             });
+          } else {
+            const bId = userData?.assigned_baby_ids?.[0] || "";
+            setBaby({ name: "Baby", baby_id: bId });
           }
         })
         .catch(() => {
@@ -110,7 +113,15 @@ export default function App() {
   function handleLogout() {
     localStorage.removeItem("nicu_token");
     setUser(null);
-    setBaby({ name: "Liam", baby_id: "baby_liam_01" });
+    setBaby(null);
+  }
+
+  function handleUpdateBaby(newBabyData) {
+    if (!newBabyData) return;
+    setBaby((prev) => ({ ...(prev || {}), ...newBabyData }));
+    if (user && newBabyData.name) {
+      setUser((prev) => ({ ...(prev || {}), baby_name: newBabyData.name }));
+    }
   }
 
   // Loading state while checking session
@@ -138,8 +149,8 @@ export default function App() {
         <LoginPage onLoginSuccess={(loggedInUser) => {
           const u = loggedInUser?.user || loggedInUser;
           setUser(u);
-          const bName = u?.baby_name || "Liam";
-          const bId = u?.assigned_baby_ids?.[0] || "baby_liam_01";
+          const bName = u?.baby_name || "Baby";
+          const bId = u?.assigned_baby_ids?.[0] || "";
           setBaby({ name: bName, baby_id: bId });
         }} />
       </ErrorBoundary>
@@ -154,6 +165,7 @@ export default function App() {
         <Navbar
           user={user}
           baby={baby}
+          onUpdateBaby={handleUpdateBaby}
           onOpenAuth={() => {}}
           onLogout={handleLogout}
           activeTab={activeTab}
@@ -166,6 +178,7 @@ export default function App() {
             <Dashboard
               user={user}
               baby={baby}
+              onUpdateBaby={handleUpdateBaby}
               onOpenReminders={() => setActiveTab("reminders")}
             />
           ) : (

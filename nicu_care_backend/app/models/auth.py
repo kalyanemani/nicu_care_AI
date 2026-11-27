@@ -18,13 +18,13 @@ class UserBase(BaseModel):
     full_name: str
     phone_number: Optional[str] = "+919876543210"
     role: UserRole = UserRole.PARENT
-    assigned_baby_ids: List[str] = Field(default_factory=lambda: ["baby_liam_01"])
-    baby_name: Optional[str] = "Liam"
+    assigned_baby_ids: List[str] = Field(default_factory=list)
+    baby_name: Optional[str] = None
 
 
 class UserRegister(UserBase):
     password: str
-    baby_name: Optional[str] = "Liam"
+    baby_name: Optional[str] = None
 
 
 class UserLogin(BaseModel):
@@ -36,7 +36,7 @@ class UserResponse(UserBase):
     id: str
     created_at: str
     last_login: Optional[str] = None
-    baby_name: Optional[str] = "Liam"
+    baby_name: Optional[str] = None
 
 
 class StorageCategory(str, Enum):

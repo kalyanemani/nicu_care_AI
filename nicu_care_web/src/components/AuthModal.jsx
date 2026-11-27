@@ -4,11 +4,11 @@ import { authApi } from "../api";
 
 export default function AuthModal({ isOpen, onClose, onLoginSuccess }) {
   const [isRegister, setIsRegister] = useState(false);
-  const [email, setEmail] = useState("mother_liam@example.com");
-  const [password, setPassword] = useState("password123");
-  const [fullName, setFullName] = useState("Ananya Sharma");
-  const [phoneNumber, setPhoneNumber] = useState("+919876543210");
-  const [babyName, setBabyName] = useState("Liam");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [fullName, setFullName] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [babyName, setBabyName] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
@@ -21,16 +21,17 @@ export default function AuthModal({ isOpen, onClose, onLoginSuccess }) {
 
     try {
       if (isRegister) {
-        // Register new account with email and mobile
-        await authApi.register(fullName, email, phoneNumber, password, "baby_liam_01");
+        // Register new account with email, mobile, and custom baby name
+        const cleanBabyName = babyName.trim() || "Baby";
+        await authApi.register(fullName.trim(), email.trim(), phoneNumber.trim(), password, cleanBabyName);
         // Automatically login
-        const session = await authApi.login(email, password);
+        const session = await authApi.login(email.trim(), password);
         localStorage.setItem("nicu_token", session.access_token);
         onLoginSuccess(session.user);
         onClose();
       } else {
         // Log in with existing account
-        const session = await authApi.login(email, password);
+        const session = await authApi.login(email.trim(), password);
         localStorage.setItem("nicu_token", session.access_token);
         onLoginSuccess(session.user);
         onClose();
@@ -46,10 +47,12 @@ export default function AuthModal({ isOpen, onClose, onLoginSuccess }) {
     if (role === "parent") {
       setEmail("mother_liam@example.com");
       setPassword("password123");
+      setBabyName("Liam");
       setIsRegister(false);
     } else {
       setEmail("dr_sharma@rainbow.com");
       setPassword("doctor123");
+      setBabyName("");
       setIsRegister(false);
     }
   }

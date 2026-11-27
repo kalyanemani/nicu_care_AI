@@ -47,7 +47,7 @@ export const authApi = {
       body: JSON.stringify({ email, password }),
     }),
 
-  register: (fullName, email, phone, password, babyName = "Liam") =>
+  register: (fullName, email, phone, password, babyName = "Baby") =>
     request("/auth/register", {
       method: "POST",
       body: JSON.stringify({
@@ -61,6 +61,11 @@ export const authApi = {
     }),
 
   getProfile: () => request("/auth/me"),
+  updateBaby: (babyName) =>
+    request("/auth/update-baby", {
+      method: "PUT",
+      body: JSON.stringify({ baby_name: babyName }),
+    }),
 };
 
 // ── Baby & Timeline Services ─────────────────────────────────────────

@@ -25,7 +25,7 @@ const LANGUAGES = [
 
 export default function ChatbotSlider({ baby }) {
   const babyName = baby?.name || "Baby";
-  const babyId = baby?.baby_id || "baby_liam_01";
+  const babyId = baby?.baby_id || "";
 
   const [isOpen, setIsOpen] = useState(false);
   const [selectedLanguage, setSelectedLanguage] = useState("en-US");

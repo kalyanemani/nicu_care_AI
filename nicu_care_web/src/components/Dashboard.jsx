@@ -1,15 +1,36 @@
 import React, { useState, useEffect } from "react";
-import { Clock, CheckCircle2, AlertCircle, Droplet, Heart, Scale, ShieldAlert, Plus, RefreshCw, Zap } from "lucide-react";
-import { babyApi, careLogApi } from "../api";
+import { Clock, CheckCircle2, AlertCircle, Droplet, Heart, Scale, ShieldAlert, Plus, RefreshCw, Zap, Edit2, Check, X } from "lucide-react";
+import { babyApi, careLogApi, authApi } from "../api";
 
-export default function Dashboard({ user, baby, onOpenReminders }) {
+export default function Dashboard({ user, baby, onUpdateBaby, onOpenReminders }) {
   const babyName = baby?.name || user?.baby_name || "Baby";
-  const babyId = baby?.baby_id || user?.assigned_baby_ids?.[0] || "baby_liam_01";
+  const babyId = baby?.baby_id || user?.assigned_baby_ids?.[0] || "";
 
   const [timeline, setTimeline] = useState([]);
   const [loading, setLoading] = useState(true);
   const [kmcSummary, setKmcSummary] = useState({ completed_hours: 1.0, target_hours: 3.0 });
   const [schedule, setSchedule] = useState(null);
+
+  // Baby Name Editing
+  const [isEditingBaby, setIsEditingBaby] = useState(false);
+  const [newBabyName, setNewBabyName] = useState("");
+  const [savingBabyName, setSavingBabyName] = useState(false);
+
+  async function handleSaveBabyName() {
+    if (!newBabyName.trim()) return;
+    setSavingBabyName(true);
+    try {
+      const res = await authApi.updateBaby(newBabyName.trim());
+      if (onUpdateBaby) {
+        onUpdateBaby({ name: newBabyName.trim(), ...(res.baby || {}) });
+      }
+      setIsEditingBaby(false);
+    } catch (err) {
+      alert("Failed to update baby name: " + err.message);
+    } finally {
+      setSavingBabyName(false);
+    }
+  }
 
   // Feed Modal State
   const [showLogFeed, setShowLogFeed] = useState(false);
@@ -32,8 +53,12 @@ export default function Dashboard({ user, baby, onOpenReminders }) {
   const [logSuccess, setLogSuccess] = useState(null);
 
   useEffect(() => {
-    loadData();
-  }, []);
+    if (babyId) {
+      loadData();
+    } else {
+      setLoading(false);
+    }
+  }, [babyId]);
 
   async function loadData() {
     setLoading(true);
@@ -124,13 +149,87 @@ export default function Dashboard({ user, baby, onOpenReminders }) {
         <div>
           <h1 style={{ fontSize: "24px", fontWeight: "800", color: "#0f172a", margin: 0 }}>
             Hello, {(() => {
-              const name = user?.full_name || user?.user?.full_name || user?.name || user?.email || "Ananya";
-              return typeof name === "string" ? name.split(" ")[0] : "Ananya";
+              const name = user?.full_name || user?.user?.full_name || user?.name || user?.email || "Parent";
+              return typeof name === "string" ? name.split(" ")[0] : "Parent";
             })()} 👋
           </h1>
-          <p style={{ fontSize: "14px", color: "#64748b", margin: "4px 0 0 0" }}>
-            Here is Baby {babyName}'s routine and clinical targets for today.
-          </p>
+          <div style={{ display: "flex", alignItems: "center", gap: "8px", marginTop: "4px" }}>
+            {isEditingBaby ? (
+              <div style={{ display: "flex", alignItems: "center", gap: "6px" }}>
+                <span style={{ fontSize: "14px", color: "#64748b" }}>Baby</span>
+                <input
+                  type="text"
+                  value={newBabyName}
+                  onChange={(e) => setNewBabyName(e.target.value)}
+                  placeholder="Enter Baby's Name"
+                  style={{
+                    padding: "4px 8px",
+                    borderRadius: "6px",
+                    border: "1px solid #0f766e",
+                    fontSize: "13px",
+                    fontWeight: "600"
+                  }}
+                  autoFocus
+                />
+                <button
+                  onClick={handleSaveBabyName}
+                  disabled={savingBabyName}
+                  style={{
+                    background: "#0f766e",
+                    color: "white",
+                    border: "none",
+                    borderRadius: "6px",
+                    padding: "4px 8px",
+                    cursor: "pointer",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "4px",
+                    fontSize: "12px",
+                    fontWeight: "600"
+                  }}
+                >
+                  <Check size={14} /> Save
+                </button>
+                <button
+                  onClick={() => setIsEditingBaby(false)}
+                  style={{
+                    background: "#f1f5f9",
+                    color: "#64748b",
+                    border: "none",
+                    borderRadius: "6px",
+                    padding: "4px 8px",
+                    cursor: "pointer",
+                    display: "flex",
+                    alignItems: "center"
+                  }}
+                >
+                  <X size={14} />
+                </button>
+              </div>
+            ) : (
+              <p style={{ fontSize: "14px", color: "#64748b", margin: 0, display: "flex", alignItems: "center", gap: "8px" }}>
+                Here is Baby <strong style={{ color: "#0f766e", fontWeight: "700" }}>{babyName}</strong>'s routine and clinical targets for today.
+                <button
+                  onClick={() => { setNewBabyName(babyName === "Baby" ? "" : babyName); setIsEditingBaby(true); }}
+                  style={{
+                    background: "transparent",
+                    border: "1px solid #cbd5e1",
+                    borderRadius: "6px",
+                    padding: "2px 6px",
+                    color: "#64748b",
+                    cursor: "pointer",
+                    fontSize: "11px",
+                    display: "inline-flex",
+                    alignItems: "center",
+                    gap: "3px"
+                  }}
+                  title="Update Baby's Name"
+                >
+                  <Edit2 size={11} /> Edit Name
+                </button>
+              </p>
+            )}
+          </div>
         </div>
         <div style={{ display: "flex", gap: "10px", flexWrap: "wrap" }}>
           <button

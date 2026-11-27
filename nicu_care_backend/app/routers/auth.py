@@ -76,16 +76,38 @@ def get_profile(current_user: UserResponse = Depends(get_current_user)):
     """Returns current user profile with their active baby storage overview."""
     from ..services.wiki_service import WikiService
     wiki = WikiService()
-    primary_baby = current_user.assigned_baby_ids[0] if current_user.assigned_baby_ids else "baby_liam_01"
-    baby = wiki.load_baby_profile_json(primary_baby)
-    storage_arch = db_architecture_service.get_storage_architecture(primary_baby)
-    memory_arch = db_architecture_service.get_agentic_memory_summary(primary_baby)
+    primary_baby = current_user.assigned_baby_ids[0] if current_user.assigned_baby_ids else None
+    baby = wiki.load_baby_profile_json(primary_baby) if primary_baby else None
+    storage_arch = db_architecture_service.get_storage_architecture(primary_baby or "baby_default")
+    memory_arch = db_architecture_service.get_agentic_memory_summary(primary_baby or "baby_default")
     return {
         "user": current_user,
-        "baby": baby.model_dump(mode="json") if baby else {"baby_id": primary_baby, "name": current_user.baby_name or "Liam"},
+        "baby": baby.model_dump(mode="json") if baby else {"baby_id": primary_baby or "baby_default", "name": current_user.baby_name or "Baby"},
         "storage_architecture": storage_arch,
         "agentic_memory_architecture": memory_arch,
     }
+
+
+@router.put("/update-baby")
+def update_baby(payload: Dict[str, str], current_user: UserResponse = Depends(get_current_user)):
+    """Updates the user's registered baby name and profile."""
+    baby_name = payload.get("baby_name", "").strip()
+    if not baby_name:
+        raise HTTPException(status_code=400, detail="Baby name is required.")
+    try:
+        updated_user = auth_service.update_user_baby_name(current_user.id, baby_name)
+        from ..services.wiki_service import WikiService
+        wiki = WikiService()
+        primary_baby = updated_user.assigned_baby_ids[0] if updated_user.assigned_baby_ids else None
+        baby = wiki.load_baby_profile_json(primary_baby) if primary_baby else None
+        return {
+            "user": updated_user,
+            "baby": baby.model_dump(mode="json") if baby else {"baby_id": primary_baby or "baby_default", "name": updated_user.baby_name or baby_name},
+            "status": "success",
+            "message": f"Baby name successfully updated to {baby_name}."
+        }
+    except ValueError as e:
+        raise HTTPException(status_code=400, detail=str(e))
 
 
 @router.get("/storage-and-memory-status")

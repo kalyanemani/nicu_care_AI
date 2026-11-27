@@ -4,10 +4,10 @@ import { reminderApi, careLogApi, babyApi } from "../api";
 
 export default function RemindersView({ user, baby }) {
   const babyName = baby?.name || user?.baby_name || "Baby";
-  const babyId = baby?.baby_id || user?.assigned_baby_ids?.[0] || "baby_liam_01";
+  const babyId = baby?.baby_id || user?.assigned_baby_ids?.[0] || "";
   const [prefs, setPrefs] = useState({
-    email: user?.email || "mother_liam@example.com",
-    phone_number: user?.phone_number || "+919876543210",
+    email: user?.email || "",
+    phone_number: user?.phone_number || "",
     feeding_interval_hours: 1.0,
     feeding_volume_range: "45–54 mL",
     target_volume_ml: 50.0,
