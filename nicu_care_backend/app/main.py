@@ -69,12 +69,17 @@ app.include_router(reminders.router)
 @app.get("/", tags=["Health"])
 @app.get("/health", tags=["Health"])
 def root():
+    env = os.getenv("ENVIRONMENT", settings.environment).lower()
+    k_service = os.getenv("K_SERVICE", "").lower()
+    db_id = os.getenv("FIRESTORE_DATABASE_ID", "staging-db" if (env == "staging" or "staging" in k_service) else "(default)")
     return {
         "status": "online",
         "service": settings.app_name,
         "version": settings.app_version,
+        "environment": env,
+        "database_id": db_id if (settings.use_cloud_firestore or os.getenv("K_SERVICE")) else "local_disk_json",
         "features": {
-            "cloud_firestore": settings.use_cloud_firestore,
+            "cloud_firestore": settings.use_cloud_firestore or bool(os.getenv("K_SERVICE")),
             "cloud_speech": settings.use_cloud_speech,
             "redis_cache": settings.use_redis_cache,
             "langgraph_agent": True,

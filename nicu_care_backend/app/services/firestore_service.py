@@ -27,10 +27,14 @@ except ImportError:
 
 
 class FirestoreService:
-    """Unified Cloud Firestore adapter with automated local file fallback."""
+    """Unified Cloud Firestore adapter with automated local file fallback and environment isolation."""
 
     def __init__(self, project_id: Optional[str] = None):
         self.project_id = project_id or os.getenv("GCP_PROJECT") or os.getenv("GOOGLE_CLOUD_PROJECT", "project-bd847704-1e76-422c-b26")
+        self.environment = os.getenv("ENVIRONMENT", "development").lower()
+        k_service = os.getenv("K_SERVICE", "").lower()
+        default_db = "staging-db" if (self.environment == "staging" or "staging" in k_service) else "(default)"
+        self.database_id = os.getenv("FIRESTORE_DATABASE_ID", default_db)
         self.db = None
         self._is_connected = False
         self._init_client()
@@ -41,6 +45,11 @@ class FirestoreService:
             logger.info("google-cloud-firestore package not installed. Running in local fallback mode.")
             return
 
+        # For local development or testing, keep local services mode (local JSON files)
+        if os.getenv("TESTING", "false").lower() == "true" or (self.environment in ("development", "dev", "test") and not os.getenv("K_SERVICE")):
+            logger.info(f"Environment is '{self.environment}'. Keeping local disk services mode.")
+            return
+
         # Check if enabled by env
         use_firestore = os.getenv("USE_CLOUD_FIRESTORE", "false").lower() in ("true", "1", "yes")
         # In Cloud Run (K_SERVICE is set), automatically enable Firestore
@@ -48,15 +57,15 @@ class FirestoreService:
             use_firestore = True
 
         if not use_firestore:
-            logger.info("USE_CLOUD_FIRESTORE is false. Running in local fallback mode.")
+            logger.info(f"USE_CLOUD_FIRESTORE is false ({self.environment}). Running in local fallback mode.")
             return
 
         try:
-            self.db = firestore.Client(project=self.project_id)
+            self.db = firestore.Client(project=self.project_id, database=self.database_id)
             self._is_connected = True
-            logger.info(f"Cloud Firestore successfully connected on project: {self.project_id}")
+            logger.info(f"Cloud Firestore successfully connected on project: {self.project_id}, database: {self.database_id} [{self.environment}]")
         except Exception as e:
-            logger.warning(f"Could not connect to Cloud Firestore ({e}). Using local fallback.")
+            logger.warning(f"Could not connect to Cloud Firestore database '{self.database_id}' ({e}). Using local fallback.")
             self.db = None
             self._is_connected = False
 

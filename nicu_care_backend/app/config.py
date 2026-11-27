@@ -15,6 +15,8 @@ class Settings(BaseSettings):
     app_name: str = "NICU Care Backend"
     app_version: str = "1.0.0"
     debug: bool = True
+    environment: str = os.getenv("ENVIRONMENT", "development")
+    firestore_database_id: str = os.getenv("FIRESTORE_DATABASE_ID", "(default)")
 
     # ── Paths (local file-based storage, emulates Firestore) ─────────
     project_root: Path = Path(__file__).resolve().parent.parent
