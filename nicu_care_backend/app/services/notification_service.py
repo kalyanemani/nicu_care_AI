@@ -9,6 +9,7 @@ Supports:
 """
 import os
 import json
+import re
 import smtplib
 import uuid
 from email.mime.text import MIMEText
@@ -405,22 +406,26 @@ class NotificationService:
 
         # B. SMS Dispatch
         if channel in [NotificationChannel.SMS, NotificationChannel.BOTH] and prefs.sms_enabled:
-            twilio_sid = os.getenv("TWILIO_ACCOUNT_SID")
+            account_sid = os.getenv("TWILIO_ACCOUNT_SID")
+            api_key = os.getenv("TWILIO_API_KEY")
+            api_secret = os.getenv("TWILIO_API_SECRET")
+            auth_token = os.getenv("TWILIO_AUTH_TOKEN")
+            from_num = os.getenv("TWILIO_PHONE_NUMBER")
             fast2sms_key = os.getenv("FAST2SMS_API_KEY")
             raw_phone = str(phone or "").strip()
 
-            if twilio_sid and raw_phone:
+            has_twilio = (account_sid and (auth_token or (api_key and api_secret))) and from_num
+
+            if has_twilio and raw_phone:
                 try:
                     import requests
-                    auth_token = os.getenv("TWILIO_AUTH_TOKEN")
-                    from_num = os.getenv("TWILIO_PHONE_NUMBER")
-                    # Ensure E.164 international format
                     target_phone = raw_phone if raw_phone.startswith("+") else f"+{raw_phone}"
-                    url = f"https://api.twilio.com/2010-04-01/Accounts/{twilio_sid}/Messages.json"
+                    auth_tuple = (api_key, api_secret) if (api_key and api_secret) else (account_sid, auth_token)
+                    url = f"https://api.twilio.com/2010-04-01/Accounts/{account_sid}/Messages.json"
                     r = requests.post(
                         url,
                         data={"From": from_num, "To": target_phone, "Body": templates["sms"]},
-                        auth=(twilio_sid, auth_token),
+                        auth=auth_tuple,
                         timeout=5
                     )
                     sms_status = "SENT" if r.status_code in [200, 201] else f"FAILED: {r.status_code} ({r.text[:60]})"
