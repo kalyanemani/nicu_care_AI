@@ -31,6 +31,55 @@ export default function RemindersView({ user, baby }) {
     return `${String(d.getHours()).padStart(2, "0")}:${String(d.getMinutes()).padStart(2, "0")}`;
   });
   const [calcSuccess, setCalcSuccess] = useState(null);
+  const [notifPermission, setNotifPermission] = useState(
+    typeof window !== "undefined" && "Notification" in window ? Notification.permission : "default"
+  );
+
+  function playNotificationChime() {
+    try {
+      const AudioCtx = window.AudioContext || window.webkitAudioContext;
+      if (!AudioCtx) return;
+      const ctx = new AudioCtx();
+      const osc = ctx.createOscillator();
+      const gain = ctx.createGain();
+      osc.connect(gain);
+      gain.connect(ctx.destination);
+      osc.type = "sine";
+      osc.frequency.setValueAtTime(587.33, ctx.currentTime); // D5
+      osc.frequency.exponentialRampToValueAtTime(880, ctx.currentTime + 0.15); // A5
+      gain.gain.setValueAtTime(0.3, ctx.currentTime);
+      gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.4);
+      osc.start();
+      osc.stop(ctx.currentTime + 0.4);
+    } catch (e) {
+      console.warn("Audio chime not permitted by browser autoplay policy:", e);
+    }
+  }
+
+  function triggerLiveDeviceAlert(title, body) {
+    playNotificationChime();
+    if (typeof window !== "undefined" && "Notification" in window) {
+      if (Notification.permission === "granted") {
+        new Notification(title, {
+          body: body,
+          icon: "/favicon.svg",
+          vibrate: [200, 100, 200]
+        });
+      }
+    }
+  }
+
+  async function handleRequestPermission() {
+    if (typeof window !== "undefined" && "Notification" in window) {
+      const perm = await Notification.requestPermission();
+      setNotifPermission(perm);
+      if (perm === "granted") {
+        triggerLiveDeviceAlert("🔔 NICU Care Alerts Activated!", "You will now receive instant push alerts on this device.");
+      }
+    } else {
+      alert("Browser push notifications are not supported by this browser.");
+    }
+  }
 
   function computeNextTime(timeStr, intervalHours) {
     if (!timeStr) return "--:--";
@@ -129,6 +178,7 @@ export default function RemindersView({ user, baby }) {
       };
       const res = await reminderApi.sendTestReminder(payload);
       setTestResult(res);
+      triggerLiveDeviceAlert(res.title || "🔔 NICU Care Reminder", res.message_sms || "Baby care reminder dispatched!");
       loadPreferencesAndHistory();
     } catch (err) {
       alert("Failed to send test reminder: " + err.message);
@@ -166,6 +216,72 @@ export default function RemindersView({ user, baby }) {
         <p style={{ fontSize: "14px", color: "#64748b", margin: "4px 0 0 0" }}>
           Configure custom feeding ranges, manual volume entries, and automated hourly care reminders to your registered email and phone.
         </p>
+      </div>
+
+      {/* Live Device Alerts Activation Banner */}
+      <div style={{
+        background: notifPermission === "granted" ? "#f0fdf4" : "#eff6ff",
+        border: `1px solid ${notifPermission === "granted" ? "#bbf7d0" : "#bfdbfe"}`,
+        borderRadius: "12px",
+        padding: "14px 18px",
+        marginBottom: "20px",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "space-between",
+        flexWrap: "wrap",
+        gap: "12px"
+      }}>
+        <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+          <div style={{
+            background: notifPermission === "granted" ? "#dcfce7" : "#dbeafe",
+            padding: "8px",
+            borderRadius: "50%",
+            display: "flex"
+          }}>
+            <Bell size={20} color={notifPermission === "granted" ? "#16a34a" : "#2563eb"} />
+          </div>
+          <div>
+            <div style={{ fontSize: "14px", fontWeight: "700", color: "#0f172a" }}>
+              {notifPermission === "granted"
+                ? "✓ Live Device Push Alerts Active on this Browser"
+                : "🔔 Enable Live Device Push Notifications (Free & Instant)"}
+            </div>
+            <div style={{ fontSize: "12px", color: "#64748b" }}>
+              {notifPermission === "granted"
+                ? "Your browser will sound a chime and show a system banner whenever an hourly care reminder or test is sent."
+                : "Receive audible clinical chimes and native system notification banners directly on your phone or desktop without needing SMS credits."}
+            </div>
+          </div>
+        </div>
+        <button
+          type="button"
+          onClick={handleRequestPermission}
+          style={{
+            background: notifPermission === "granted" ? "#16a34a" : "#2563eb",
+            color: "white",
+            border: "none",
+            borderRadius: "8px",
+            padding: "8px 16px",
+            fontSize: "13px",
+            fontWeight: "700",
+            cursor: "pointer",
+            display: "flex",
+            alignItems: "center",
+            gap: "6px"
+          }}
+        >
+          {notifPermission === "granted" ? (
+            <>
+              <CheckCircle size={15} />
+              Alerts Enabled (Test Chime)
+            </>
+          ) : (
+            <>
+              <Bell size={15} />
+              Enable Device Alerts
+            </>
+          )}
+        </button>
       </div>
 
       {saveSuccess && (
