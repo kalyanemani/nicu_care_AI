@@ -247,5 +247,97 @@
         "remaining_hours": 3.0
       }
     }
+  },
+  {
+    "id": "notif_c437604ee3",
+    "timestamp": "2026-11-27 11:17:03",
+    "baby_id": "baby_liam_01",
+    "user_id": "usr_mother_01",
+    "recipient_email": "ananya.sharma@example.org",
+    "recipient_phone": "+919876500000",
+    "channel": "both",
+    "category": "FEEDING",
+    "title": "\ud83c\udf7c [NICU Care Alert] Time for Baby Baby's Scheduled Feed (45-54 mL)",
+    "message_sms": "[NICU Alert] Time for Baby Baby's 11:17 AM Feed! Target: 45-54 mL fortified breast milk. Paced upright feed, burp frequently. 24/7 NICU Helpline: 040-49694969",
+    "message_html": "<!DOCTYPE html>\n<html>\n<head>\n<style>\n  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; margin: 0; padding: 20px; background-color: #f8fafc; color: #1e293b; }\n  .card { max-width: 580px; margin: auto; background: #ffffff; border-radius: 12px; overflow: hidden; border: 1px solid #e2e8f0; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }\n  .header { background: linear-gradient(135deg, #0284c7, #0369a1); color: white; padding: 24px; text-align: center; }\n  .header h2 { margin: 0; font-size: 22px; font-weight: 700; }\n  .header p { margin: 6px 0 0 0; opacity: 0.9; font-size: 13px; letter-spacing: 0.5px; }\n  .content { padding: 24px; }\n  .alert-pill { display: inline-block; background: #e0f2fe; color: #0369a1; padding: 6px 14px; border-radius: 20px; font-size: 13px; font-weight: 600; margin-bottom: 16px; }\n  .box { background: #f0f9ff; border-left: 4px solid #0284c7; padding: 14px 16px; border-radius: 4px; margin: 16px 0; }\n  .stat-grid { display: flex; gap: 12px; margin: 16px 0; }\n  .stat { flex: 1; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 12px; text-align: center; }\n  .stat-val { font-size: 20px; font-weight: 700; color: #0284c7; }\n  .stat-lbl { font-size: 11px; color: #64748b; text-transform: uppercase; margin-top: 4px; }\n  ul { padding-left: 20px; line-height: 1.6; color: #334155; }\n  .footer { background: #f1f5f9; padding: 16px; text-align: center; font-size: 12px; color: #64748b; border-top: 1px solid #e2e8f0; }\n  .btn { display: inline-block; background: #0284c7; color: white; text-decoration: none; padding: 10px 20px; border-radius: 6px; font-weight: 600; margin-top: 10px; }\n</style>\n</head>\n<body>\n<div class=\"card\">\n  <div class=\"header\">\n    <h2>\ud83c\udf7c Scheduled Feeding Reminder</h2>\n    <p>NICU HOMECARE AI \u2022 PRETERM CLINICAL COMPANION</p>\n  </div>\n  <div class=\"content\">\n    <div class=\"alert-pill\">\u23f0 Interval Target (11:17 AM)</div>\n    <p>Hello, it is time for <strong>Baby Baby's</strong> scheduled feeding.</p>\n    \n    <div class=\"box\">\n      <strong>Recommended Feed Volume Target:</strong> <span style=\"font-size: 18px; color: #0284c7; font-weight: bold;\">45-54 mL</span> fortified breast milk (24 kcal/oz).\n    </div>\n\n    <h3>Clinical Care Instructions (AAP / WHO Protocol):</h3>\n    <ul>\n      <li><strong>Paced Bottle Feeding:</strong> Hold baby in a semi-upright position with the bottle horizontal to prevent swallowing air or gulping.</li>\n      <li><strong>Mid-Feed Burping:</strong> Gently burp after every 15\u201320 mL to relieve trapped gastric air.</li>\n      <li><strong>Satiety Cues:</strong> If baby pushes bottle away, slows sucking, or falls into calm sleep, do not force them to finish.</li>\n      <li><strong>Safe Sleep Post-Feed:</strong> Keep baby upright for 15 minutes before placing Back to Sleep in an empty crib.</li>\n    </ul>\n\n    <div style=\"text-align: center; margin: 20px 0;\">\n      <a href=\"tel:04049694969\" class=\"btn\">\ud83d\udea8 24/7 NICU Helpline: 040-49694969</a>\n    </div>\n  </div>\n  <div class=\"footer\">\n    Sent automatically by NICU HomeCare AI \u2022 Dedicated to Baby Baby's Growth & Thermal Stability\n  </div>\n</div>\n</body>\n</html>",
+    "status": "SIMULATED",
+    "metadata": {
+      "email_delivery": "SIMULATED",
+      "sms_delivery": "SIMULATED",
+      "details": {
+        "target_volume_ml": 50.0,
+        "feeding_volume_range": "45-54 mL",
+        "last_feed_time": "None recorded today"
+      }
+    }
+  },
+  {
+    "id": "notif_34a570a2e6",
+    "timestamp": "2026-11-27 11:22:30",
+    "baby_id": "baby_liam_01",
+    "user_id": "usr_mother_01",
+    "recipient_email": "ananya.sharma@example.org",
+    "recipient_phone": "+919876500000",
+    "channel": "both",
+    "category": "FEEDING",
+    "title": "\ud83c\udf7c [NICU Care Alert] Time for Baby Baby's Scheduled Feed (45-54 mL)",
+    "message_sms": "[NICU Alert] Time for Baby Baby's 11:22 AM Feed! Target: 45-54 mL fortified breast milk. Paced upright feed, burp frequently. 24/7 NICU Helpline: 040-49694969",
+    "message_html": "<!DOCTYPE html>\n<html>\n<head>\n<style>\n  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; margin: 0; padding: 20px; background-color: #f8fafc; color: #1e293b; }\n  .card { max-width: 580px; margin: auto; background: #ffffff; border-radius: 12px; overflow: hidden; border: 1px solid #e2e8f0; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }\n  .header { background: linear-gradient(135deg, #0284c7, #0369a1); color: white; padding: 24px; text-align: center; }\n  .header h2 { margin: 0; font-size: 22px; font-weight: 700; }\n  .header p { margin: 6px 0 0 0; opacity: 0.9; font-size: 13px; letter-spacing: 0.5px; }\n  .content { padding: 24px; }\n  .alert-pill { display: inline-block; background: #e0f2fe; color: #0369a1; padding: 6px 14px; border-radius: 20px; font-size: 13px; font-weight: 600; margin-bottom: 16px; }\n  .box { background: #f0f9ff; border-left: 4px solid #0284c7; padding: 14px 16px; border-radius: 4px; margin: 16px 0; }\n  .stat-grid { display: flex; gap: 12px; margin: 16px 0; }\n  .stat { flex: 1; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 12px; text-align: center; }\n  .stat-val { font-size: 20px; font-weight: 700; color: #0284c7; }\n  .stat-lbl { font-size: 11px; color: #64748b; text-transform: uppercase; margin-top: 4px; }\n  ul { padding-left: 20px; line-height: 1.6; color: #334155; }\n  .footer { background: #f1f5f9; padding: 16px; text-align: center; font-size: 12px; color: #64748b; border-top: 1px solid #e2e8f0; }\n  .btn { display: inline-block; background: #0284c7; color: white; text-decoration: none; padding: 10px 20px; border-radius: 6px; font-weight: 600; margin-top: 10px; }\n</style>\n</head>\n<body>\n<div class=\"card\">\n  <div class=\"header\">\n    <h2>\ud83c\udf7c Scheduled Feeding Reminder</h2>\n    <p>NICU HOMECARE AI \u2022 PRETERM CLINICAL COMPANION</p>\n  </div>\n  <div class=\"content\">\n    <div class=\"alert-pill\">\u23f0 Interval Target (11:22 AM)</div>\n    <p>Hello, it is time for <strong>Baby Baby's</strong> scheduled feeding.</p>\n    \n    <div class=\"box\">\n      <strong>Recommended Feed Volume Target:</strong> <span style=\"font-size: 18px; color: #0284c7; font-weight: bold;\">45-54 mL</span> fortified breast milk (24 kcal/oz).\n    </div>\n\n    <h3>Clinical Care Instructions (AAP / WHO Protocol):</h3>\n    <ul>\n      <li><strong>Paced Bottle Feeding:</strong> Hold baby in a semi-upright position with the bottle horizontal to prevent swallowing air or gulping.</li>\n      <li><strong>Mid-Feed Burping:</strong> Gently burp after every 15\u201320 mL to relieve trapped gastric air.</li>\n      <li><strong>Satiety Cues:</strong> If baby pushes bottle away, slows sucking, or falls into calm sleep, do not force them to finish.</li>\n      <li><strong>Safe Sleep Post-Feed:</strong> Keep baby upright for 15 minutes before placing Back to Sleep in an empty crib.</li>\n    </ul>\n\n    <div style=\"text-align: center; margin: 20px 0;\">\n      <a href=\"tel:04049694969\" class=\"btn\">\ud83d\udea8 24/7 NICU Helpline: 040-49694969</a>\n    </div>\n  </div>\n  <div class=\"footer\">\n    Sent automatically by NICU HomeCare AI \u2022 Dedicated to Baby Baby's Growth & Thermal Stability\n  </div>\n</div>\n</body>\n</html>",
+    "status": "SIMULATED",
+    "metadata": {
+      "email_delivery": "SIMULATED",
+      "sms_delivery": "SIMULATED",
+      "details": {
+        "target_volume_ml": 50.0,
+        "feeding_volume_range": "45-54 mL",
+        "last_feed_time": "None recorded today"
+      }
+    }
+  },
+  {
+    "id": "notif_260ee22448",
+    "timestamp": "2026-11-27 11:22:30",
+    "baby_id": "baby_liam_01",
+    "user_id": "usr_mother_01",
+    "recipient_email": "ananya.sharma@example.org",
+    "recipient_phone": "+919876500000",
+    "channel": "both",
+    "category": "KMC_SESSION",
+    "title": "\ud83e\udd98 [NICU Care Alert] Kangaroo Mother Care (Skin-to-Skin) Session for Baby Baby",
+    "message_sms": "[NICU Alert] Time for Baby Baby's Skin-to-Skin KMC Session! WHO recommends min 60 continuous minutes upright on bare chest. Keep room at 22-24\u00b0C. Helpline: 040-49694969",
+    "message_html": "<!DOCTYPE html>\n<html>\n<head>\n<style>\n  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; margin: 0; padding: 20px; background-color: #f8fafc; color: #1e293b; }\n  .card { max-width: 580px; margin: auto; background: #ffffff; border-radius: 12px; overflow: hidden; border: 1px solid #e2e8f0; }\n  .header { background: linear-gradient(135deg, #059669, #047857); color: white; padding: 24px; text-align: center; }\n  .content { padding: 24px; }\n  .box { background: #ecfdf5; border-left: 4px solid #059669; padding: 14px 16px; border-radius: 4px; margin: 16px 0; }\n  ul { padding-left: 20px; line-height: 1.6; color: #334155; }\n  .footer { background: #f1f5f9; padding: 16px; text-align: center; font-size: 12px; color: #64748b; }\n</style>\n</head>\n<body>\n<div class=\"card\">\n  <div class=\"header\">\n    <h2>\ud83e\udd98 Kangaroo Mother Care (KMC) Time</h2>\n    <p>RAINBOW CHILDREN'S HOSPITAL \u2022 THERMAL CARE</p>\n  </div>\n  <div class=\"content\">\n    <p>Hello, it is time for <strong>Baby Baby's</strong> daily Kangaroo Mother Care session.</p>\n    <div class=\"box\">\n      <strong>Target Duration:</strong> Minimum 60 continuous minutes (WHO Clinical Standard).\n    </div>\n    <h3>KMC Best Practice Checklist:</h3>\n    <ul>\n      <li>Place baby diapered and upright against your bare chest in the frog-leg position.</li>\n      <li>Turn baby's head gently to one side with airway completely open and clear.</li>\n      <li>Cover baby with a warm cotton wrap or blanket. Ensure nursery room is comfortably warm (22\u00b0C to 24\u00b0C).</li>\n      <li>Skin-to-skin stabilizes preterm heart rate, oxygenation, and accelerates neurodevelopment.</li>\n    </ul>\n  </div>\n  <div class=\"footer\">NICU HomeCare AI \u2022 Safe Thermal & Kangaroo Care Protocol</div>\n</div>\n</body>\n</html>",
+    "status": "SIMULATED",
+    "metadata": {
+      "email_delivery": "SIMULATED",
+      "sms_delivery": "SIMULATED",
+      "details": {
+        "target_minutes": 60,
+        "last_kmc_time": "None today",
+        "remaining_hours": 3.0
+      }
+    }
+  },
+  {
+    "id": "notif_b5f8138b89",
+    "timestamp": "2026-11-27 12:02:04",
+    "baby_id": "baby_liam_01",
+    "user_id": "usr_mother_01",
+    "recipient_email": "ananya.sharma@example.org",
+    "recipient_phone": "+919876500000",
+    "channel": "both",
+    "category": "FEEDING",
+    "title": "\ud83c\udf7c [NICU Care Alert] Time for Baby Baby's Scheduled Feed (45-54 mL)",
+    "message_sms": "[NICU Alert] Time for Baby Baby's 12:02 PM Feed! Target: 45-54 mL fortified breast milk. Paced upright feed, burp frequently. 24/7 NICU Helpline: 040-49694969",
+    "message_html": "<!DOCTYPE html>\n<html>\n<head>\n<style>\n  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; margin: 0; padding: 20px; background-color: #f8fafc; color: #1e293b; }\n  .card { max-width: 580px; margin: auto; background: #ffffff; border-radius: 12px; overflow: hidden; border: 1px solid #e2e8f0; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }\n  .header { background: linear-gradient(135deg, #0284c7, #0369a1); color: white; padding: 24px; text-align: center; }\n  .header h2 { margin: 0; font-size: 22px; font-weight: 700; }\n  .header p { margin: 6px 0 0 0; opacity: 0.9; font-size: 13px; letter-spacing: 0.5px; }\n  .content { padding: 24px; }\n  .alert-pill { display: inline-block; background: #e0f2fe; color: #0369a1; padding: 6px 14px; border-radius: 20px; font-size: 13px; font-weight: 600; margin-bottom: 16px; }\n  .box { background: #f0f9ff; border-left: 4px solid #0284c7; padding: 14px 16px; border-radius: 4px; margin: 16px 0; }\n  .stat-grid { display: flex; gap: 12px; margin: 16px 0; }\n  .stat { flex: 1; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 12px; text-align: center; }\n  .stat-val { font-size: 20px; font-weight: 700; color: #0284c7; }\n  .stat-lbl { font-size: 11px; color: #64748b; text-transform: uppercase; margin-top: 4px; }\n  ul { padding-left: 20px; line-height: 1.6; color: #334155; }\n  .footer { background: #f1f5f9; padding: 16px; text-align: center; font-size: 12px; color: #64748b; border-top: 1px solid #e2e8f0; }\n  .btn { display: inline-block; background: #0284c7; color: white; text-decoration: none; padding: 10px 20px; border-radius: 6px; font-weight: 600; margin-top: 10px; }\n</style>\n</head>\n<body>\n<div class=\"card\">\n  <div class=\"header\">\n    <h2>\ud83c\udf7c Scheduled Feeding Reminder</h2>\n    <p>NICU HOMECARE AI \u2022 PRETERM CLINICAL COMPANION</p>\n  </div>\n  <div class=\"content\">\n    <div class=\"alert-pill\">\u23f0 Interval Target (12:02 PM)</div>\n    <p>Hello, it is time for <strong>Baby Baby's</strong> scheduled feeding.</p>\n    \n    <div class=\"box\">\n      <strong>Recommended Feed Volume Target:</strong> <span style=\"font-size: 18px; color: #0284c7; font-weight: bold;\">45-54 mL</span> fortified breast milk (24 kcal/oz).\n    </div>\n\n    <h3>Clinical Care Instructions (AAP / WHO Protocol):</h3>\n    <ul>\n      <li><strong>Paced Bottle Feeding:</strong> Hold baby in a semi-upright position with the bottle horizontal to prevent swallowing air or gulping.</li>\n      <li><strong>Mid-Feed Burping:</strong> Gently burp after every 15\u201320 mL to relieve trapped gastric air.</li>\n      <li><strong>Satiety Cues:</strong> If baby pushes bottle away, slows sucking, or falls into calm sleep, do not force them to finish.</li>\n      <li><strong>Safe Sleep Post-Feed:</strong> Keep baby upright for 15 minutes before placing Back to Sleep in an empty crib.</li>\n    </ul>\n\n    <div style=\"text-align: center; margin: 20px 0;\">\n      <a href=\"tel:04049694969\" class=\"btn\">\ud83d\udea8 24/7 NICU Helpline: 040-49694969</a>\n    </div>\n  </div>\n  <div class=\"footer\">\n    Sent automatically by NICU HomeCare AI \u2022 Dedicated to Baby Baby's Growth & Thermal Stability\n  </div>\n</div>\n</body>\n</html>",
+    "status": "SIMULATED",
+    "metadata": {
+      "email_delivery": "SIMULATED",
+      "sms_delivery": "SIMULATED",
+      "details": {
+        "target_volume_ml": 50.0,
+        "feeding_volume_range": "45-54 mL",
+        "last_feed_time": "None recorded today"
+      }
+    }
   }
 ]
